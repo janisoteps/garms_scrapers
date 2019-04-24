@@ -1,6 +1,7 @@
+
 # -*- coding: utf-8 -*-
 
-# Scrapy settings for scraper11 project
+# Scrapy settings for asos project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -9,10 +10,10 @@
 #     https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'scraper11'
+BOT_NAME = 'asos'
 
-SPIDER_MODULES = ['scraper11.spiders']
-NEWSPIDER_MODULE = 'scraper11.spiders'
+SPIDER_MODULES = ['asos.spiders']
+NEWSPIDER_MODULE = 'asos.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
@@ -62,22 +63,21 @@ USER_AGENTS = [
     ('Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 '
      '(KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36')
 ]
-
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = False
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
-# CONCURRENT_REQUESTS = 32
+#CONCURRENT_REQUESTS = 32
 
 # Configure a delay for requests for the same website (default: 0)
 # See https://doc.scrapy.org/en/latest/topics/settings.html#download-delay
 # See also autothrottle settings and docs
 #DOWNLOAD_DELAY = 3
 # The download delay setting will honor only one of:
-#CONCURRENT_REQUESTS_PER_DOMAIN = 16
-#CONCURRENT_REQUESTS_PER_IP = 16
 CONCURRENT_REQUESTS_PER_DOMAIN = 1
+#CONCURRENT_REQUESTS_PER_IP = 16
 RETRY_TIMES = 0
+
 # Disable cookies (enabled by default)
 #COOKIES_ENABLED = False
 
@@ -98,7 +98,13 @@ DEFAULT_REQUEST_HEADERS = {
 # Enable or disable spider middlewares
 # See https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'scraper11.middlewares.Scraper11SpiderMiddleware': 543,
+#    'asos.middlewares.AsosSpiderMiddleware': 543,
+#}
+
+# Enable or disable downloader middlewares
+# See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
+#DOWNLOADER_MIDDLEWARES = {
+#    'asos.middlewares.AsosDownloaderMiddleware': 543,
 #}
 
 # PROXY
@@ -113,11 +119,17 @@ BLACKLIST_HTTP_STATUS_CODES = [503, 403]
 
 # Enable or disable downloader middlewares
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
+# DOWNLOADER_MIDDLEWARES = {
+#     'scrapoxy.downloadmiddlewares.proxy.ProxyMiddleware': 100,
+#     'scrapoxy.downloadmiddlewares.wait.WaitMiddleware': 101,
+#     'scrapoxy.downloadmiddlewares.scale.ScaleMiddleware': 102,
+#     'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware': None,
+#     'scrapoxy.downloadmiddlewares.blacklist.BlacklistDownloaderMiddleware': 950,
+#     'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
+#     'scrapy_useragents.downloadermiddlewares.useragents.UserAgentsMiddleware': 500,
+# }
+
 DOWNLOADER_MIDDLEWARES = {
-    'scrapoxy.downloadmiddlewares.proxy.ProxyMiddleware': 100,
-    'scrapoxy.downloadmiddlewares.wait.WaitMiddleware': 101,
-    'scrapoxy.downloadmiddlewares.scale.ScaleMiddleware': 102,
-    'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware': None,
     'scrapoxy.downloadmiddlewares.blacklist.BlacklistDownloaderMiddleware': 950,
     'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
     'scrapy_useragents.downloadermiddlewares.useragents.UserAgentsMiddleware': 500,
@@ -132,15 +144,25 @@ DOWNLOADER_MIDDLEWARES = {
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 #ITEM_PIPELINES = {
-#    'scraper11.pipelines.Scraper11Pipeline': 300,
+#    'asos.pipelines.AsosPipeline': 300,
 #}
 
 ITEM_PIPELINES = {'scrapy.pipelines.images.ImagesPipeline': 1}
 
-IMAGES_STORE = '/home/jdo/jdev/scrapers/img_uk/asos_uk_1'
+IMAGES_STORE = '/home/janis/jdev/scrapers/img_uk/asos_uk_2'
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/autothrottle.html
+#AUTOTHROTTLE_ENABLED = True
+# The initial download delay
+#AUTOTHROTTLE_START_DELAY = 5
+# The maximum download delay to be set in case of high latencies
+#AUTOTHROTTLE_MAX_DELAY = 60
+# The average number of requests Scrapy should be sending in parallel to
+# each remote server
+#AUTOTHROTTLE_TARGET_CONCURRENCY = 1.0
+# Enable showing throttling stats for every response received:
+#AUTOTHROTTLE_DEBUG = False
 AUTOTHROTTLE_ENABLED = True
 # The initial download delay
 AUTOTHROTTLE_START_DELAY = 0
@@ -149,9 +171,6 @@ AUTOTHROTTLE_MAX_DELAY = 60
 # The average number of requests Scrapy should be sending in parallel to
 # each remote server
 AUTOTHROTTLE_TARGET_CONCURRENCY = 5
-# Enable showing throttling stats for every response received:
-#AUTOTHROTTLE_DEBUG = False
-
 # Enable and configure HTTP caching (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html#httpcache-middleware-settings
 #HTTPCACHE_ENABLED = True
@@ -159,5 +178,3 @@ AUTOTHROTTLE_TARGET_CONCURRENCY = 5
 #HTTPCACHE_DIR = 'httpcache'
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
-
-# HTTPERROR_ALLOWED_CODES = [403]
