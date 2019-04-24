@@ -1,0 +1,2996 @@
+<!DOCTYPE HTML>
+<html lang="en" class="no-js en-gb" ng-app="hmApp">
+    <head>
+
+
+<script type="text/javascript" src="/dtagent_ICA23STVbpqr_7000100141019.js" data-dtconfig="agentUri=/dtagent_ICA23STVbpqr_7000100141019.js|rid=RID_272591485|rpid=-1386040406|domain=hm.com|bandwidth=300_m|lastModification=1549330027320|lab=1|tp=500,50,0,1,10|reportUrl=dynaTraceMonitor|app=H&M Production Web"></script><link rel="stylesheet" href="/etc/designs/hm/clientlibs/desktop/general.min.11.1.19.css" type="text/css">
+<script>
+var hm_deviceType="desktop";
+</script>
+<!--[if lt IE 9]>
+<link rel="stylesheet" href="/etc/designs/hm/clientlibs/desktop/ie8.min.css" type="text/css">
+<script type="text/javascript" src="/etc/designs/hm/clientlibs/desktop/ie8.min.js"></script>
+<script type="text/javascript" src="/etc/designs/hm/clientlibs/desktop/ie8/js/libs/selectivizr-min.js"></script>
+<![endif]-->
+<script type="text/javascript" src="/etc/designs/hm/clientlibs/shared/jquery.min.js"></script>
+<script type="text/javascript" src="/etc/designs/hm/clientlibs/shared/head.min.11.1.19.js"></script>
+<!-- to include grunticon -->
+<script>var clientlibsVersion = '.11.1.19';</script>
+   <noscript><link rel="stylesheet" href="/etc/designs/hm/clientlibs/shared/icons/svg.11.1.19.css" type="text/css">
+</noscript>
+<!-- to include grunticon -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<script type="text/javascript"></script><script src="https://cdn-pci.optimizely.com/js/7935450046.js"></script>
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=1000">
+
+    <meta name="keywords" content="View All">
+    <meta name="description" content="Discover the latest women&#39;s fashion trends at H&amp;M. Shop women’s clothing and accessories and get inspired by the latest fashion trends.">
+    <meta property="og:title" content="Women&#39;s Clothing &amp; Fashion - shop the latest trends | H&amp;M GB">
+    <meta property="og:description" content="Discover the latest women&#39;s fashion trends at H&amp;M. Shop women’s clothing and accessories and get inspired by the latest fashion trends.">
+<meta property="og:site_name" content="H&amp;M">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://www2.hm.com/en_gb/ladies.html">
+    <meta property="og:image" content="https://www2.hm.com/content/dam/TOOLBOX/PRE_SEASON/2018_s8/w31/TCK8032-Back-To-School-SGI-3x1.jpg" >
+	<meta property="fb:app_id" content="1433700643510498" >
+    <link rel="icon" type="image/vnd.microsoft.icon" href="/etc/designs/hm/favicon.ico">
+    <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="/etc/designs/hm/favicon.ico">
+    <link rel="canonical" href="https://www2.hm.com/en_gb/ladies.html"/>
+        <link rel="alternate" media="only screen and (max-width: 640px)" href="https://m2.hm.com/m/en_gb/ladies.html">
+
+    <title>Women&#39;s Clothing &amp; Fashion - shop the latest trends | H&amp;M GB</title>
+
+
+<script type="text/javascript" src="/en_gb/metrics/default/touchpoint.js"></script>
+
+
+        <meta property="og:open_graph_title"/>
+	    <meta property="og:open_graph_description"/>
+	    <meta property="og:open_graph_url"/>
+	    <meta property="og:open_graph_image"/>
+	    <meta property="og:open_graph_video"/>
+</head>
+
+<body ng-controller="HmAppController" ng-class="{pre_shopping_sale_countdown:preshoppingStartingSoon}" class="department-page">
+	<div class="dictionary parbase"></div>
+<script type="text/javascript">
+
+        var hm = hm || {};
+        hm.options = hm.options || {};
+        hm.options.tealiumPageId = 'Ladies Department';
+
+</script><header class="header-global"><!-- Header -->
+    <script>
+var hm_deviceType="desktop";
+</script>
+<!--AEMPUBPRDEU66.goep.hm.com-->
+<noscript>
+<div class="responsive status-message is-open notice">
+  <div class="message icon icon-banner-info-white">
+  		Welcome! Hm.com works best with JavaScript enabled, turn it on and enjoy the latest fashion!
+  		</div>
+</div>
+</noscript><script>
+    var hm = hm || {};
+    hm.options = hm.options || {};
+
+    var wpwlOptions = window.wpwlOptions || {};
+
+    hm.i18n = hm.i18n || {};
+
+    hm.options.product = {
+      removeFromCartServiceUrl: 'remove_from_cart_response.json', //why is it static? I think we should remove this hardcoded value
+      country: 'hm-greatbritain',
+      locale: 'en_gb', //here we put contextPath because dx team use it to create url
+      getFavoritesService: '/en_gb/favourites/productCodes',
+      addFavoriteService: '/en_gb/favourites/addItem',
+      removeFavoriteService: '/en_gb/favourites/removeItem',
+      productAvailabilityServiceUrl: '/en_gb/getAvailability',
+	  addToCartServiceUrl: '/en_gb/cart/add',
+	  esalesServicePathname: '/pra/panel/product-detail-page'
+    };
+
+    hm.options.esalesPra10 = {
+    		url: '/en_gb/pra/panel/pra10'
+    };
+
+    hm.options.praSlideNoText = {
+   		slideBulletText: '[slideNumberLabel]'
+  	};
+
+    hm.options.gdpr = {
+    	    enabled: 'true',
+    	    dateStart: '2018-05-14T00:00:00.000+02:00',
+    	    dateEnd: '2021-05-01T00:00:00.000+02:00',
+    	    url:'/content/hmonline/en_gb/customer-service/legal-and-privacy/privacy-link.html'
+    	  };
+
+    hm.options.orders = {
+    	    getOrders: '/mock/getOrders',
+    	    offset: '5',
+    	    missingImageUrl: '/etc/designs/hm/clientlibs/shared/images/kaff.png'
+    	  };
+    hm.options.pra = {
+    		pra1: '/en_gb/pra/panel/product-detail-page', //PDP
+    	    pra6: '/en_gb/pra/panel/sub-department-page', //SDP
+   	     	pra10: '/en_gb/pra/panel/pra10', //Search
+    	   	pra11: '/en_gb/pra/panel/sale-department-page', //Sale
+    	    pra3: '/en_gb/pra/panel/shopping-bag-page', //Shopping bag
+    	    pra4: '/en_gb/pra/panel/shopping-bag-page' //Shopping bag
+         };
+       hm.i18n = {
+   		 favorite: {
+   	   	        favoritesErrorText: 'Sorry, we were unable to move your item to Favourites. Please try again later.',
+   	   	        addToFavoritesErrorHeading: 'Item not added to Favourites',
+   	   	        removeFavoritesErrorHeading: 'ERROR WHEN REMOVING FAVOURITE',
+   	   	        moveToBagErrorHeading: 'Item not moved to your Shopping Bag',
+   	   	     	moveToFavoritesErrorHeading: 'Oops… Favourites is full',
+   	   	    	fullFavoritesListError: 'Sorry, Favourites is full so we can&#039;t add this item. If you really want to save this item, please delete another item and try again.',
+   	   	        fullFavoritesListErrorHeading: 'Oops… Favourites is full',
+   	   	    	activeText: 'Saved to favourites',
+   	  	      	inactiveText: 'Not saved to favourites'
+   	   	},
+   	 	quickbuy: {
+   	   	      viewMore: 'Show more',
+   	   	      add: 'ADD',
+   	   	      selectSize: 'Select size',
+   	   	      fewPiecesLeft: 'Few pieces left',
+   	   	      soldOut: 'Sold Out',
+    	 	  sizeGuide: 'Size guide'
+   	   	    },
+   	 	gdpr: {
+	      	headerText: 'WE CARE ABOUT YOUR PRIVACY!',
+   	  		bodyText:'Your privacy is important to us which is why we want to inform you on our updated Privacy Notice.   To give you a more transparent and clear information on how we process your personal data, we have divided the Privacy Notice into different chapters. Depending on if you are a subscriber, H&amp;M Club member or if you have an H&amp;M Account, different parts of the notice will apply to you. In each chapter, we describe in more detail what personal data we have about you and how we use it. We have also increased the information on your rights, for example how to get access to your data and how you can request to terminate the usage of your data.',
+	      	linkText: 'You can find our Privacy Notice here',
+	      	buttonText: 'OK'
+   		},
+	    luminaires: {
+	    		regulationText: 'Regulation (EU) No: 874/2012',
+	    		energyLabelling: 'ENERGY RATING',
+	    		compatible: 'This luminaire is compatible with bulbs of energy classes:',
+	    		energyDeclaration: 'ENERGY RATING',
+	    		imageNumber: '874/2012'
+
+	   	},
+    	turnTo: {
+		    labels: {
+		    	reviewesLabel: "REVIEWS",
+		    	finishReview: "FINISH THIS REVIEW",
+		    	submitReviewCTA: "SEND MY REVIEW",
+		    	helpHeading: "Help us rate your latest purchase",
+		    	greeting: "HI",
+		    	shareExperienceCta: "Share your experience",
+		    	shareExperienceCtaText: "and help others make great  decisions, please rate your latest purchase",
+		    	productSatHeading: "Product satisfaction",
+		    	productSatText: "Rate your product satisfaction",
+		    	ratingHeading: "Rating",
+		    	sizeFitHeading: "SIZE AND FIT",
+		    	myProfileHeading: "My profile",
+		    	myProfileText: "Help others make great decisions, tell them a little about yourself.",
+		    	reviewTextLong: "What do you think? People talk about quality, look and feel.",
+		    	thankYouHeading: "THANK YOU!",
+		    	thankYouText: "Your feedback is much appreciated",
+		    	moreReviewCta: "Your reviews are really valuable",
+		    	moreReviewCta2: "Let&#039;s go for another one!",
+		    	othersLabel: "What other customers think based on",
+		    	numberReviews: "{xx} reviews",
+		    	numberReviewsMenu: "Reviews ({xx})",
+		    	numberComments: "{xx} comments",
+		    	othersHeading: "WHAT OTHER CUSTOMERS THINK",
+		    	userProfileShort: 'in size {size}',
+		    	commentTitle: 'COMMENT',
+		    	commentText: 'What do you think? People talk about quality, look and feel.',
+		    	basedText: "Based on",
+		    	customerReviews: "customer ratings",
+		    	boughtLabel: "Bought:",
+		    	inSizeLabel: "in size",
+		    	aboutMeLabel: "About me:",
+		    	showMoreLabel: "Show more",
+		    	selectedBodyType: "{bodyType} body type",
+		    	selectedSkinTone: "[skynTone]",
+		    	selectedSkinType: "{skinType} skin type",
+		    	filterLabel: "[filter]",
+		    	sortByLabel: "Sort by",
+		    	sortOptionLables: [
+		    		"Most Relevant",
+		    		"Newest",
+		    		"Highest Rated",
+		    		"Lowest Rated"
+		    	],
+		    	reviewsDescriptionLabel: "[reviewDescription]",
+		    	clearAllCta: "[clearAll]",
+		    	noReviewesHeading: "[noMatchReview]",
+		    	noReviewesText: "[noReviewText]",
+		    	colorPurchased: "[purchasedColor]",
+		    	sizePurchased: "[pushasedSize]",
+		    	heightLabel: "Height",
+		    	bodyTypeLabel: "[bodyTypeLabel]",
+		    	skinToneLabel: "[skinToneLabel]",
+		    	SkinTypeLabel: "[skinTypeLabel]",
+		    	labelAll: "All",
+		    	doneCta: "[done]",
+		    	clearCta: "[clear]",
+		    	backCta: "Back",
+		    	unreviewedItemsPlaceholder: "Your purchased items will show up here, waiting for your review.",
+		    	unreviewedItemsText: "Let&#039;s leave a review!",
+		    	itmesCount: "{x} items",
+		    	leaveReviewCta: "Leave a Review",
+		    	gotohm: "Go to HM.com",
+		    	reviewHeading: "REVIEW",
+		    	shareThoughtsHeading: "SHARE YOUR THOUGHTS ON THIS ITEM!",
+		    	dimensionText: "What do you think? People talk  about style, occasion and feel.",
+		    	ratingValidationText: "Your review must include a rating.",
+		    	maxLengthValidationText: "This is fantastic, we love novels and we love that you are being so generous. To make it into our small review frame, try to make it a bit shorter, let&#039;s say 5000 characters.",
+		    	unfinishedReviewHeading: "Your review means a lot.",
+		    	unfinishedReviewtext: "Please finish it before you leave, changes will not be saved.",
+		    	unfinishedReviewCta: "YES, I WANT TO FINISH",
+		    	unfinishedReviewExit: "EXIT",
+		    	shopNowLabel: "SHOP NOW",
+		    	ratingStarTips: [
+			    	'Poor',
+			    	'Fair',
+			    	'Average',
+			    	'Good',
+			    	'Excellent'
+			    ],
+			    myhmReviewSection: {
+		    		noReviewText: 'Your purchased items will show up here, waiting for your review.',
+				    canReviewText: 'You have {xx} item(s) waiting for your opinion.',
+					errorText: 'Server error, please try again later.'
+	        	},
+			    headlines: {
+			    	normal: {
+			    	  title: "REVIEWS",
+			    	  subTitle: "Tell us what you thought of these items"
+			    	  },
+			    	validationError: {
+			    	  title: "ALMOST THERE!",
+			    	  subTitle: "Please take a look at what is missing to continue:",
+			    	  text:  "1. Add rating. 2. Tick Terms &amp; Conditions box."
+			    	},
+			    	connectionError: {
+			    	  title: "OH, SNAP!",
+			    	  subTitle: "It looks like you can&#039;t review right now. Please try again later. Thank you for your patience!",
+			    	  text:  "In the meanwile, head over to our shop!"
+			    	},
+			    	NotLoggedIn: {
+			    	  title: "THANK YOU!",
+			    	  subTitle: "Your reviews are really valuable",
+			    	  text:  ""
+			    	},
+			    	reviewFiltersError: {
+			    	  title: "Sorry",
+			    	  text: "We are unable to show any comments about this item at the moment. Please try again in a little while"
+			    	},
+			    	oldPurchasedProduct: {
+			    	  title: "Sorry",
+			    	  subTitle: "Products were purchased more than {x} days ago and can not be reviewed.",
+			    	  text: "However, you can still review other items that you have bought below."
+			    	},
+			    	reviewError: {
+			    	  title: "HI AGAIN!",
+			    	  subTitle: "YOU HAVE ALREADY REVIEWED THIS ITEM.",
+			    	  text1: "However, you can still review other items that you have bought below.",
+			    	  text2: "However, you can always head over to our shop to see what&#039;s trending right now!"
+			    	},
+			    	start: {
+			    	  title: "THANK YOU!",
+			    	  subTitle: "Your reviews are really valuable",
+			    	},
+			    	end: {
+			    	  title: "YOU&#039;RE THE BEST!",
+			    	  subTitle: "Your reviews are really valuable",
+			    	},
+			    	random: [
+			    	  "THE MORE THE BETTER!",
+			    	  "JUST ONE MORE!",
+			    	  "YES, THIS IS AWESOME!",
+			    	  "YOU&#039;RE ON A ROLL",
+			    	  "FLAWLESS!",
+			    	  "YOU RISE AND SHINE!",
+			    	  "MORE IS ALWAYS MORE, THANK YOU!",
+			    	  "DIAMONDS, YOU KEEP ON GIVING!",
+			    	]
+	    		},
+		    	continueShoppingBtn: {
+			    	text: "Continue Shopping",
+                    urlLink: "/en_gb/index.html"
+			    },
+    		},
+		    showMoreBtn: {
+	        	text: "Show More Products"
+	      	}
+    	},
+    	searchImgAlt: {
+	    	washTag: 'Wash Tag',
+	    	priceTag: 'Price Tag'
+    	},
+    	confirm: 'OK',
+	    general: {
+	    	next: 'Next',
+	    	previous: 'Previous',
+	    	close: 'Close',
+	    	all: 'All',
+	    	enableContrastMode: 'Enable high-contrast mode',
+	    	disableContrastMode: 'Disable high-contrast mode',
+	    	hm: 'H&amp;M',
+	    	hennes: 'Hennes &amp; Mauritz'
+    	},
+    	pdp: {
+	    	artNo: 'Art. No.',
+	    	soldOut: 'Sold Out',
+	    	fewPiecesLeft: 'Few pieces left'
+    	},
+    	product: {
+    		newArrivalText: 'New Arrival'
+    	},
+    	completeRegistration: '[pleaseCompleteRegistration]',
+        giftCard: {
+        	servicedown: 'Service Down'
+        }
+   	};
+
+ hm.options.vkAppId = '5104831';
+ hm.options.baiduKey = 'swDgGnUXEsDc69fssH1PiFdMy0pqsq4y';
+ hm.options.rimd = {
+		service: 'https://lp2.hm.com/hmgoepprod?set=width[{width}],quality[{quality}],options[limit]&source=url[{path}]&scale=width[global.width],height[15000],options[global.options]&sink=format[{ext}],quality[global.quality]',
+		product: 'https://lp2.hm.com/hmgoepprod?source=url[{path}]&scale=width[{width}],height[{height}],options[{scale}]&sink=format[jpeg],quality[{quality}]&hmver={version}',
+		serviceOverride: {
+			gif: 'https://lp2.hm.com/hmgoepprod?source=url[{path}]&optimize&sink=format[{ext}]'
+		}
+	};
+ hm.options.googleMapApiKey = 'gme-hmhennesmauritzab';
+
+ hm.options.searchNumGuide = {
+ 	    washTagImg: '/etc/designs/hm/clientlibs/shared/images/tag-wash.svg',
+ 	    pricetagImg: '/etc/designs/hm/clientlibs/shared/images/tag-price.svg'
+ };
+
+ hm.options.turnTo = {
+		  enabled: true,
+ 	      dateFrom: '56',
+ 	      ugcSummary: '/en_gb/reviews/rrs/ugcsummary',
+		  unreviewedPurchases: '/en_gb/reviews/rrs/unreviewed',
+	      reviewList: '/en_gb/reviews/rrs/reviews',
+	      createReview: '/en_gb/reviews/rrs/createreview',
+	      reviewFormSubmission: '/en_gb/reviews/rrs/formsubmission',
+
+ 	      	dimensionId: 1,
+
+ 	      legal: [
+            {
+            	label: 'I accept {URL1}terms and conditions{/URL}',
+                url1: '/en_gb/customer-service/legal-and-privacy/privacy-link.modal.html',
+             	validationText: "Please accept the terms and conditions to continue.",
+            	finePrint: 'The information you provide will be handled in accordance with our {URL2}Privacy notice{/URL}',
+                url2: '/en_gb/customer-service/legal-and-privacy/reviews-terms-and-conditions.modal.html'
+            }
+ 	      ]
+ 	  };
+
+
+
+hm.options.truefit = {
+	enabled: {"favorites":"true","myHM":"true","quick_buy":"false","PDP":"true"},
+	environment: 'production',
+	clientid: 'hms'
+};
+
+hm.options.truefit.enabled.thankyou = "true";
+
+
+ hm.options.trendingSearches = {
+    url: '/en_gb/pra/panel/top-searches',
+    errorTitle: '[trendingErrorTitle]' //This title will display icase server error but business user added link to the trending search
+  };
+
+ hm.options.ugc = {enabled: true};
+
+ hm.options.isPublishMode = true;
+
+
+ hm.options.preshopperData = {
+	bookingsService: '/en_gb/loyalty/booking/bookings',
+	memberService: '/en_gb/loyalty/getMember',
+	offersService: ''
+ };
+
+ hm.options.useNewFilter = true;
+
+ hm.options.quickBuyBaseUrl = '/en_gb/productpage/_jcr_content/product.quickbuy.{{=it.articleCode}}.html';
+
+ hm.options.acceptableJoin = {};
+
+ 	hm.options.acceptableJoin.popupTimes = 2;
+
+
+ $(document).ready(function(){
+	 if(!hm.options.isPublishMode){
+		 $('.preshopping-container').show();
+	 }
+	 else{
+ 		$('.preshopping-container').has("article[data-preshopping-teaser=false]").show();
+	 }
+ });
+</script><div class="warehousemessage"></div>
+<div class="wrapper" ng-init="isMobile=false;preshoppingCountdown='900000';preshoppingOfferPageUrl='';hmClubEnabled=true; timeInterval=5000; autorefreshCount=3; offersSpace='rewardSpace'; hmClubServiceCacheDuration=5; hmRedirectPath='/en_gb/hmclub.guest.html'">
+<div class="top-strip">
+<nav class="services-menu"><!-- Services menu -->
+	<div class="linklist1 linklist parbase"><ul>
+			<li>
+				<a href="#main-content" class="visuallyhidden focusable">[skipNavigation]</a>
+			</li>
+			<li><a class="link" href="/en_gb/customer-service.html" target="_blank">Customer Service</a></li>
+		            <li><a class="link" href="/en_gb/customer-service/newsletter.html">Newsletter</a></li>
+		            <li><a class="link" href="/en_gb/customer-service/shopping-at-hm/store-locator.html">Store Locator</a></li>
+		            <li><a class="link" href="https://play.google.com/store/apps/details?id=com.hm" target="_blank">Download Android</a></li>
+		            <li><a class="link" href="https://itunes.apple.com/app/h-m/id589351740" target="_blank">Download iOS</a></li>
+		            <li><button class="js-high-contrast-mode high-contrast-mode-button">[enableMode]</button></li>
+		</ul>
+	</div>
+</nav><!-- /Services menu --><nav class="session-menu"><!-- Session menu -->
+
+    <ul class="session-menu-top-row">
+   		<li class="signin rollover-popdown" data-target="click"><div class="account parbase"><script type="text/javascript">
+
+function removeloginparam(){
+  if(sessionStorage.getItem('lastOpened')) {
+    sessionStorage.removeItem('lastOpened');
+  }
+}
+//tealium script
+var localeInfo = {};
+	localeInfo.locale = "en_GB";
+	localeInfo.country = "GB";
+	window.onbeforeunload = removeloginparam;
+</script>
+
+<script>
+    $(document).ready(function() {
+        $("#theLoginForm").submit(function(e) {
+            trackSubmitLogin();
+            if (!hm.formValidator.validateForm($(this), false)) {
+                return;
+            } else {
+                $("#loginBtnSubmit").attr("disabled", true);
+                return true;
+            }
+        });
+    });
+</script>
+
+    <div class="signin-signed-in">
+        <a class="goto-my-hm" href="https://www2.hm.com/en_gb/my-account/overview" rel="noreferrer">My H&amp;M</a>
+        <a class="hm-club" id="hmClubAccountSignedInDynamicLink" rel="noreferrer" href="/en_gb/hmclub.guest.html">H&amp;M Club</a>
+        <a class="goto-sign-in" href="https://www2.hm.com/en_gb/logout">Sign out</a>
+    </div>
+    <div class="signin-not-signed-in">
+		<a class="goto-my-hm" href="https://www2.hm.com/en_gb/my-account" rel="noreferrer">My H&amp;M</a>
+        <a class="hm-club" id="hmClubAccountNotSignedInDynamicLink" rel="noreferrer" href="/en_gb/hmclub.guest.html">H&amp;M Club</a>
+        <a href="#" class="goto-sign-in rollover-toggle" onclick='trackLinkAccountHeader()'>Sign in / Join</a>
+        <div class="signin-rollover popdown row">
+        	<div class="inner">
+				<div class="signin-rollover-login">
+					<form id="theLoginForm" class="responsive form-section" action="https://www2.hm.com/en_gb/j_spring_security_check" onsubmit='trackSubmitLogin()' method="POST" novalidate>
+              			<fieldset class="fieldset">
+                			<legend class="legend sub-sub-heading light">Sign In</legend>
+                        	<input type="hidden" id="enableMigration" value="true" name="enableMigration">
+						 		<input type="hidden" id="cookieName" value="HMORIGLOGIN" name="cookieName">
+                         		<span class="hidden" id="notJoshuaEmail"> </span>
+                         		<span class="hidden" id="joshuaStartAreNotSame">Make sure to be the first to know what’s going on in the world of fashion, sign up to our newsletter.</span>
+                         		<span class="hidden" id="notLoggedIn"> </span>
+                       		 <div class="inputwrapper required">
+                            	<label class="label" for="txt-signin-rollover-email" data-optional="(Optional)">Email:</label>
+                            	<input required class="text-input" id="txt-signin-rollover-email" name="j_username" type="email" maxlength="50" autocomplete="email" data-validation-maxlength="40" data-validation-maxlength-text="Email can be only 40 characters long" data-validation-email="true" data-validation-email-text="Please enter a valid email" data-validation-required-text="You have to enter an email address" data-validated-value="jane.doe@email.com" data-validation-inline="false"/>
+                        		<div class="input-info">Enter email address</div>
+                        	</div>
+                        	<div class="inputwrapper required">
+                            	<label class="label" for="signin-rollover-password" data-optional="(Optional)">Password:</label>
+                            	<input required class="password-input" name="j_password" type="password" id="signin-rollover-password" maxlength="25" data-validation-required-text="You have to enter a password" data-validation-nospaces="true" data-validation-nospaces-text="Password must not contain any spaces" data-validation-minlength="6" data-validation-minlength-text="The password is too short" data-validation-maxlength="25" data-validation-maxlength-text="Your password may contain max. 25 characters" data-validation-pw-not-email="true" data-validation-pw-not-email-text="Your password can&#039;t be the same as your Email" data-validation-tips-fullfilled="true" data-validation-tips-fullfilled-text="Your password must be:" data-validation-inline="false"/>
+                               	<button type="button" data-show-text="SHOW" data-hide-text="HIDE" tabindex="0" class="toggle-password-visibility js-toggle-password-visibility">SHOW</button>
+                        	</div>
+
+                        	<div class="inputwrapper optional">
+				        			<input class="checkbox-input" type="checkbox" name="_spring_security_remember_me" id="signin-rollover-remember-me"/>
+									<label class="checkbox-label" for="signin-rollover-remember-me">Keep me signed in!</label>
+	                       		</div>
+                        	</fieldset>
+                        <div class="inputwrapper">
+                            <p>
+                                <a href="https://www2.hm.com/en_gb/password/requestSignIn" class="forgot-password underline">Forgotten password?</a>
+                            </p>
+                            <input id="loginBtnSubmit" type="submit" class="large fluid button" value="Sign In" data-validation-text="This form could not be submitted. Please review your information" data-validation-required="true"/>
+                        </div>
+                        <div class="inputwrapper join">
+                       		<input type="button" class="large fluid secondary button" value="Join Us" onclick="trackClickButtonCreateNewAccount()"/>
+                        		</div>
+                    </form>
+                </div>
+                <div class="signin-rollover-join">
+                	<section class="responsive create-account popdown-form">
+	                    <form action="https://www2.hm.com/en_gb/register/newcustomer" onsubmit="trackSubmitJoin()" method="POST" class="responsive form-section" novalidate>
+	                        <fieldset class="form-part">
+		                        <legend class="heading">Create an H&amp;M Account</legend>
+		                        <p class="info-paragraph"></p>
+		                        <div class="inputwrapper required">
+					                <label class="label" for="club-membership-popdown-email" data-optional="(Optional)">Email:</label>
+				                    <input required type="email" class="js-create-account-email email-input" name="email" id="club-membership-popdown-email" maxlength="50" autocomplete="email" data-validation-email="true" data-validation-email-text="Please enter a valid email" data-validation-maxlength="40" data-validation-maxlength-text="Email can be only 40 characters long" data-validation-required-text="You have to enter an email address" data-validated-value="jane.doe@email.com"/>
+					            	<div class="input-info">Enter email address</div>
+					            </div>
+		                        <div class="inputwrapper required">
+					                <label class="label" for="club-membership-popdown-password" data-optional="(Optional)">Password:</label>
+					                <input required type="password" name="pwd" id="club-membership-popdown-password" class="password-input" maxlength="25" data-validation-required-text="You have to confirm your password" data-validation-minlength="8" data-validation-minlength-text="The password is too short" data-validation-maxlength="25" data-validation-maxlength-text="Your password may contain max. 25 characters" data-validation-nospaces="true" data-validation-nospaces-text="Password must not contain any spaces" data-validation-pw-not-email="true" data-validation-pw-not-email-text="Your password can&#039;t be the same as your Email" data-validation-tips-fullfilled="true" data-validation-tips-fullfilled-text="Your password must be:"/>
+					           		<div class="input-info js-validtips" style="display: none;">
+	                                 <span class="validtip" data-ruleid="validate_min_chars">
+	                                  Minimum 8 characters<span class="icon icon-valid"></span>
+	                                 </span>
+	                                 <span class="validtip" data-ruleid="validate_min_one_num">
+	                                  1 number<span class="icon icon-valid"></span>
+	                                 </span>
+	                                 <span class="validtip" data-ruleid="validate_min_one_uppercase">
+	                                  1 uppercase<span class="icon icon-valid"></span>
+	                                 </span>
+	                                 <span class="validtip" data-ruleid="validate_min_one_lowercase">
+	                                  1 lowercase<span class="icon icon-valid"></span>
+	                                 </span>
+                                	</div>
+					           		<button type="button" data-show-text="SHOW" data-hide-text="HIDE" tabindex="0" class="toggle-password-visibility js-toggle-password-visibility">SHOW</button>
+					            </div>
+					           </fieldset>
+	                        <fieldset class="form-part club-fieldset" data-fashion-news-autocomplete="true">
+		<legend class="heading">
+			<span class="icon-hm-club-logo">H&amp;M Club</span>
+		</legend>
+		<p class="info-paragraph">The most approachable fashion club in the world</p>
+		<div class="inputwrapper">
+			<input type="checkbox" name="hmClubJoin" id="club-membership-popdown" class="checkbox-input membership-toggle">
+			<label class="checkbox-label" for="club-membership-popdown">Yes, I want to be part of H&amp;M Club!</label>
+		</div>
+		<div class="inputwrapper optional required select-date">
+			<label class="label" for="club-membership-popdown-dob" data-optional="(Optional)">Date of birth</label>
+			<div class="select-date">
+				<div class="merged-inputs">
+	                <input type="tel" autocomplete="bday-day" pattern="[0-9]*" inputmode="numeric" id="club-membership-popdown-day" name="day" class="input-day text-input" placeholder="dd" size="2" maxlength="2" aria-label="">
+	                    <span class="divider"> /</span>
+	                    <input type="tel" autocomplete="bday-month" pattern="[0-9]*" inputmode="numeric" id="club-membership-popdown-month" name="month" class="input-month text-input" placeholder="mm" size="2" maxlength="2" aria-label="">
+	                    <span class="divider"> /</span>
+	                    <input type="tel" autocomplete="bday-year" pattern="[0-9]*" inputmode="numeric" id="club-membership-popdown-year" name="year" class="input-year text-input" placeholder="yyyy" size="4" maxlength="4" aria-label="">
+	                    </div>
+				<input id="club-membership-popdown-dob" type="hidden" class="input-date" name="birthDate" data-min-age="16" data-min-age-text="You must be at least 16 years old to join H&amp;M club" data-format-text="Incorrect format" data-validation-minlength-text="Please enter your year of birth in a four digit format" data-show-text-after-this="true" data-validation-birthdate="true" data-validation-required-if-checked="#club-membership-popdown" data-validation-required-text="Please enter your date of birth">
+			</div>
+			<div class="input-info">Please enter your date of birth in the correct format</div>
+		</div>
+		</fieldset>
+<fieldset class="form-part">
+		                        <!-- <ul class="input-list">
+		                        	</div>
+					            <p id="privacy-policy">I agree to let H&amp;M process my personal data in order to manage my
+personal account, in accordance with H&amp;M's <a
+  href="/content/hmonline/en_gb/customer-service/legal-and-privacy/privacy-notice-hm-account-link.html"
+  class="underline overlay-trigger">Privacy Notice</a>
+  .<br /></p>
+					            <p id="club-terms" class="hidden">I agree to receive personalised marketing material and I confirm that I
+am 16 years old or older.<br /></p> -->
+					            <div class="inputwrapper required js-show-if-club hidden">
+											<input class="checkbox-input " type="checkbox" required="true" id="create-account-popdown-fashion-news" name="create-account-popdown-fashion-news">
+											<label class="checkbox-label " for="create-account-popdown-fashion-news">
+											    I agree to receive personalised marketing material and I confirm that I
+am 16 years old or older.<br />
+</label>
+									</div>
+						            <div class="inputwrapper required js-hide-if-club">
+	  									<input class="checkbox-input" type="checkbox" required="true" id="create-account-popdown-privacy-policy" name="create-account-popdown-privacy-policy">
+	  									<label class="checkbox-label" for="create-account-popdown-privacy-policy">
+	                                    I agree to let H&amp;M process my personal data in order to manage my
+personal account, in accordance with H&amp;M's <a href="/en_gb/customer-service/legal-and-privacy/privacy-notice-hm-account-link.html" class="underline overlay-trigger">Privacy Notice</a>
+  .<br />
+</label>
+									</div>
+									<p class="js-show-if-club hidden">By clicking &quot;Join Us&quot;, I agree to the H&amp;M Club <a href="/en_gb/customer-service/club-terms-link.html" class="underline overlay-trigger">Terms and Conditions</a>
+     .<br />
+</p>
+									<p class="js-show-if-club hidden">H&amp;M will process your personal data to provide the full H&amp;M Club
+experience, in accordance with H&amp;M's <a href="/en_gb/customer-service/legal-and-privacy/privacy-notice-hm-club-link.html" class="underline overlay-trigger">Privacy Notice</a>
+    .<br />
+</p>
+								<div class="button-group">
+					                <button type="submit" class="button large" data-validation-text="This form could not be submitted. Please review your information">Join Us</button>
+					                <button type="button" class="big secondary button large" onclick="trackClickButtonBack()">Back to sign in</button>
+					            </div>
+	                        </fieldset>
+	                    </form>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div></div>
+</li>
+    	<li class="favorites">
+        	<a href="/en_gb/favourites" class="js-favorite-entry-point favorite-entry-point is-favorite icon-favorites-dark icon">
+        	Favourites</a>
+        </li>
+        <li class="shopping-bag rollover-popdown is-loaded" data-cart="/en_gb/minicart/view"><span class="minicart parbase"><a href="https://www2.hm.com/en_gb/cart" class="goto-shopping-bag rollover-toggle">
+       Shopping bag
+       (<span class="shoppingbag-item-count">0</span>)
+   </a>
+   <div class="shopping-bag-rollover row popdown"></div></span>
+</li>
+	</ul>
+
+</nav>
+<!-- /Session menu -->
+</div>
+<a href="/en_gb/index.html" title="HM.com" class="logotype hidden-text">HM.com</a>
+<div class="topnav parbase"><nav class="primary-menu"><!-- Primary menu -->
+    <ul>
+        <li>
+                <a href="/en_gb/ladies.html">Ladies</a>
+                  <button class="js-toggle-submenu visuallyhidden" aria-haspopup="true">Open 'Ladies' submenu</button>
+                <div class="primary-menu-sub-menu">
+                        <div class="primary-menu-sub-menu-inner">
+                            <div class="primary-menu-categories">
+        <div class="primary-menu-category ">
+                    <div class="sub-sub-heading">New Arrivals</div>
+                    <ul >
+                        <li>
+                                <a href="/en_gb/ladies/new-arrivals/clothes.html">
+                                    Clothes</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/ladies/new-arrivals/shoes-and-accessories.html">
+                                    Shoes &amp; Accessories</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/ladies/new-arrivals/beauty.html">
+                                    Beauty</a>
+                            </li>
+                        </ul>
+                </div>
+
+        <div class="primary-menu-category ">
+                    <div class="sub-sub-heading">Trending Now</div>
+                    <ul >
+                        <li>
+                                <a href="/en_gb/ladies/shop-by-occasion/holiday-shop.html">
+                                    Holiday Shop</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/ladies/shop-by-occasion/s-s19-trends-utility-neon-and-prints.html">
+                                    SS19 Trends: Utility, Neon and Prints</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/ladies/shop-by-occasion/young-styles.html">
+                                    Young Styles</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/ladies/shop-by-occasion/most-wanted.html">
+                                    Bestsellers</a>
+                            </li>
+                        </ul>
+                </div>
+
+        <div class="primary-menu-category ">
+                    <div class="sub-sub-heading">SUSTAINABILITY AT H&amp;M</div>
+                    <ul >
+                        <li>
+                                <a href="/en_gb/ladies/sustainability-at-h-m/recycle-at-h-m.html">
+                                    Recycle at H&amp;M</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/ladies/sustainability-at-h-m/h-m-take-care.html">
+                                    H&amp;M Take Care</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/ladies/sustainability-at-h-m/h-m-s-sustainability-strategy.html">
+                                    H&amp;M&#039;s Sustainability Strategy</a>
+                            </li>
+                        </ul>
+                </div>
+
+        <div class="primary-menu-category ">
+                    <div class="sub-sub-heading">CONSCIOUS SHOP</div>
+                    <ul >
+                        <li>
+                                <a href="/en_gb/ladies/conscious-shop/ladies.html">
+                                    Ladies</a>
+                            </li>
+                        </ul>
+                </div>
+
+        </div>
+<div class="primary-menu-categories">
+        <div class="primary-menu-category primary-menu-category-products">
+                    <div class="sub-sub-heading">Shop by Product</div>
+                    <ul >
+                        <li>
+                                <a href="/en_gb/ladies/shop-by-product/view-all.html">
+                                    View All</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/ladies/shop-by-product/dresses.html">
+                                    Dresses</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/ladies/shop-by-product/shirts-and-blouses.html">
+                                    Shirts &amp; Blouses</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/ladies/shop-by-product/tops.html">
+                                    Tops</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/ladies/shop-by-product/swimwear.html">
+                                    Swimwear</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/ladies/shop-by-product/jeans.html">
+                                    Jeans</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/ladies/shop-by-product/trousers.html">
+                                    Trousers</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/ladies/shop-by-product/jumpsuits.html">
+                                    Jumpsuits</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/ladies/shop-by-product/shorts.html">
+                                    Shorts</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/ladies/shop-by-product/skirts.html">
+                                    Skirts</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/ladies/shop-by-product/jackets-and-coats.html">
+                                    Jackets &amp; Coats</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/ladies/shop-by-product/hoodies-sweatshirts.html">
+                                    Sweatshirts &amp; Hoodies</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/ladies/shop-by-product/blazers-and-waistcoats.html">
+                                    Blazers &amp; Waistcoats</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/ladies/shop-by-product/knitwear.html">
+                                    Knitwear</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/ladies/shop-by-product/basics.html">
+                                    Basics</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/ladies/shop-by-product/lingerie.html">
+                                    Lingerie</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/ladies/shop-by-product/nightwear.html">
+                                    Nightwear</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/ladies/shop-by-product/accessories.html">
+                                    Accessories</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/ladies/shop-by-product/shoes.html">
+                                    Shoes</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/ladies/shop-by-product/socks-and-tights.html">
+                                    Socks &amp; Tights</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/ladies/shop-by-product/cardigans-and-jumpers.html">
+                                    Cardigans &amp; Jumpers</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/ladies/shop-by-product/sportswear.html">
+                                    Sportswear</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/ladies/shop-by-product/hm-plus.html">
+                                    H&amp;M+ Plus Sizes </a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/ladies/shop-by-product/extended-sizes.html">
+                                    Extended Sizes</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/ladies/shop-by-product/maternity-wear.html">
+                                    Maternity Wear</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/ladies/shop-by-product/beauty.html">
+                                    Beauty</a>
+                            </li>
+                        </ul>
+                </div>
+
+        </div>
+<div class="primary-menu-categories">
+        <div class="primary-menu-category ">
+                    <div class="sub-sub-heading">Campaigns</div>
+                    <ul >
+                        <li>
+                                <a href="/en_gb/ladies/shop-by-feature/1119b-lets-celebrate.html">
+                                    Let’s Celebrate!</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/ladies/shop-by-feature/62k-a-novel-romance.html">
+                                    A Novel Romance</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/ladies/shop-by-feature/1119a-fresh-florals.html">
+                                    Fresh Florals</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/ladies/shop-by-feature/1189c-a-perfect-match.html">
+                                    Bridal Lingerie</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/ladies/shop-by-feature/1149h-shades-of-blue.html">
+                                    Shades Of Blue</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/ladies/shop-by-feature/6039a-the-denim-style-guide.html">
+                                    The Denim Style Guide</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/ladies/shop-by-feature/takecare.html">
+                                    H&amp;M Take Care</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/ladies/shop-by-feature/1079-studio-2019.html">
+                                    H&amp;M Studio S/S 2019</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/ladies/shop-by-feature/1229b-stripes-on-stripes.html">
+                                    Stripes on Stripes</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/ladies/shop-by-feature/1229a-spring-suiting.html">
+                                    Spring Suiting </a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/ladies/shop-by-feature/1209c-give-it-a-glow.html">
+                                    Give It a Glow!</a>
+                            </li>
+                        </ul>
+                </div>
+
+        <div class="primary-menu-category ">
+                    <div class="sub-sub-heading">#HMxME</div>
+                    <ul >
+                        <li>
+                                <a href="/en_gb/ladies/hmgallery/h-m-gallery.html">
+                                    #HMxME</a>
+                            </li>
+                        </ul>
+                </div>
+
+        <div class="primary-menu-category ">
+                    <div class="sub-sub-heading">Gift Cards</div>
+                    <ul >
+                        <li>
+                                <a href="/en_gb/ladies/gift-cards/gift-card.html">
+                                    Gift Cards</a>
+                            </li>
+                        </ul>
+                </div>
+
+        <div class="primary-menu-category ">
+                    <div class="sub-sub-heading">Magazine</div>
+                    <ul >
+                        <li>
+                                <a href="/en_gb/ladies/magazine/magazine.html">
+                                    Magazine</a>
+                            </li>
+                        </ul>
+                </div>
+
+        </div>
+<div class="primary-menu-categories">
+        <div class="primary-menu-category ">
+                    <div class="sub-sub-heading">Shop by Concept</div>
+                    <ul >
+                        <li>
+                                <a href="/en_gb/ladies/shop-by-concept/divided.html">
+                                    Divided</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/ladies/shop-by-concept/trend.html">
+                                    Trend</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/ladies/shop-by-concept/modern-classic.html">
+                                    Modern Classic</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/ladies/shop-by-concept/party.html">
+                                    Party</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/ladies/shop-by-concept/basics.html">
+                                    Basics</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/ladies/shop-by-concept/logg.html">
+                                    L.O.G.G.</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/ladies/shop-by-concept/hm-sport.html">
+                                    Sportswear</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/ladies/shop-by-concept/premium-quality.html">
+                                    Premium Quality</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/ladies/shop-by-concept/conscious-sustainable-style.html">
+                                    Conscious – Sustainable Style</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/ladies/shop-by-concept/denim.html">
+                                    Denim</a>
+                            </li>
+                        </ul>
+                </div>
+
+        </div>
+</div><!-- /primary-menu-sub-menu-inner topnav1 -->
+                    </div><!-- primary-menu-sub-menu topnav1 -->
+                </li>
+        <li>
+                <a href="/en_gb/men.html">Men</a>
+                  <button class="js-toggle-submenu visuallyhidden" aria-haspopup="true">Open 'Men' submenu</button>
+                <div class="primary-menu-sub-menu">
+                        <div class="primary-menu-sub-menu-inner">
+                            <div class="primary-menu-categories">
+        <div class="primary-menu-category ">
+                    <div class="sub-sub-heading">New Arrivals</div>
+                    <ul >
+                        <li>
+                                <a href="/en_gb/men/new-arrivals/clothes.html">
+                                    Clothes</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/men/new-arrivals/shoes-and-accessories.html">
+                                    Shoes &amp; Accessories</a>
+                            </li>
+                        </ul>
+                </div>
+
+        <div class="primary-menu-category ">
+                    <div class="sub-sub-heading">Offers</div>
+                    <ul >
+                        <li>
+                                <a href="/en_gb/men/deals/3-for-2-on-socks.html">
+                                    3 for 2 on  Selected Socks</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/men/deals/trousers-from-14-99.html">
+                                    Trousers from £14.99</a>
+                            </li>
+                        </ul>
+                </div>
+
+        <div class="primary-menu-category ">
+                    <div class="sub-sub-heading">T- SHIRT SHOP</div>
+                    <ul >
+                        <li>
+                                <a href="/en_gb/men/shop-by-occation/printed-t-shirts.html">
+                                    Printed T-shirts</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/men/shop-by-occation/polo-shirts.html">
+                                    Polo Shirts</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/men/shop-by-occation/perfect-white-tees.html">
+                                    The Perfect white Tee</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/men/shop-by-occation/basic-staples.html">
+                                    Basic Staples</a>
+                            </li>
+                        </ul>
+                </div>
+
+        <div class="primary-menu-category ">
+                    <div class="sub-sub-heading">CONSCIOUS SHOP</div>
+                    <ul >
+                        <li>
+                                <a href="/en_gb/men/conscious-shop/men.html">
+                                    Men</a>
+                            </li>
+                        </ul>
+                </div>
+
+        <div class="primary-menu-category ">
+                    <div class="sub-sub-heading">SUSTAINABILITY AT H&amp;M</div>
+                    <ul >
+                        <li>
+                                <a href="/en_gb/men/sustainability-at-h-m/recycle-at-h-m.html">
+                                    Recycle at H&amp;M</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/men/sustainability-at-h-m/h-m-take-care.html">
+                                    H&amp;M Take Care</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/men/sustainability-at-h-m/h-m-s-sustainability-strategy.html">
+                                    H&amp;M&#039;s Sustainability Strategy</a>
+                            </li>
+                        </ul>
+                </div>
+
+        </div>
+<div class="primary-menu-categories">
+        <div class="primary-menu-category primary-menu-category-products">
+                    <div class="sub-sub-heading">Shop by Product</div>
+                    <ul >
+                        <li>
+                                <a href="/en_gb/men/shop-by-product/view-all.html">
+                                    View All</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/men/shop-by-product/jeans.html">
+                                    Jeans</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/men/shop-by-product/jackets-and-coats.html">
+                                    Jackets &amp; Coats</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/men/shop-by-product/hoodies-and-sweatshirts.html">
+                                    Hoodies &amp; Sweatshirts</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/men/shop-by-product/t-shirts-and-vests.html">
+                                    T-shirts &amp; Vests</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/men/shop-by-product/shirts.html">
+                                    Shirts</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/men/shop-by-product/basics.html">
+                                    Basics</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/men/shop-by-product/cardigans-and-jumpers.html">
+                                    Cardigans &amp; Jumpers</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/men/shop-by-product/blazers-and-suits.html">
+                                    Blazers &amp; Suits</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/men/shop-by-product/trousers.html">
+                                    Trousers</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/men/shop-by-product/shorts.html">
+                                    Shorts</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/men/shop-by-product/underwear.html">
+                                    Underwear</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/men/shop-by-product/socks.html">
+                                    Socks</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/men/shop-by-product/shoes.html">
+                                    Shoes</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/men/shop-by-product/accessories.html">
+                                    Accessories</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/men/shop-by-product/hm-sport.html">
+                                    Sportswear </a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/men/shop-by-product/swimwear.html">
+                                    Swimwear</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/men/shop-by-product/extended-sizes.html">
+                                    Extended sizes</a>
+                            </li>
+                        </ul>
+                </div>
+
+        </div>
+<div class="primary-menu-categories">
+        <div class="primary-menu-category ">
+                    <div class="sub-sub-heading">Gift Cards</div>
+                    <ul >
+                        <li>
+                                <a href="/en_gb/men/gift-cards/gift-card.html">
+                                    Gift Cards</a>
+                            </li>
+                        </ul>
+                </div>
+
+        <div class="primary-menu-category ">
+                    <div class="sub-sub-heading">#HMxME</div>
+                    <ul >
+                        <li>
+                                <a href="/en_gb/men/hmgallery/h-m-gallery.html">
+                                    #HMxME</a>
+                            </li>
+                        </ul>
+                </div>
+
+        </div>
+<div class="primary-menu-categories">
+        <div class="primary-menu-category ">
+                    <div class="sub-sub-heading">Shop by Concept</div>
+                    <ul >
+                        <li>
+                                <a href="/en_gb/men/shop-by-concept/premium-quality.html">
+                                    Premium Quality</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/men/shop-by-concept/h-m-edition.html">
+                                    H&amp;M Edition</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/men/shop-by-concept/modern-classic.html">
+                                    Modern Classic</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/men/shop-by-concept/logg.html">
+                                    L.O.G.G.</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/men/shop-by-concept/divided.html">
+                                    Divided</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/men/shop-by-concept/basics.html">
+                                    Basics</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/men/shop-by-concept/conscious.html">
+                                    Conscious - Sustainable Style</a>
+                            </li>
+                        </ul>
+                </div>
+
+        </div>
+</div><!-- /primary-menu-sub-menu-inner topnav2 -->
+                    </div><!-- primary-menu-sub-menu topnav2 -->
+                </li>
+        <li>
+                <a href="/en_gb/divided.html">Divided</a>
+                  <button class="js-toggle-submenu visuallyhidden" aria-haspopup="true">Open 'Divided' submenu</button>
+                <div class="primary-menu-sub-menu">
+                        <div class="primary-menu-sub-menu-inner">
+                            <div class="primary-menu-categories">
+        <div class="primary-menu-category ">
+                    <div class="sub-sub-heading">New Arrivals</div>
+                    <ul >
+                        <li>
+                                <a href="/en_gb/divided/new-arrivals/clothes.html">
+                                    Clothes</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/divided/new-arrivals/shoes-accessories.html">
+                                    Shoes &amp; Accessories</a>
+                            </li>
+                        </ul>
+                </div>
+
+        <div class="primary-menu-category ">
+                    <div class="sub-sub-heading">Campaigns</div>
+                    <ul >
+                        <li>
+                                <a href="/en_gb/divided/campaigns/5019f-good-times-guaranteed.html">
+                                    Divided: Good Times</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/divided/campaigns/5129a-dare-to-be-square.html">
+                                    Dare to be Square</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/divided/campaigns/5129b-festival-favorites-girls.html">
+                                    Girls&#039; Festival</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/divided/campaigns/5019d-trainers-to-try.html">
+                                    Trainers to Try</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/divided/campaigns/5019g-eye-candy-literally.html">
+                                    Sunglasses</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/divided/campaigns/5019i-tees-that-are-true-to-you.html">
+                                    Tees That Are True to You</a>
+                            </li>
+                        </ul>
+                </div>
+
+        </div>
+<div class="primary-menu-categories">
+        <div class="primary-menu-category primary-menu-category-products">
+                    <div class="sub-sub-heading">Shop by Product</div>
+                    <ul >
+                        <li>
+                                <a href="/en_gb/divided/shop-by-product/view-all.html">
+                                    View All</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/divided/shop-by-product/dresses-and-jumpsuits.html">
+                                    Dresses &amp; Jumpsuits</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/divided/shop-by-product/shirts-and-blouses.html">
+                                    Shirts &amp; Blouses</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/divided/shop-by-product/tops.html">
+                                    Tops</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/divided/shop-by-product/jeans.html">
+                                    Jeans</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/divided/shop-by-product/trousers.html">
+                                    Trousers</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/divided/shop-by-product/skirts.html">
+                                    Skirts</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/divided/shop-by-product/hoodies-sweatshirts.html">
+                                    Hoodies &amp; Sweatshirts</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/divided/shop-by-product/jackets-and-blazers.html">
+                                    Jackets &amp; Blazers</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/divided/shop-by-product/shoes.html">
+                                    Shoes</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/divided/shop-by-product/accessories.html">
+                                    Accessories</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/divided/shop-by-product/basics.html">
+                                    Basics</a>
+                            </li>
+                        </ul>
+                </div>
+
+        </div>
+<div class="primary-menu-categories">
+        </div>
+<div class="primary-menu-categories">
+        </div>
+</div><!-- /primary-menu-sub-menu-inner topnav3 -->
+                    </div><!-- primary-menu-sub-menu topnav3 -->
+                </li>
+        <li>
+                <a href="/en_gb/kids.html">Kids</a>
+                  <button class="js-toggle-submenu visuallyhidden" aria-haspopup="true">Open 'Kids' submenu</button>
+                <div class="primary-menu-sub-menu">
+                        <div class="primary-menu-sub-menu-inner">
+                            <div class="primary-menu-categories">
+        <div class="primary-menu-category ">
+                    <div class="sub-sub-heading">New Arrivals</div>
+                    <ul >
+                        <li>
+                                <a href="/en_gb/kids/new-arrivals/baby.html">
+                                    Baby</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/kids/new-arrivals/girl.html">
+                                    Girl</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/kids/new-arrivals/boy.html">
+                                    Boy</a>
+                            </li>
+                        </ul>
+                </div>
+
+        <div class="primary-menu-category ">
+                    <div class="sub-sub-heading">Offers</div>
+                    <ul >
+                        <li>
+                                <a href="/en_gb/kids/deals/multipack-magic.html">
+                                    Multipack Magic</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/kids/deals/gbk9-favourites-from.html">
+                                    Spring favourites from £1.99</a>
+                            </li>
+                        </ul>
+                </div>
+
+        <div class="primary-menu-category ">
+                    <div class="sub-sub-heading">CONSCIOUS SHOP</div>
+                    <ul >
+                        <li>
+                                <a href="/en_gb/kids/conscious-shop/kids.html">
+                                    Kids</a>
+                            </li>
+                        </ul>
+                </div>
+
+        <div class="primary-menu-category ">
+                    <div class="sub-sub-heading">SUSTAINABILITY AT H&amp;M</div>
+                    <ul >
+                        <li>
+                                <a href="/en_gb/kids/sustainability-at-h-m/recycle-at-h-m.html">
+                                    Recycle at H&amp;M</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/kids/sustainability-at-h-m/h-m-take-care.html">
+                                    H&amp;M Take Care</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/kids/sustainability-at-h-m/h-m-s-sustainability-strategy.html">
+                                    H&amp;M&#039;s Sustainability Strategy</a>
+                            </li>
+                        </ul>
+                </div>
+
+        </div>
+<div class="primary-menu-categories">
+        <div class="primary-menu-category primary-menu-category-products">
+                    <div class="sub-sub-heading">Shop by Product</div>
+                    <ul >
+                        <li>
+                                <a href="/en_gb/kids/shop-by-product/view-all.html">
+                                    View All</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/kids/shop-by-product/newborn-0-9-months.html">
+                                    Newborn 0-9 months</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/kids/shop-by-product/baby-girl-4-24-months.html">
+                                    Baby Girl 4m-4Y</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/kids/shop-by-product/baby-boy-4-24-months.html">
+                                    Baby Boy 4m-4Y</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/kids/shop-by-product/baby-exclusive.html">
+                                    Baby Exclusive 0m-4Y</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/kids/shop-by-product/girl-18-months-10-years.html">
+                                    Girls 1½-10 years</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/kids/shop-by-product/boys-18-months-10-years.html">
+                                    Boys 1½-10 years</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/kids/shop-by-product/girls-8-14-years.html">
+                                    Girls 8-14+ years</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/kids/shop-by-product/boys-8-14-years.html">
+                                    Boys 8-14+ years</a>
+                            </li>
+                        </ul>
+                </div>
+
+        </div>
+<div class="primary-menu-categories">
+        <div class="primary-menu-category ">
+                    <div class="sub-sub-heading">Campaigns</div>
+                    <ul >
+                        <li>
+                                <a href="/en_gb/kids/shop-by-feature/4039a-nathalie-lete-x-hm.html">
+                                    Poppin&#039; Print Collab</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/kids/shop-by-feature/4039c-sailor-styles.html">
+                                    Sailor Styles from £2.99</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/kids/shop-by-feature/4119f-family-tees.html">
+                                    Family Tees</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/kids/shop-by-feature/4119a-brighter-days.html">
+                                    Brighter Days</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/kids/shop-by-feature/4119c-a-touch-of-nostalgia.html">
+                                    New: Baby Exclusive</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/kids/shop-by-feature/4039m-tropical-babywear.html">
+                                    Tropical Babywear</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/kids/shop-by-feature/4039f-sweet-pjs-kids.html">
+                                    Sweet pyjamas from £5.99</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/kids/shop-by-feature/4039h-spring-time-party-time.html">
+                                    Spring Partywear</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/kids/shop-by-feature/4039g-soft-spring-denim.html">
+                                    Soft Spring Denim</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/kids/shop-by-feature/4039e-jersey-kidswear-spring-girl.html">
+                                    Spring Styles for £2.99</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/kids/shop-by-feature/4039e-jersey-kidswear-spring-boy.html">
+                                    Spring Styles for £2.99</a>
+                            </li>
+                        </ul>
+                </div>
+
+        <div class="primary-menu-category ">
+                    <div class="sub-sub-heading">Gift Cards</div>
+                    <ul >
+                        <li>
+                                <a href="/en_gb/kids/gift-cards/gift-card.html">
+                                    Gift Cards</a>
+                            </li>
+                        </ul>
+                </div>
+
+        </div>
+<div class="primary-menu-categories">
+        <div class="primary-menu-category ">
+                    <div class="sub-sub-heading">Shop by Concept</div>
+                    <ul >
+                        <li>
+                                <a href="/en_gb/kids/shop-by-concept/basics.html">
+                                    Basics</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/kids/shop-by-concept/jeans.html">
+                                    Jeans</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/kids/shop-by-concept/kids-room.html">
+                                    Kids room</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/kids/shop-by-concept/cartoons_and_comics.html">
+                                    Cartoons &amp; Comics</a>
+                            </li>
+                        </ul>
+                </div>
+
+        </div>
+</div><!-- /primary-menu-sub-menu-inner topnav4 -->
+                    </div><!-- primary-menu-sub-menu topnav4 -->
+                </li>
+        <li>
+                <a href="/en_gb/home.html">H&amp;M Home</a>
+                  <button class="js-toggle-submenu visuallyhidden" aria-haspopup="true">Open 'H&amp;M Home' submenu</button>
+                <div class="primary-menu-sub-menu">
+                        <div class="primary-menu-sub-menu-inner">
+                            <div class="primary-menu-categories">
+        <div class="primary-menu-category ">
+                    <div class="sub-sub-heading">New Arrivals</div>
+                    <ul >
+                        <li>
+                                <a href="/en_gb/home/new-arrivals/new-products.html">
+                                    New Home &amp; Interior Products</a>
+                            </li>
+                        </ul>
+                </div>
+
+        <div class="primary-menu-category ">
+                    <div class="sub-sub-heading">Shop by Room</div>
+                    <ul >
+                        <li>
+                                <a href="/en_gb/home/shop-by-room/bedroom.html">
+                                    Bedroom</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/home/shop-by-room/living-room.html">
+                                    Living Room</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/home/shop-by-room/bathroom.html">
+                                    Bathroom</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/home/shop-by-room/kids-room.html">
+                                    Kids Room</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/home/shop-by-room/kitchen.html">
+                                    Kitchen</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/home/shop-by-room/outdoor.html">
+                                    Outdoor</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/home/shop-by-room/classic-collection.html">
+                                    Classic Collection </a>
+                            </li>
+                        </ul>
+                </div>
+
+        <div class="primary-menu-category ">
+                    <div class="sub-sub-heading">CONSCIOUS SHOP</div>
+                    <ul >
+                        <li>
+                                <a href="/en_gb/home/conscious-shop/h-m-home.html">
+                                    H&amp;M Home</a>
+                            </li>
+                        </ul>
+                </div>
+
+        <div class="primary-menu-category ">
+                    <div class="sub-sub-heading">SUSTAINABILITY AT H&amp;M</div>
+                    <ul >
+                        <li>
+                                <a href="/en_gb/home/sustainability-at-h-m/recycle-at-h-m.html">
+                                    Recycle at H&amp;M</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/home/sustainability-at-h-m/h-m-take-care.html">
+                                    H&amp;M Take Care</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/home/sustainability-at-h-m/h-m-s-sustainability-strategy.html">
+                                    H&amp;M&#039;s Sustainability Strategy</a>
+                            </li>
+                        </ul>
+                </div>
+
+        </div>
+<div class="primary-menu-categories">
+        <div class="primary-menu-category primary-menu-category-products">
+                    <div class="sub-sub-heading">Shop by Product</div>
+                    <ul >
+                        <li>
+                                <a href="/en_gb/home/shop-by-product/view-all.html">
+                                    View All</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/home/shop-by-product/cushions.html">
+                                    Cushions</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/home/shop-by-product/bed-linen.html">
+                                    Bed Linen</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/home/shop-by-product/towels.html">
+                                    Towels</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/home/shop-by-product/bathmats.html">
+                                    Bathmats</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/home/shop-by-product/shower-curtains.html">
+                                    Shower Curtains</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/home/shop-by-product/blankets.html">
+                                    Blankets</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/home/shop-by-product/curtains.html">
+                                    Curtains</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/home/shop-by-product/carpets.html">
+                                    Rugs</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/home/shop-by-product/storage.html">
+                                    Storage</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/home/shop-by-product/decorations.html">
+                                    Decorations</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/home/shop-by-product/candles-and-candleholders.html">
+                                    Candles &amp; Candleholders</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/home/shop-by-product/glassware.html">
+                                    Glassware</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/home/shop-by-product/porcelain.html">
+                                    Porcelain</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/home/shop-by-product/kitchenware.html">
+                                    Kitchenware</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/home/shop-by-product/tablecloths.html">
+                                    Tablecloths</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/home/shop-by-product/table-runners.html">
+                                    Table Runners</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/home/shop-by-product/tea-towels.html">
+                                    Tea Towels</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/home/shop-by-product/napkins.html">
+                                    Napkins</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/home/shop-by-product/aprons.html">
+                                    Aprons</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/home/shop-by-product/furnitures.html">
+                                    Furniture</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/home/shop-by-product/lighting.html">
+                                    Lighting</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/home/shop-by-product/giftwraps.html">
+                                    Gift wraps</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/home/shop-by-product/homewear.html">
+                                    Homewear</a>
+                            </li>
+                        </ul>
+                </div>
+
+        </div>
+<div class="primary-menu-categories">
+        <div class="primary-menu-category ">
+                    <div class="sub-sub-heading">Gift Cards</div>
+                    <ul >
+                        <li>
+                                <a href="/en_gb/home/gift-cards/gift-card.html">
+                                    Gift Cards</a>
+                            </li>
+                        </ul>
+                </div>
+
+        <div class="primary-menu-category ">
+                    <div class="sub-sub-heading">#HMxME</div>
+                    <ul >
+                        <li>
+                                <a href="/en_gb/home/hmgallery/h-m-gallery.html">
+                                    #HMxME</a>
+                            </li>
+                        </ul>
+                </div>
+
+        </div>
+<div class="primary-menu-categories">
+        <div class="primary-menu-category ">
+                    <div class="sub-sub-heading">Shop by Concept</div>
+                    <ul >
+                        <li>
+                                <a href="/en_gb/home/shop-by-concept/conscious.html">
+                                    Conscious - Sustainable Style </a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/home/shop-by-concept/premium-quality.html">
+                                    Premium Quality</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/home/shop-by-concept/classic-collection.html">
+                                    Classic Collection</a>
+                            </li>
+                        </ul>
+                </div>
+
+        </div>
+</div><!-- /primary-menu-sub-menu-inner topnav5 -->
+                    </div><!-- primary-menu-sub-menu topnav5 -->
+                </li>
+        <li>
+                <a href="/en_gb/sale.html">Sale</a>
+                  <button class="js-toggle-submenu visuallyhidden" aria-haspopup="true">Open 'Sale' submenu</button>
+                <div class="primary-menu-sub-menu">
+                        <div class="primary-menu-sub-menu-inner">
+                            <div class="primary-menu-categories">
+        <div class="primary-menu-category ">
+                    <div class="sub-sub-heading">Ladies</div>
+                    <ul >
+                        <li>
+                                <a href="/en_gb/sale/ladies/view-all.html">
+                                    View All</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/sale/ladies/last-chance-sale.html">
+                                    Last Chance!</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/sale/ladies/premium-quality.html">
+                                    Premium Quality</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/sale/ladies/divided.html">
+                                    Divided</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/sale/ladies/trend.html">
+                                    Trend</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/sale/ladies/dresses.html">
+                                    Dresses</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/sale/ladies/tops.html">
+                                    Tops</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/sale/ladies/shirtsblouses.html">
+                                    Shirts &amp; Blouses</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/sale/ladies/blazerswaistcoats.html">
+                                    Blazers &amp; Waistcoats</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/sale/ladies/knitwear.html">
+                                    Knitwear</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/sale/ladies/cardigansjumpers.html">
+                                    Cardigans &amp; Jumpers</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/sale/ladies/jacketscoats.html">
+                                    Jackets &amp; Coats</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/sale/ladies/basics.html">
+                                    Basics</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/sale/ladies/trousers.html">
+                                    Trousers</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/sale/ladies/jeans.html">
+                                    Jeans</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/sale/ladies/skirts.html">
+                                    Skirts</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/sale/ladies/jumpsuits.html">
+                                    Jumpsuits</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/sale/ladies/shorts.html">
+                                    Shorts</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/sale/ladies/lingerie.html">
+                                    Lingerie</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/sale/ladies/nightwear.html">
+                                    Nightwear</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/sale/ladies/sockstights.html">
+                                    Socks &amp; Tights</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/sale/ladies/hmsport.html">
+                                    H&amp;M Sport</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/sale/ladies/swimwear.html">
+                                    Swimwear</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/sale/ladies/hmplus.html">
+                                    H&amp;M Plus</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/sale/ladies/maternitywear.html">
+                                    Maternitywear</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/sale/ladies/accessories.html">
+                                    Accessories</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/sale/ladies/shoes.html">
+                                    Shoes</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/sale/ladies/beauty.html">
+                                    Beauty</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/sale/ladies/extended-sizes.html">
+                                    Extended sizes</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/sale/ladies/hoodies-sweatshirts.html">
+                                    Sweatshirts &amp; Hoodies</a>
+                            </li>
+                        </ul>
+                </div>
+
+        <div class="primary-menu-category ">
+                    <div class="sub-sub-heading">Divided</div>
+                    <ul >
+                        <li>
+                                <a href="/en_gb/sale/divided/view-all.html">
+                                    View All</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/sale/divided/jackets-and-blazers.html">
+                                    Jackets &amp; Blazers</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/sale/divided/shirts-and-blouses.html">
+                                    Shirts &amp; Blouses</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/sale/divided/dresses-and-jumpsuits.html">
+                                    Dresses &amp; Jumpsuits</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/sale/divided/skirts.html">
+                                    Skirts</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/sale/divided/hoodies-sweatshirts.html">
+                                    Hoodies &amp; Sweatshirts</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/sale/divided/tops.html">
+                                    Tops</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/sale/divided/basics.html">
+                                    Basics</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/sale/divided/shoes.html">
+                                    Shoes</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/sale/divided/accessories.html">
+                                    Accessories</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/sale/divided/trousers.html">
+                                    Trousers</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/sale/divided/jeans.html">
+                                    Jeans</a>
+                            </li>
+                        </ul>
+                </div>
+
+        </div>
+<div class="primary-menu-categories">
+        <div class="primary-menu-category ">
+                    <div class="sub-sub-heading">Men</div>
+                    <ul >
+                        <li>
+                                <a href="/en_gb/sale/men/view-all.html">
+                                    View all</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/sale/men/sale-last-chance-to-buy.html">
+                                    Last Chance up to 70%</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/sale/men/hoodiessweatshirts.html">
+                                    Hoodies &amp; Sweatshirts</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/sale/men/jeans.html">
+                                    Jeans</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/sale/men/shirts.html">
+                                    Shirts</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/sale/men/cardigansjumpers.html">
+                                    Cardigans &amp; Jumpers</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/sale/men/premium-quality.html">
+                                    Premium Quality</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/sale/men/jacketscoats.html">
+                                    Jackets &amp; Coats</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/sale/men/blazerssuits.html">
+                                    Blazers &amp;  Suits</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/sale/men/tshirtstanks.html">
+                                    T-shirts &amp; Tanks</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/sale/men/trousers.html">
+                                    Trousers</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/sale/men/shoes.html">
+                                    Shoes</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/sale/men/accessories.html">
+                                    Accessories</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/sale/men/shorts.html">
+                                    Shorts</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/sale/men/extended-sizes.html">
+                                    Extended Sizes</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/sale/men/hmsport.html">
+                                    Sportswear</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/sale/men/underwear.html">
+                                    Underwear</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/sale/men/socks.html">
+                                    Socks</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/sale/men/swimwear.html">
+                                    Swimwear</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/sale/men/basics.html">
+                                    Basics</a>
+                            </li>
+                        </ul>
+                </div>
+
+        </div>
+<div class="primary-menu-categories">
+        <div class="primary-menu-category ">
+                    <div class="sub-sub-heading">Kids</div>
+                    <ul >
+                        <li>
+                                <a href="/en_gb/sale/kids/view-all.html">
+                                    View all</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/sale/kids/last-chance-.html">
+                                    Last chance!</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/sale/kids/newborn-size0-9m.html">
+                                    Newborn 0 - 9 months</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/sale/kids/babygirls-size4-24m.html">
+                                    Baby Girl 4m-4Y</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/sale/kids/bebe-garcon-4-m-2-ans.html">
+                                    Baby Boy 4m-4Y</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/sale/kids/baby-exclusive.html">
+                                    Baby Exclusive</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/sale/kids/girls-size18m-10y.html">
+                                    Girls 1½-10 years</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/sale/kids/boys-size18m-10y.html">
+                                    Boys 1½-10 years</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/sale/kids/girls-size8-14y.html">
+                                    Girls 8 - 14+ years</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/sale/kids/boys-size8-14y.html">
+                                    Boys 8 - 14+ years</a>
+                            </li>
+                        </ul>
+                </div>
+
+        </div>
+<div class="primary-menu-categories">
+        <div class="primary-menu-category primary-menu-category-products">
+                    <div class="sub-sub-heading">H&amp;M Home</div>
+                    <ul >
+                        <li>
+                                <a href="/en_gb/sale/home/viewall.html">
+                                    View All</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/sale/home/bedroom.html">
+                                    Bedroom</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/sale/home/livingroom.html">
+                                    Livingroom</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/sale/home/bathroom.html">
+                                    Bathroom</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/sale/home/kids-room.html">
+                                    Kids Room</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/sale/home/kitchen.html">
+                                    Kitchen</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/sale/home/outdoor.html">
+                                    Outdoor</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/sale/home/cushions.html">
+                                    Cushions</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/sale/home/bed-linen.html">
+                                    Bed linen</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/sale/home/kitchen-ware.html">
+                                    Kitchen ware</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/sale/home/decorations.html">
+                                    Decorations</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/sale/home/storage.html">
+                                    Storage</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/sale/home/candles-and-candleholders.html">
+                                    Candles &amp; Candleholders</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/sale/home/blankets.html">
+                                    Blankets</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/sale/home/curtains.html">
+                                    Curtains</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/sale/home/glasswear.html">
+                                    Glasswear</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/sale/home/tea-towel.html">
+                                    Tea towels</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/sale/home/table-cloth.html">
+                                    Table cloth</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/sale/home/table-runners.html">
+                                    Table Runners</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/sale/home/place-mats.html">
+                                    Place Mats</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/sale/home/napkins.html">
+                                    Napkins</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/sale/home/porcelain.html">
+                                    Porcelain</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/sale/home/towels.html">
+                                    Towels</a>
+                            </li>
+                        <li>
+                                <a href="/en_gb/sale/home/bathmats.html">
+                                    Bathmats</a>
+                            </li>
+                        </ul>
+                </div>
+
+        </div>
+</div><!-- /primary-menu-sub-menu-inner topnav6 -->
+                    </div><!-- primary-menu-sub-menu topnav6 -->
+                </li>
+        <li>
+                <a href="/en_gb/hmgallery.html">#HMxME</a>
+                  <button class="js-toggle-submenu visuallyhidden" aria-haspopup="true">Open '#HMxME' submenu</button>
+                <div class="primary-menu-sub-menu">
+                        <div class="primary-menu-sub-menu-inner">
+                            <div class="primary-menu-categories">
+        </div>
+<div class="primary-menu-categories">
+        </div>
+<div class="primary-menu-categories">
+        </div>
+<div class="primary-menu-categories">
+        </div>
+</div><!-- /primary-menu-sub-menu-inner topnav7 -->
+                    </div><!-- primary-menu-sub-menu topnav7 -->
+                </li>
+        </ul>
+</nav><!-- /Primary Menu -->
+<script type="text/javascript">
+function loadCategories(id,value,name){
+	var componentPath='/content/hmonline/en_gb/jcr:content/header/topnav';
+	loadCategoriesCmpPath(componentPath,id,value,name);
+}
+</script>
+</div>
+<div class="autosuggestsearch parbase"><div id="search-field" class="ui-widget">
+		<form method="get" action="/en_gb/search-results.html">
+			<span role="status" aria-live="polite"
+				class="ui-helper-hidden-accessible"></span> <input id="main-search" data-url="/content/hmonline/en_gb/jcr:content/header/autosuggestsearch.display.html" type="text" data-test="false" name="q" placeholder="Search products" minlength="3" maxlength="200" data-autocomplete-disabled="false" class="ui-autocomplete-input" autocorrect="off" spellcheck="false" autocomplete="off">
+		</form>
+		<span class="magnify"></span>
+	</div>
+</div>
+<span class="js-cookie-message-url" data-message-url="/en_gb/_jcr_content/header.cookies.html"></span>
+</div></header><!-- /Header --><!-- HeaderLife -->
+<img src="/alive/user" width="1" height="1" style="position: absolute; left: -999px"/>
+<main role="main" class="responsive segments"><!-- Main -->
+<!--AEMPUBPRDEU59-->
+	<nav class="breadcrumbs"><!-- Breadcrumbs -->
+	<ul class="breadcrumbs-list" itemscope="" itemtype="https://schema.org/BreadcrumbList">
+		<li class="breadcrumb-list-item" itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+			<a href="/en_gb/index.html" itemprop="item">
+				<span itemprop="name">HM.com</span>
+			</a>
+			<meta itemprop="position" content="1">
+		</li>
+		<li class="breadcrumb-list-item breadcrumb-list-item-current" itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+						<span itemprop="name">Ladies</span>
+						<meta itemprop="position" content="2">
+					</li>
+				</ul>
+	<!-- /Breadcrumbs -->
+</nav>
+<div class="layout">
+		<section class="sidebarpluscontent modules">
+			<aside class="aside section-menu">
+				<nav class="secondary-nav ">
+        <ul id="menu-links" role="menubar">
+         <li class="list-group">
+					<strong class="list-group-title">New Arrivals</strong>
+					<ul class="menu" role="menu" style="display: block;">
+                        <li class=item>
+                                 <a class="link " href="/en_gb/ladies/new-arrivals/clothes.html" role="menuitem">
+                                     Clothes</a>
+					          </li>
+                        <li class=item>
+                                 <a class="link " href="/en_gb/ladies/new-arrivals/shoes-and-accessories.html" role="menuitem">
+                                     Shoes &amp; Accessories</a>
+					          </li>
+                        <li class=item>
+                                 <a class="link " href="/en_gb/ladies/new-arrivals/beauty.html" role="menuitem">
+                                     Beauty</a>
+					          </li>
+                        </ul>
+                </li>
+           <li class="list-group">
+					<strong class="list-group-title">Trending Now</strong>
+					<ul class="menu" role="menu" style="display: block;">
+                        <li class=item>
+                                 <a class="link " href="/en_gb/ladies/shop-by-occasion/holiday-shop.html" role="menuitem">
+                                     Holiday Shop</a>
+					          </li>
+                        <li class=item>
+                                 <a class="link " href="/en_gb/ladies/shop-by-occasion/s-s19-trends-utility-neon-and-prints.html" role="menuitem">
+                                     SS19 Trends: Utility, Neon and Prints</a>
+					          </li>
+                        <li class=item>
+                                 <a class="link " href="/en_gb/ladies/shop-by-occasion/young-styles.html" role="menuitem">
+                                     Young Styles</a>
+					          </li>
+                        <li class=item>
+                                 <a class="link " href="/en_gb/ladies/shop-by-occasion/most-wanted.html" role="menuitem">
+                                     Bestsellers</a>
+					          </li>
+                        </ul>
+                </li>
+           <li class="list-group">
+					<strong class="list-group-title">Dress Code</strong>
+					<ul class="menu" role="menu" style="display: block;">
+                        <li class=item>
+                                 <a class="link " href="/en_gb/ladies/occasion-shop/wedding.html" role="menuitem">
+                                     Wedding</a>
+					          </li>
+                        <li class=item>
+                                 <a class="link " href="/en_gb/ladies/occasion-shop/graduation-day.html" role="menuitem">
+                                     Graduation Day</a>
+					          </li>
+                        <li class=item>
+                                 <a class="link " href="/en_gb/ladies/occasion-shop/prom.html" role="menuitem">
+                                     Prom</a>
+					          </li>
+                        <li class=item>
+                                 <a class="link " href="/en_gb/ladies/occasion-shop/coctail.html" role="menuitem">
+                                     Cocktail</a>
+					          </li>
+                        </ul>
+                </li>
+           <li class="list-group">
+					<strong class="list-group-title">Shop by Product</strong>
+					<ul class="menu" role="menu" style="display: block;">
+                        <li class=item>
+                                 <a class="link " href="/en_gb/ladies/shop-by-product/view-all.html" role="menuitem">
+                                     View All</a>
+					          </li>
+                        <li class=item>
+                                 <a class="link " href="/en_gb/ladies/shop-by-product/dresses.html" role="menuitem">
+                                     Dresses</a>
+					          </li>
+                        <li class=item>
+                                 <a class="link " href="/en_gb/ladies/shop-by-product/shirts-and-blouses.html" role="menuitem">
+                                     Shirts &amp; Blouses</a>
+					          </li>
+                        <li class=item>
+                                 <a class="link " href="/en_gb/ladies/shop-by-product/tops.html" role="menuitem">
+                                     Tops</a>
+					          </li>
+                        <li class=item>
+                                 <a class="link " href="/en_gb/ladies/shop-by-product/swimwear.html" role="menuitem">
+                                     Swimwear</a>
+					          </li>
+                        <li class=item>
+                                 <a class="link " href="/en_gb/ladies/shop-by-product/jeans.html" role="menuitem">
+                                     Jeans</a>
+					          </li>
+                        <li class=item>
+                                 <a class="link " href="/en_gb/ladies/shop-by-product/trousers.html" role="menuitem">
+                                     Trousers</a>
+					          </li>
+                        <li class=item>
+                                 <a class="link " href="/en_gb/ladies/shop-by-product/jumpsuits.html" role="menuitem">
+                                     Jumpsuits</a>
+					          </li>
+                        <li class=item>
+                                 <a class="link " href="/en_gb/ladies/shop-by-product/shorts.html" role="menuitem">
+                                     Shorts</a>
+					          </li>
+                        <li class=item>
+                                 <a class="link " href="/en_gb/ladies/shop-by-product/skirts.html" role="menuitem">
+                                     Skirts</a>
+					          </li>
+                        <li class=item>
+                                 <a class="link " href="/en_gb/ladies/shop-by-product/jackets-and-coats.html" role="menuitem">
+                                     Jackets &amp; Coats</a>
+					          </li>
+                        <li class=item>
+                                 <a class="link " href="/en_gb/ladies/shop-by-product/hoodies-sweatshirts.html" role="menuitem">
+                                     Sweatshirts &amp; Hoodies</a>
+					          </li>
+                        <li class=item>
+                                 <a class="link " href="/en_gb/ladies/shop-by-product/blazers-and-waistcoats.html" role="menuitem">
+                                     Blazers &amp; Waistcoats</a>
+					          </li>
+                        <li class=item>
+                                 <a class="link " href="/en_gb/ladies/shop-by-product/knitwear.html" role="menuitem">
+                                     Knitwear</a>
+					          </li>
+                        <li class=item>
+                                 <a class="link " href="/en_gb/ladies/shop-by-product/basics.html" role="menuitem">
+                                     Basics</a>
+					          </li>
+                        <li class=item>
+                                 <a class="link " href="/en_gb/ladies/shop-by-product/lingerie.html" role="menuitem">
+                                     Lingerie</a>
+					          </li>
+                        <li class=item>
+                                 <a class="link " href="/en_gb/ladies/shop-by-product/nightwear.html" role="menuitem">
+                                     Nightwear</a>
+					          </li>
+                        <li class=item>
+                                 <a class="link " href="/en_gb/ladies/shop-by-product/accessories.html" role="menuitem">
+                                     Accessories</a>
+					          </li>
+                        <li class=item>
+                                 <a class="link " href="/en_gb/ladies/shop-by-product/shoes.html" role="menuitem">
+                                     Shoes</a>
+					          </li>
+                        <li class=item>
+                                 <a class="link " href="/en_gb/ladies/shop-by-product/socks-and-tights.html" role="menuitem">
+                                     Socks &amp; Tights</a>
+					          </li>
+                        <li class=item>
+                                 <a class="link " href="/en_gb/ladies/shop-by-product/cardigans-and-jumpers.html" role="menuitem">
+                                     Cardigans &amp; Jumpers</a>
+					          </li>
+                        <li class=item>
+                                 <a class="link " href="/en_gb/ladies/shop-by-product/sportswear.html" role="menuitem">
+                                     Sportswear</a>
+					          </li>
+                        <li class=item>
+                                 <a class="link " href="/en_gb/ladies/shop-by-product/hm-plus.html" role="menuitem">
+                                     H&amp;M+ Plus Sizes </a>
+					          </li>
+                        <li class=item>
+                                 <a class="link " href="/en_gb/ladies/shop-by-product/extended-sizes.html" role="menuitem">
+                                     Extended Sizes</a>
+					          </li>
+                        <li class=item>
+                                 <a class="link " href="/en_gb/ladies/shop-by-product/maternity-wear.html" role="menuitem">
+                                     Maternity Wear</a>
+					          </li>
+                        <li class=item>
+                                 <a class="link " href="/en_gb/ladies/shop-by-product/beauty.html" role="menuitem">
+                                     Beauty</a>
+					          </li>
+                        </ul>
+                </li>
+           <li class="list-group">
+					<strong class="list-group-title">SUSTAINABILITY AT H&amp;M</strong>
+					<ul class="menu" role="menu" style="display: block;">
+                        <li class=item>
+                                 <a class="link " href="/en_gb/ladies/sustainability-at-h-m/recycle-at-h-m.html" role="menuitem">
+                                     Recycle at H&amp;M</a>
+					          </li>
+                        <li class=item>
+                                 <a class="link " href="/en_gb/ladies/sustainability-at-h-m/h-m-take-care.html" role="menuitem">
+                                     H&amp;M Take Care</a>
+					          </li>
+                        <li class=item>
+                                 <a class="link " href="/en_gb/ladies/sustainability-at-h-m/h-m-s-sustainability-strategy.html" role="menuitem">
+                                     H&amp;M&#039;s Sustainability Strategy</a>
+					          </li>
+                        </ul>
+                </li>
+           <li class="list-group">
+					<strong class="list-group-title">CONSCIOUS SHOP</strong>
+					<ul class="menu" role="menu" style="display: block;">
+                        <li class=item>
+                                 <a class="link " href="/en_gb/ladies/conscious-shop/ladies.html" role="menuitem">
+                                     Ladies</a>
+					          </li>
+                        </ul>
+                </li>
+           <li class="list-group">
+					<strong class="list-group-title">Campaigns</strong>
+					<ul class="menu" role="menu" style="display: block;">
+                        <li class=item>
+                                 <a class="link " href="/en_gb/ladies/shop-by-feature/1119b-lets-celebrate.html" role="menuitem">
+                                     Let’s Celebrate!</a>
+					          </li>
+                        <li class=item>
+                                 <a class="link " href="/en_gb/ladies/shop-by-feature/62k-a-novel-romance.html" role="menuitem">
+                                     A Novel Romance</a>
+					          </li>
+                        <li class=item>
+                                 <a class="link " href="/en_gb/ladies/shop-by-feature/1119a-fresh-florals.html" role="menuitem">
+                                     Fresh Florals</a>
+					          </li>
+                        <li class=item>
+                                 <a class="link " href="/en_gb/ladies/shop-by-feature/1189c-a-perfect-match.html" role="menuitem">
+                                     Bridal Lingerie</a>
+					          </li>
+                        <li class=item>
+                                 <a class="link " href="/en_gb/ladies/shop-by-feature/1149h-shades-of-blue.html" role="menuitem">
+                                     Shades Of Blue</a>
+					          </li>
+                        <li class=item>
+                                 <a class="link " href="/en_gb/ladies/shop-by-feature/6039a-the-denim-style-guide.html" role="menuitem">
+                                     The Denim Style Guide</a>
+					          </li>
+                        <li class=item>
+                                 <a class="link " href="/en_gb/ladies/shop-by-feature/takecare.html" role="menuitem">
+                                     H&amp;M Take Care</a>
+					          </li>
+                        <li class=item>
+                                 <a class="link " href="/en_gb/ladies/shop-by-feature/1079-studio-2019.html" role="menuitem">
+                                     H&amp;M Studio S/S 2019</a>
+					          </li>
+                        <li class=item>
+                                 <a class="link " href="/en_gb/ladies/shop-by-feature/1229b-stripes-on-stripes.html" role="menuitem">
+                                     Stripes on Stripes</a>
+					          </li>
+                        <li class=item>
+                                 <a class="link " href="/en_gb/ladies/shop-by-feature/1229a-spring-suiting.html" role="menuitem">
+                                     Spring Suiting </a>
+					          </li>
+                        <li class=item>
+                                 <a class="link " href="/en_gb/ladies/shop-by-feature/1209c-give-it-a-glow.html" role="menuitem">
+                                     Give It a Glow!</a>
+					          </li>
+                        </ul>
+                </li>
+           <li class="list-group">
+					<strong class="list-group-title">Shop by Concept</strong>
+					<ul class="menu" role="menu" style="display: block;">
+                        <li class=item>
+                                 <a class="link " href="/en_gb/ladies/shop-by-concept/divided.html" role="menuitem">
+                                     Divided</a>
+					          </li>
+                        <li class=item>
+                                 <a class="link " href="/en_gb/ladies/shop-by-concept/trend.html" role="menuitem">
+                                     Trend</a>
+					          </li>
+                        <li class=item>
+                                 <a class="link " href="/en_gb/ladies/shop-by-concept/modern-classic.html" role="menuitem">
+                                     Modern Classic</a>
+					          </li>
+                        <li class=item>
+                                 <a class="link " href="/en_gb/ladies/shop-by-concept/party.html" role="menuitem">
+                                     Party</a>
+					          </li>
+                        <li class=item>
+                                 <a class="link " href="/en_gb/ladies/shop-by-concept/basics.html" role="menuitem">
+                                     Basics</a>
+					          </li>
+                        <li class=item>
+                                 <a class="link " href="/en_gb/ladies/shop-by-concept/logg.html" role="menuitem">
+                                     L.O.G.G.</a>
+					          </li>
+                        <li class=item>
+                                 <a class="link " href="/en_gb/ladies/shop-by-concept/hm-sport.html" role="menuitem">
+                                     Sportswear</a>
+					          </li>
+                        <li class=item>
+                                 <a class="link " href="/en_gb/ladies/shop-by-concept/premium-quality.html" role="menuitem">
+                                     Premium Quality</a>
+					          </li>
+                        <li class=item>
+                                 <a class="link " href="/en_gb/ladies/shop-by-concept/conscious-sustainable-style.html" role="menuitem">
+                                     Conscious – Sustainable Style</a>
+					          </li>
+                        <li class=item>
+                                 <a class="link " href="/en_gb/ladies/shop-by-concept/denim.html" role="menuitem">
+                                     Denim</a>
+					          </li>
+                        </ul>
+                </li>
+           <li class="list-group">
+					<strong class="list-group-title">#HMxME</strong>
+					<ul class="menu" role="menu" style="display: block;">
+                        <li class=item>
+                                 <a class="link " href="/en_gb/ladies/hmgallery/h-m-gallery.html" role="menuitem">
+                                     #HMxME</a>
+					          </li>
+                        </ul>
+                </li>
+           <li class="list-group">
+					<strong class="list-group-title">Gift Cards</strong>
+					<ul class="menu" role="menu" style="display: block;">
+                        <li class=item>
+                                 <a class="link " href="/en_gb/ladies/gift-cards/gift-card.html" role="menuitem">
+                                     Gift Cards</a>
+					          </li>
+                        </ul>
+                </li>
+           <li class="list-group">
+					<strong class="list-group-title">Magazine</strong>
+					<ul class="menu" role="menu" style="display: block;">
+                        <li class=item>
+                                 <a class="link " href="/en_gb/ladies/magazine/magazine.html" role="menuitem">
+                                     Magazine</a>
+					          </li>
+                        </ul>
+                </li>
+           </ul>
+    </nav>
+<div class="left-bottom parsys"></div>
+</aside>
+			<div class="main parsys"><section class="segment singleteasercontainer preshopping-container section">
+
+
+
+
+		<article data-preshopping-teaser="false" class="merch-deal-large-middle teaser-media expandable" data-item-ratio="3x1" data-view-tracking="true" data-activity-type="MERCH" data-promotion-creative="KIDS_20%_START">
+	<div class="background-image teaser-image rimd">
+    <noscript data-src="https://www2.hm.com/content/dam/TOOLBOX/PRE_SEASON/2018_s8/w31/TCK8032-Back-To-School-SGI-3x1.jpg" data-alt="Campaign image" data-title="Campaign image">
+    	<img src="https://www2.hm.com/content/dam/TOOLBOX/PRE_SEASON/2018_s8/w31/TCK8032-Back-To-School-SGI-3x1.jpg" alt="Campaign image"/>
+   	</noscript>
+</div>
+
+	<div class="text-container" data-text-color='black'>
+	<span class="vignette">IN STORE &amp; ONLINE</span>
+
+	<span class="heading">20% OFF <br /></span>
+	<span class="preamble-bottom">KIDS DEPARTMENT</span>
+
+
+	<span class="text-3"></span>
+
+
+
+	<span class="legal-text">Valid on all orders over £40 on kidswear &amp; kids room (Kids room
+online only). Use code KIDS20.  <br />
+Offer is valid online until 31.03.2019 &amp; in store until 07.04.2019.</span>
+
+
+    <ul class="cta-list" data-cta-color="black">
+		<li class="item"><a href="/en_gb/kids.html" title="Kids - KIDS DEPARTMENT" data-promotion-page-id="Kids Department" data-promotion-page-category="KIDS_DEPARTMENT_VIEW_ALL" data-cta-tracking="true" class="cta link" target="_self">KIDS DEPARTMENT</a></li>
+
+		<li class="item"><a href="/en_gb/home/shop-by-room/kids-room.html" title="Kids Room - KIDS ROOM" data-promotion-page-id="Home : Shopbyroom : KidsRoom : Viewall" data-promotion-page-category="HOME_SHOPBYROOM : KIDSROOM_KIDSROOM : VIEWALL_VIEW_ALL" data-cta-tracking="true" class="cta link" target="_self">KIDS ROOM</a></li>
+	</ul>
+
+</div>
+</article>
+
+
+</section>
+<section class="segment singleteasercontainer preshopping-container section">
+
+
+
+
+		<article data-preshopping-teaser="false" class="default-m-sans has-effect-1 teaser-media " data-item-ratio="3x2" style="position:relative;" data-view-tracking="true" data-activity-type="CAMPAIGN" data-promotion-creative="1119B">
+
+	<div id="threebytwo-item0" data-container-initial-width="662px" data-container-initial-height="441px" data-path="/content/hmonline/en_gb/ladies/campaign-teasers-s09/1119b/jcr:content/areateaser/threebytwo/pricemodule/item0" class="cq-pricemodule resizable draggable campaign-price campaign-price-white campaign-price-medium campaign-price-align-left" data-quick-buy-url="/en_gb/productpage/_jcr_content/product.quickbuy.0608007020.html" style="
+		width:91px;
+		height:43px;
+		top:168px;
+		left:288.703px">
+		<span class="campaign-price-name">Lace dress</span>
+
+
+			<span class="campaign-price-price">
+				£59.99
+			</span>
+
+
+		<span class="campaign-price-more-info">
+
+
+
+		</span>
+	</div>
+
+	<div class="background-image teaser-image rimd">
+    <noscript data-src="https://www2.hm.com/content/dam/campaign-ladies-s09/1119b/1119B-3x2.jpg" data-alt="Campaign image" data-title="">
+    	<img src="https://www2.hm.com/content/dam/campaign-ladies-s09/1119b/1119B-3x2.jpg" alt="Campaign image" title=""/>
+   	</noscript>
+</div>
+	<div class="text-container" data-text-placement='center bottom' data-text-alignment='center' data-text-color='white'>
+	<p class="vignette">FESTIVE FLAIR</p>
+
+	<h3 class="heading">LET’S CELEBRATE!</h3>
+
+
+
+
+	 <ul class="cta-list" data-cta-color="white">
+		<li class="item"><a href="/en_gb/ladies/shop-by-feature/1119b-lets-celebrate.html" title="Let’s Celebrate! - SHOP NOW" data-promotion-page-id="Ladies : Shopbyfeature : 1119B - Let’S Celebrate!" data-promotion-page-category="LADIES_SHOPBYFEATURE_1119B - Let’s Celebrate!" data-cta-tracking="true" class="cta button" target="_self">SHOP NOW</a></li>
+	</ul>
+
+</div>
+</article>
+
+
+</section>
+<section class="segment singleteasercontainer preshopping-container section">
+
+
+
+
+		<article data-preshopping-teaser="false" class="default-m-sans  teaser-media " data-item-ratio="3x2" style="position:relative;" data-view-tracking="true" data-activity-type="CAMPAIGN" data-promotion-creative="62K">
+
+	<div id="threebytwo-item0" data-container-initial-width="662px" data-container-initial-height="441px" data-path="/content/hmonline/en_gb/ladies/campaign-teasers-s09/62k/jcr:content/areateaser/threebytwo/pricemodule/item0" class="cq-pricemodule resizable draggable campaign-price campaign-price-black campaign-price-medium campaign-price-align-left" data-quick-buy-url="/en_gb/productpage/_jcr_content/product.quickbuy.0760667004.html" style="
+		width:111px;
+		height:34px;
+		top:288px;
+		left:19.8594px">
+		<span class="campaign-price-name">Calf-length skirt</span>
+
+
+			<span class="campaign-price-price">
+				£34.99
+			</span>
+
+
+		<span class="campaign-price-more-info">
+
+
+
+		</span>
+	</div>
+
+	<div class="background-image teaser-image rimd">
+    <noscript data-src="https://www2.hm.com/content/dam/campaign-ladies-s09/62k/Prio%202%20-%2032.jpg" data-alt="Campaign image" data-title="">
+    	<img src="https://www2.hm.com/content/dam/campaign-ladies-s09/62k/Prio%202%20-%2032.jpg" alt="Campaign image" title=""/>
+   	</noscript>
+</div>
+	<div class="text-container" data-text-placement='center bottom' data-text-alignment='center' data-text-color='white'>
+	<p class="vignette">TREND ALERT</p>
+
+	<h3 class="heading">A NOVEL ROMANCE</h3>
+
+
+
+
+	 <ul class="cta-list" data-cta-color="white">
+		<li class="item"><a href="/en_gb/ladies/shop-by-feature/62k-a-novel-romance.html" title="A Novel Romance - SHOP NOW" data-promotion-page-id="Ladies : Shopbyfeature : 62K - A Novel Romance" data-promotion-page-category="LADIES_SHOPBYFEATURE_62K - A Novel Romance" data-cta-tracking="true" class="cta button" target="_self">SHOP NOW</a></li>
+	</ul>
+
+</div>
+</article>
+
+
+</section>
+<section class="segment singleteasercontainer preshopping-container section">
+
+
+
+
+		<article data-preshopping-teaser="false" class="default-m-sans  teaser-media " data-item-ratio="3x2" style="position:relative;" data-view-tracking="true" data-activity-type="CAMPAIGN" data-activity-code="1189C" data-promotion-creative="1189C">
+
+	<div id="threebytwo-item0" data-container-initial-width="662px" data-container-initial-height="441px" data-path="/content/hmonline/en_gb/ladies/campaign-teasers-s09/1189c/jcr:content/areateaser/threebytwo/pricemodule/item0" class="cq-pricemodule resizable draggable campaign-price campaign-price-black campaign-price-medium campaign-price-align-left" data-quick-buy-url="/en_gb/productpage/_jcr_content/product.quickbuy.0702703001.html" style="
+		width:106px;
+		height:54px;
+		top:196px;
+		left:93px">
+		<span class="campaign-price-name">Lace corset</span>
+
+
+			<span class="campaign-price-price">
+				£24.99
+			</span>
+
+
+		<span class="campaign-price-more-info">
+
+
+
+		</span>
+	</div>
+
+	<div class="background-image teaser-image rimd">
+    <noscript data-src="https://www2.hm.com/content/dam/campaign-ladies-s09/1189c/1189C-3x2-a-perfect-match.jpg" data-alt="Campaign image" data-title="">
+    	<img src="https://www2.hm.com/content/dam/campaign-ladies-s09/1189c/1189C-3x2-a-perfect-match.jpg" alt="Campaign image" title=""/>
+   	</noscript>
+</div>
+	<div class="text-container" data-text-placement='center bottom' data-text-alignment='center' data-text-color='black'>
+	<p class="vignette">BRIDAL LINGERIE</p>
+
+	<h3 class="heading">A PERFECT MATCH</h3>
+
+
+
+
+	 <ul class="cta-list" data-cta-color="black">
+		<li class="item"><a href="/en_gb/ladies/shop-by-feature/1189c-a-perfect-match.html" title="Bridal Lingerie - SHOP NOW" data-promotion-page-id="Ladies : Shopbyfeature : 1189C - A Perfect Match" data-promotion-page-category="LADIES_SHOPBYFEATURE_1189C - A PERFECT MATCH" data-cta-tracking="true" class="cta button" target="_self">SHOP NOW</a></li>
+	</ul>
+
+</div>
+</article>
+
+
+</section>
+<section class="segment singleteasercontainer preshopping-container section">
+
+
+
+
+		<article data-preshopping-teaser="false" class="merch-customer-deal-small-middle teaser-media " data-item-ratio="3x1" data-view-tracking="true" data-activity-type="MERCH" data-promotion-creative="UK Mothers day giftcard deal 3:1">
+	<div class="background-image teaser-image rimd">
+    <noscript data-src="https://www2.hm.com/content/dam/TOOLBOX/IN_SEASON/2019_09/w11/TCL9088-3x1.jpg" data-alt="Campaign image" data-title="Campaign image">
+    	<img src="https://www2.hm.com/content/dam/TOOLBOX/IN_SEASON/2019_09/w11/TCL9088-3x1.jpg" alt="Campaign image"/>
+   	</noscript>
+</div>
+
+	<div class="text-container" data-text-color='black'>
+	<span class="vignette">Make mum feel special!</span>
+
+	<span class="heading">GIFT CARD  <br />
+The perfect  Mother's Day gift</span>
+
+	<span class="text-1"></span>
+	<span class="text-2"></span>
+	<span class="text-3"></span>
+
+
+
+
+
+
+    <ul class="cta-list" data-cta-color="black">
+		<li class="item"><a href="/en_gb/customer-service/gift-card.html" title="Gift Cards - SHOP NOW" data-promotion-page-id="Customerservice : Giftcards : Mainpage" data-promotion-page-category="CUSTOMERSERVICE_GIFTCARDS_MAINPAGE_VIEW_ALL" data-cta-tracking="true" class="cta link" target="_self">SHOP NOW</a></li>
+	</ul>
+
+</div>
+</article>
+
+
+</section>
+<section class="segment singleteasercontainer preshopping-container section">
+
+
+
+
+		<article data-preshopping-teaser="false" class="default-m-sans  teaser-media " data-item-ratio="3x2" style="position:relative;" data-view-tracking="true" data-activity-type="CAMPAIGN" data-promotion-creative="1119A">
+
+
+
+	<div class="background-image teaser-image rimd">
+    <noscript data-src="https://www2.hm.com/content/dam/campaign-ladies-s09/1119a/1119A-3x2-Fresh-Florals.jpg" data-alt="Campaign image" data-title="">
+    	<img src="https://www2.hm.com/content/dam/campaign-ladies-s09/1119a/1119A-3x2-Fresh-Florals.jpg" alt="Campaign image" title=""/>
+   	</noscript>
+</div>
+	<div class="text-container" data-text-placement='center bottom' data-text-alignment='center' data-text-color='white'>
+	<p class="vignette">FAMILY BLISS</p>
+
+	<h3 class="heading">FRESH FLORALS</h3>
+
+
+
+
+	 <ul class="cta-list" data-cta-color="white">
+		<li class="item"><a href="/en_gb/ladies/shop-by-feature/1119a-fresh-florals.html" title="Fresh Florals - SHOP NOW" data-promotion-page-id="Ladies : Shopbyfeature : 1119A - Fresh Florals" data-promotion-page-category="LADIES_SHOPBYFEATURE_1119A - Fresh Florals" data-cta-tracking="true" class="cta button" target="_self">SHOP NOW</a></li>
+	</ul>
+
+</div>
+</article>
+
+
+</section>
+<section class="segment section">
+
+
+
+	   <h1 class="single heading centered">Women’s Clothes</h1>
+
+</section>
+<section class="segment expandable-text js-read-more section">
+
+
+
+
+<h2 class="sub-sub-heading">
+
+</h2>
+<div class="text is-closed js-read-more-content">
+      <p>Shop the latest fashion online at H&amp;M and discover new favourites
+  in women’s clothing. Find everything from casual day dresses or <a href="/en_gb/ladies/shop-by-product/dresses/cocktail-dresses.html">cocktail
+  dresses</a> to sharp office wear. We have jeans in every fit, premium
+  quality items and the latest fashion essentials. Check out our
+  Conscious collection, made out of more sustainable materials, we bring
+  you women’s fashion in a more sustainable way</p>
+ <p> </p>
+ <p>Once you’ve found that perfect outfit complete your look with
+  stylish shoes, bags and accessories. Don’t miss out on our wide range
+  of on-point beauty products, not to mention beautiful and flattering
+  lingerie, shapewear and loungewear. Prepare for the cold season with
+    our <a href="/en_gb/ladies/shop-by-product/jackets-and-coats/winter-coats.html">women’s
+    winter coats</a>.</p>
+ <p> </p>
+ <p>Update your gym bag with stylish, functional sportswear for the gym
+  or the yoga class.</p>
+ <p> </p>
+ <p>If you have a big occasion coming up and an <a href="/en_gb/ladies/shop-by-product/dresses/evening-dresses.html">evening
+  dress</a> is the only thing to suffice we have suitable styles. For
+  the biggest occasion of all we also have <a href="/en_gb/ladies/shop-by-product/dresses/bridesmaid-dresses.html">bridesmaids
+  dresses</a> to co-ordinate your bridal party and have the girls
+  looking their absolute best.</p>
+ <p> </p>
+ <p>Find flattering and on-trend bikinis and swimsuits. Start building
+  your new wardrobe today. Browse our collections to find the latest in
+  women’s fashion trends and update your wardrobe with stylish women’s
+  clothes. Your new season style starts here at H&amp;M.</p>
+
+</div>
+<button class="link js-read-more-toggle" type="button" data-expand-text="Read less" data-default-text="Read more">
+Read more
+</button>
+
+
+</section>
+</div>
+</section>
+	</div>
+	<div class="overlaycontainer parbase">
+
+
+
+
+</div>
+</main><footer class="footer-global responsive"><!-- Footer -->
+        <div class="layout">
+<!--AEMPUBPRDEU52-->
+
+<div class="four modules footer-menu footer-content">
+
+        <nav class="footer-category"><h4 class="footer-heading">
+	<button class="js-toggle-trigger toggle-button">SHOP</button>
+	</h4>
+	<ul class="list">
+			<li class="item"><a class="link" href="/en_gb/ladies.html">Ladies</a></li>
+		            <li class="item"><a class="link" href="/en_gb/men.html">Men</a></li>
+		            <li class="item"><a class="link" href="/en_gb/divided.html">Divided</a></li>
+		            <li class="item"><a class="link" href="/en_gb/kids.html">Kids</a></li>
+		            <li class="item"><a class="link" href="/en_gb/home.html">H&amp;M Home</a></li>
+		            </ul>
+	</nav>
+<nav class="footer-category"><h4 class="footer-heading">
+	<button class="js-toggle-trigger toggle-button">CORPORATE INFO</button>
+	</h4>
+	<ul class="list">
+			<li class="item"><a class="link" href="http://career.hm.com/content/hmcareer/en_gb.html" target="_blank">Career at H&amp;M</a></li>
+		            <li class="item"><a class="link" href="http://about.hm.com/en/About.html" target="_blank">About H&amp;M group</a></li>
+		            <li class="item"><a class="link" href="http://about.hm.com/en/About/Sustainability.html" target="_blank">Sustainability</a></li>
+		            <li class="item"><a class="link" href="http://about.hm.com/en/news/newsroom.html" target="_blank">Press</a></li>
+		            <li class="item"><a class="link" href="http://about.hm.com/en/About/Investor-Relations.html" target="_blank">Investor Relations</a></li>
+		            <li class="item"><a class="link" href="http://about.hm.com/en/About/Corporate-Governance.html" target="_blank">Corporate Governance</a></li>
+		            </ul>
+	</nav>
+<nav class="footer-category"><h4 class="footer-heading">
+	<button class="js-toggle-trigger toggle-button">HELP</button>
+	</h4>
+	<ul class="list">
+			<li class="item"><a class="link" href="/en_gb/customer-service.html">Customer Service</a></li>
+		            <li class="item"><a class="link" href="https://www2.hm.com/en_gb/my-account/overview">My H&amp;M</a></li>
+		            <li class="item"><a class="link" href="/en_gb/customer-service/shopping-at-hm/store-locator.html">Store Locator</a></li>
+		            <li class="item"><a class="link" href="/en_gb/customer-service/legal-and-privacy/privacy-link.html">Legal &amp; Privacy</a></li>
+		            <li class="item"><a class="link" href="/en_gb/customer-service/contact.html">Contact</a></li>
+		            <li class="item"><a class="link" href="/en_gb/customer-service/gift-card.html">Gift Cards</a></li>
+		            </ul>
+	</nav>
+<section class="footer-newsletter">
+        <div class="newsletter newslettersignupform parbase"><h4 class="footer-heading">Sign up for newsletter</h4>
+<p class="text">Sign up now and get 10% off in-store or online.</p>
+<a href="https://www2.hm.com/en_gb/register/club" class="button">READ MORE</a></div>
+</section>
+</div>
+	<ul class="footer-social footer-content">
+        <li class="item">
+			<a href="https://www.facebook.com/hm" target="_blank" title="Facebook" class="hidden-text icon icon-social-facebook-white">
+			Facebook</a></li>
+        <li class="item">
+			<a href="https://twitter.com/hmunitedkingdom" target="_blank" title="Twitter" class="hidden-text icon icon-social-twitter-white">
+			Twitter</a>
+			</li>
+        <li class="item">
+			<a href="https://www.instagram.com/hm" target="_blank" title="Instagram" class="hidden-text icon icon-social-instagram-white">
+			Instagram</a>
+			</li>
+        <li class="item">
+			<a href="http://www.youtube.com/user/hennesandmauritz" title="Youtube" target="_blank" class="hidden-text icon icon-social-youtube-white">
+			Youtube</a>
+			</li>
+        <li class="item">
+				<a href="https://www.pinterest.com/hm" target="_blank" title="Pinterest" class="hidden-text icon icon-social-pinterest-white">
+				Pinterest</a>
+			</li>
+        </ul>
+<div class="footer-copyright footer-content">
+    <p class="text">
+		H&amp;M&#039;s business concept is to offer fashion and quality at the best price in a sustainable way. H&amp;M has since it was founded in 1947 grown into one of the world&#039;s leading fashion companies. The content of this site is copyright-protected and is the property of H&amp;M Hennes &amp; Mauritz AB.</p>
+
+
+    </div>
+<a href="/en_gb/index.html" class="footer-logotype icon icon-hm-white hidden-text">H&M</a>
+
+<div class="country-info"><div class="countrylanguage parbase"><a class="country-name overlay-trigger" data-layout="confirm" data-modal-scrollup="false" href="/en_gb/_jcr_content/footer/countrylanguage.changecountry.html">United Kingdom</a> | £</div>
+</div>
+	</div></footer><!-- /Footer --><script type="text/javascript" src="/etc/designs/hm/clientlibs/shared/grunticon.11.1.19.js"></script>
+<script type="text/javascript" src="/etc/designs/hm/clientlibs/shared.min.11.1.19.js"></script>
+<script type="text/javascript" src="/etc/designs/hm/clientlibs/desktop.min.11.1.19.js"></script>
+<div class="tealiumPageviewtag pageview parbase"><script type="text/javascript">utag_data = {touchpoint : getTouchpoint() , page_id : "Ladies Department", category_id : "LADIES_DEPARTMENT_VIEW_ALL", category_path : "LADIES_DEPARTMENT_VIEW_ALL", selected_market : "GB", display_language : "en_GB", conversion_id  : "", conversion_category  : "", conversion_step  : "", event_type  : "", customer_id : "", customer_email : "", customer_zip : "", customer_city : "", customer_state : "", customer_state : "", customer_country : "", customer_loyalty_level : "", customer_has_children : "", customer_fashion_news : "" }; utagTealiumTrack(function(a,b,c,d){a=getTealiumURL("GB");b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);}); </script> </div>
+<div class="chatonline parbase">
+</div>
+<div class="nuancechat nuanceChat parbase">
+
+<div id="Nuance-chat-anchored"></div>
+
+
+<script type="text/javascript" charset="utf-8" src="https://hm.inq.com/chatskins/launch/inqChatLaunch10006112.js">
+</script>
+
+<script>
+hm.cookies = hm.cookies || new hm.Cookies();
+var nuanceData={};
+if(hm.cookies && hm.cookies.readCookie('userCookie')){
+  var userCookie = JSON.parse(hm.cookies.readCookie('userCookie'));
+  if (userCookie){
+    var userCookieVal  = JSON.parse(userCookie);
+    if(userCookieVal.cartCount>=0){
+       nuanceData["cartCount"] = userCookieVal.cartCount;
+    }
+	if(userCookieVal.dominantCategory){
+       nuanceData["dominantCategory"] = userCookieVal.dominantCategory;
+    }
+    if(userCookieVal.cartProducts){
+       nuanceData["cartProducts"] = userCookieVal.cartProducts;
+    }
+    if(userCookieVal.hybris_firstName){
+       nuanceData["hybris_firstName"] = userCookieVal.hybris_firstName;
+    }
+    if(userCookieVal.hybris_uuid){
+       nuanceData["hybris_uuid"] = userCookieVal.hybris_uuid;
+    }
+    if(userCookieVal.customer_id){
+       nuanceData["customer_id"] = userCookieVal.customer_id;
+    }
+    if(userCookieVal.type){
+       nuanceData["type"] = userCookieVal.type;
+    }
+    if(userCookieVal.str){
+       var val = userCookieVal.str.replace(/[+,-]/g," ");
+       nuanceData["st"] = unescape(val);
+    }
+    if(userCookieVal.zc){
+    	var val = userCookieVal.zc.replace(/[+,-]/g," ");
+   	    nuanceData["zc"] = val;
+	}
+    if(userCookieVal.tn){
+       nuanceData["tn"] = userCookieVal.tn;
+    }
+	}
+ }
+var favouritesCookie = hm.options.product.country + "-favourites";
+var cookiesInBrowser = document.cookie.split(";");
+for(var i = 0; i <cookiesInBrowser.length; i++) {
+   var cookieKeyValue = cookiesInBrowser[i].split("=");
+   if(favouritesCookie.trim()==cookieKeyValue[0].trim()){
+          var hasFav = cookieKeyValue[1];
+          if(hasFav && !(hasFav==="\"\"")){nuanceData["hm-country-favourites"] = cookieKeyValue[1];}
+  }
+ }
+
+   console.log(nuanceData);
+</script>
+	<script type="text/javascript">
+		// Click on Chat icon
+		$(document).on("click", "#Nuance-chat-anchored", function() {
+			if (typeof (window.utag) != "undefined") {
+				window.utag.link({
+					event_type : 'AI_CHAT_INITIATE',
+					event_id : 'Click on Start AI chat',
+					event_category : 'AI Chat',
+					event_label : hm.options.tealiumPageId
+				});
+			}
+
+			console.log(document.URL);
+		});
+	</script>
+</div>
+<script type="text/javascript">var _cf = _cf || []; _cf.push(['_setFsp', true]); _cf.push(['_setBm', true]); _cf.push(['_setAu', '/static/69440bd89e61762ddbd30909e8d1987']);</script><script type="text/javascript" src="/static/69440bd89e61762ddbd30909e8d1987"></script></body></html>
