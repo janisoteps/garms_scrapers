@@ -137,7 +137,7 @@ DOWNLOADER_MIDDLEWARES = {
 
 ITEM_PIPELINES = {'scrapy.pipelines.images.ImagesPipeline': 1}
 
-IMAGES_STORE = '/home/jdo/jdev/scrapers/img_uk/asos_uk_1'
+IMAGES_STORE = '/home/janis/jdev/scrapers/img_uk/asos_uk_2'
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/autothrottle.html

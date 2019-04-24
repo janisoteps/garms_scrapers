@@ -1,5 +1,5 @@
 import scrapy
-from scraper11.items import AsosItem
+from scraper11.scraper11.items import AsosItem
 import hashlib
 import re
 import requests
