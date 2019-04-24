@@ -81,36 +81,39 @@ class ZaraSpider(scrapy.Spider):
         item['currency'] = 'GBP'
         item['prod_url'] = response.meta['prod_url']
         item['category'] = response.meta['cat_name']
-        item['name'] = response.xpath('.//h1[@class="product-name"]/text()').extract_first().title()
-        img_urls = response.xpath('.//a[contains(@class, "main-image")]/@href').extract()
-        item['image_urls'] = [f'http:{img_url}' for img_url in img_urls]
-        item['color_string'] = response.xpath('.//span[@class="_colorName"]/text()').extract_first()
-        price_match = re.search('(?<=price\": \").*?(?=\")', response.text)
-        item['price'] = float(price_match.group(0))
-        item['saleprice'] = None
-        item['sale'] = False
-        item['description'] = response.xpath('.//p[@class="description"]/text()').extract_first()
+        name = response.xpath('.//h1[@class="product-name"]/text()').extract_first()
+        if name is not None:
+            item['name'] = name.title()
+            img_urls = response.xpath('.//a[contains(@class, "main-image")]/@href').extract()
+            item['image_urls'] = [f'http:{img_url}' for img_url in img_urls]
+            item['color_string'] = response.xpath('.//span[@class="_colorName"]/text()').extract_first()
+            price_match = re.search('(?<=price\": \").*?(?=\")', response.text)
+            if price_match is not None:
+                item['price'] = float(price_match.group(0))
+                item['saleprice'] = None
+                item['sale'] = False
+                item['description'] = response.xpath('.//p[@class="description"]/text()').extract_first()
 
-        sizes = response.xpath('.//input[@name="size"]/@value').extract()
-        oos_sizes = response.xpath('.//input[@disabled="disabled"]/@value').extract()
-        item['size_stock'] = [{
-                           'stock': 'Out of stock',
-                           'size': size
-                       } if size in oos_sizes else {
-            'stock': 'In stock',
-            'size': size
-        } for size in sizes]
+                sizes = response.xpath('.//input[@name="size"]/@value').extract()
+                oos_sizes = response.xpath('.//input[@disabled="disabled"]/@value').extract()
+                item['size_stock'] = [{
+                                   'stock': 'Out of stock',
+                                   'size': size
+                               } if size in oos_sizes else {
+                    'stock': 'In stock',
+                    'size': size
+                } for size in sizes]
 
-        img_strings = item['image_urls']
-        item['image_hash'] = []
-        for img_string in img_strings:
-            # Check if image string is a string, if not then do not pass this item
-            if isinstance(img_string, str):
-                # print(img_string)
-                hash_object = hashlib.sha1(img_string.encode('utf8'))
-                hex_dig = hash_object.hexdigest()
-                item['image_hash'].append(hex_dig)
+                img_strings = item['image_urls']
+                item['image_hash'] = []
+                for img_string in img_strings:
+                    # Check if image string is a string, if not then do not pass this item
+                    if isinstance(img_string, str):
+                        # print(img_string)
+                        hash_object = hashlib.sha1(img_string.encode('utf8'))
+                        hex_dig = hash_object.hexdigest()
+                        item['image_hash'].append(hex_dig)
 
-        item['date'] = int(datetime.datetime.now().timestamp())
+                item['date'] = int(datetime.datetime.now().timestamp())
 
-        yield item
+                yield item
