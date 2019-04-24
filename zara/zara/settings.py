@@ -120,11 +120,17 @@ BLACKLIST_HTTP_STATUS_CODES = [503, 403]
 
 # Enable or disable downloader middlewares
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
+# DOWNLOADER_MIDDLEWARES = {
+#     'scrapoxy.downloadmiddlewares.proxy.ProxyMiddleware': 100,
+#     'scrapoxy.downloadmiddlewares.wait.WaitMiddleware': 101,
+#     'scrapoxy.downloadmiddlewares.scale.ScaleMiddleware': 102,
+#     'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware': None,
+#     'scrapoxy.downloadmiddlewares.blacklist.BlacklistDownloaderMiddleware': 950,
+#     'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
+#     'scrapy_useragents.downloadermiddlewares.useragents.UserAgentsMiddleware': 500,
+# }
+
 DOWNLOADER_MIDDLEWARES = {
-    'scrapoxy.downloadmiddlewares.proxy.ProxyMiddleware': 100,
-    'scrapoxy.downloadmiddlewares.wait.WaitMiddleware': 101,
-    'scrapoxy.downloadmiddlewares.scale.ScaleMiddleware': 102,
-    'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware': None,
     'scrapoxy.downloadmiddlewares.blacklist.BlacklistDownloaderMiddleware': 950,
     'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
     'scrapy_useragents.downloadermiddlewares.useragents.UserAgentsMiddleware': 500,
@@ -144,7 +150,7 @@ DOWNLOADER_MIDDLEWARES = {
 
 ITEM_PIPELINES = {'scrapy.pipelines.images.ImagesPipeline': 1}
 
-IMAGES_STORE = '/Users/jdo/dev/scrapers/img_uk/zara_uk_1'
+IMAGES_STORE = '/home/janis/jdev/scrapers/img_uk/zara_uk_1'
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/autothrottle.html
