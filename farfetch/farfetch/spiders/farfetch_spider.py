@@ -156,4 +156,9 @@ class FarfetchSpider(scrapy.Spider):
             'stock': 'In stock'
         } for key, value in prod_json['productViewModel']['sizes']['available'].items()]
 
+        if isinstance(response.meta['prod_url'], str):
+            prod_id_hash_object = hashlib.sha1(response.meta['prod_url'].encode('utf8'))
+            prod_id_hex_dig = prod_id_hash_object.hexdigest()
+            item['prod_id'] = prod_id_hex_dig
+
         yield item

@@ -14,6 +14,7 @@ class FarfetchItem(Item):
     name = Field()
     price = Field()
     prod_url = Field()
+    prod_id = Field()
     image_urls = Field()
     image_hash = Field()
     sex = Field()

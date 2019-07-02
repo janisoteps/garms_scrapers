@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1bdd0736-13d7-4616-b3fc-d7dc7e4ce71e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/boohoo/boohoo/spiders/boohoo_spider_1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/farfetch/farfetch/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/farfetch/farfetch/items.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/farfetch/farfetch/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/farfetch/farfetch/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/farfetch/farfetch/spiders/farfetch_spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/farfetch/farfetch/spiders/farfetch_spider.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new_look/new_look/spiders/.ipynb_checkpoints/New_look_explore_1-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/new_look/new_look/spiders/.ipynb_checkpoints/New_look_explore_1-checkpoint.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,8 +25,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/farfetch/farfetch/spiders/farfetch_spider.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="720">
-              <caret line="159" lean-forward="true" selection-start-line="159" selection-end-line="159" />
+            <state relative-caret-position="690">
+              <caret line="162" lean-forward="true" selection-start-line="162" selection-end-line="162" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -42,7 +38,7 @@
         <entry file="file://$PROJECT_DIR$/farfetch/farfetch/settings.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1710">
-              <caret line="114" column="2" lean-forward="true" selection-start-line="114" selection-start-column="2" selection-end-line="114" selection-end-column="2" />
+              <caret line="114" column="2" selection-start-line="114" selection-start-column="2" selection-end-line="114" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -63,7 +59,7 @@
         <entry file="file://$PROJECT_DIR$/boohoo/boohoo/items.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
-              <caret line="12" column="4" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="29" selection-end-column="24" />
+              <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="29" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -71,8 +67,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/farfetch/farfetch/items.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="18" lean-forward="true" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
+            <state relative-caret-position="240">
+              <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -90,7 +86,7 @@
         <entry file="file://$PROJECT_DIR$/freeppl/freeppl/spiders/freeppl_spider_uk.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="563">
-              <caret line="139" column="35" lean-forward="true" selection-start-line="139" selection-start-column="35" selection-end-line="139" selection-end-column="35" />
+              <caret line="139" column="35" selection-start-line="139" selection-start-column="35" selection-end-line="139" selection-end-column="35" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -141,8 +137,8 @@
         <option value="$PROJECT_DIR$/boohoo/boohoo/items.py" />
         <option value="$PROJECT_DIR$/boohoo/boohoo/spiders/boohoo_spider_1.py" />
         <option value="$PROJECT_DIR$/boohoo/boohoo/settings.py" />
-        <option value="$PROJECT_DIR$/farfetch/farfetch/items.py" />
         <option value="$PROJECT_DIR$/farfetch/farfetch/settings.py" />
+        <option value="$PROJECT_DIR$/farfetch/farfetch/items.py" />
         <option value="$PROJECT_DIR$/farfetch/farfetch/spiders/farfetch_spider.py" />
       </list>
     </option>
@@ -520,14 +516,7 @@
     <entry file="file://$PROJECT_DIR$/boohoo/boohoo/items.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="12" column="4" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="29" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/farfetch/farfetch/items.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="18" lean-forward="true" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
+          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="29" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -535,16 +524,6 @@
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
           <selected id="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boohoo/boohoo/spiders/boohoo_spider_1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="40" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -568,7 +547,7 @@
     <entry file="file://$PROJECT_DIR$/freeppl/freeppl/spiders/freeppl_spider_uk.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="563">
-          <caret line="139" column="35" lean-forward="true" selection-start-line="139" selection-start-column="35" selection-end-line="139" selection-end-column="35" />
+          <caret line="139" column="35" selection-start-line="139" selection-start-column="35" selection-end-line="139" selection-end-column="35" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
@@ -582,17 +561,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/boohoo/boohoo/spiders/boohoo_spider_1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="40" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/farfetch/farfetch/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1710">
-          <caret line="114" column="2" lean-forward="true" selection-start-line="114" selection-start-column="2" selection-end-line="114" selection-end-column="2" />
+          <caret line="114" column="2" selection-start-line="114" selection-start-column="2" selection-end-line="114" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/farfetch/farfetch/items.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/farfetch/farfetch/spiders/farfetch_spider.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="159" lean-forward="true" selection-start-line="159" selection-end-line="159" />
+        <state relative-caret-position="690">
+          <caret line="162" lean-forward="true" selection-start-line="162" selection-end-line="162" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
