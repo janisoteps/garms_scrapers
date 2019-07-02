@@ -3,6 +3,7 @@ from farfetch.items import FarfetchItem
 import hashlib
 import time
 import re
+import json
 
 
 class FarfetchSpider(scrapy.Spider):
@@ -21,61 +22,100 @@ class FarfetchSpider(scrapy.Spider):
 
         cat_url_elems = [cat_url_anchors_top, cat_url_anchors_lower]
 
+        cat_url_list = []
         for cat_url_elem_list in cat_url_elems:
             for cat_url_anchor in cat_url_elem_list:
-                cat_url = 'https://www.farfetch.com' + cat_url_anchor.xpath('.//@href').extract_first()
-                cat_name = cat_url_anchor.xpath('.//text()').extract_first()
+                cat_url = 'https://www.farfetch.com' + cat_url_anchor.xpath('.//@href')[0]
+                cat_name = cat_url_anchor.xpath('.//text()')[0]
+                cat_url_list.append({
+                    'cat_url': cat_url,
+                    'cat_name': cat_name
+                })
 
-                print('Category URL: ', str(cat_url))
-                print('Category name: ', str(cat_name))
+        def get_sex(url_string):
+            if 'women' in url_string:
+                return 'women'
+            elif 'men' in url_string:
+                return 'men'
+            else:
+                return None
 
-                yield scrapy.Request(
-                    url=cat_url,
-                    callback=self.product_collection,
-                    meta={
-                        'cat_name': cat_name
-                    }
-                )
+        adult_cat_url_list = [{
+            'cat_url': cat_dict['cat_url'],
+            'cat_name': cat_dict['cat_name'],
+            'sex': get_sex(cat_dict['cat_url'])
+        } for cat_dict in cat_url_list if get_sex(cat_dict['cat_url']) is not None]
+
+        for cat_url_name in adult_cat_url_list:
+            yield scrapy.Request(
+                url=cat_url_name['cat_url'],
+                callback=self.product_collection,
+                meta={
+                    'cat_name': cat_url_name['cat_name'],
+                    'sex': cat_url_name['sex']
+                }
+            )
 
     # Collect product URLs in each category
     def product_collection(self, response):
         cat_name = response.meta['cat_name']
+        sex = response.meta['sex']
 
-        prod_urls = response.xpath('.//div[@class = "listing-item-image"]/a/@href').extract()
+        prod_tiles = response.xpath('.//li[@data-test="productCard"]')
+        prod_list = []
+        for prod_tile in prod_tiles:
+            prod_url = prod_tile.xpath('.//a[@itemprop="itemListElement"]/@href')
+            prod_name = prod_tile.xpath('.//p[@data-test="productDescription"]/text()')
+            price_match = prod_tile.xpath('.//span[@data-test="price"]/text()')
+            initial_price = prod_tile.xpath('.//span[@data-test="initialPrice"]/text()')
+            sale = False
+            # price = None
+            saleprice = None
+            if len(initial_price) > 0:
+                sale = True
+                price = initial_price[0]
+                saleprice = price_match[0]
+            else:
+                price = price_match[0]
+            brand = prod_tile.xpath('.//h3[@data-test="productDesignerName"]/text()')
 
-        for prod_url in prod_urls:
-            print('Product URL scraped: ', str(prod_url))
-            prod_req_url = 'https://www.farfetch.com' + prod_url
+            prod_list.append({
+                'name': prod_name[0].title(),
+                'prod_url': 'https://www.farfetch.com' + prod_url[0],
+                'price': price,
+                'sale': sale,
+                'saleprice': saleprice,
+                'brand': brand[0]
+            })
+
+        for prod_dict in prod_list:
+            print('Product URL scraped: ', str(prod_dict['prod_url']))
             yield scrapy.Request(
-                url=prod_req_url,
+                url=prod_dict['prod_url'],
                 callback=self.parse,
                 meta={
-                    'cat_name': cat_name
+                    'cat_name': cat_name,
+                    'sex': sex,
+                    'name': prod_dict['name'],
+                    'prod_url': prod_dict['prod_url'],
+                    'price': prod_dict['price'],
+                    'sale': prod_dict['sale'],
+                    'saleprice': prod_dict['saleprice'],
+                    'brand': prod_dict['brand']
                 }
             )
 
-        current_page = response.xpath('.//span[@data-tstid = "paginationCurrent"]/text()').extract_first()
-        if current_page is not None:
-            current_page = int(current_page)
-
-            total_pages = response.xpath('.//span[@data-tstid = "paginationTotal"]/text()').extract_first()
-            if total_pages is not None:
-                total_pages = int(total_pages)
-
-                if total_pages > current_page:
-                    if response.url[-6:-1] == 'page=':
-                        next_page_url = str(response.url)[0:-1] + str(current_page + 1)
-                    else:
-                        next_page_url = str(response.url) + '?page=' + str(current_page + 1)
-
-                    print('Next page scraped: ', str(next_page_url))
-                    yield scrapy.Request(
-                        url=next_page_url,
-                        callback=self.product_collection,
-                        meta={
-                            'cat_name': cat_name
-                        }
-                    )
+        next_page_match = response.xpath('.//link[@rel = "next"]/@href')
+        if len(next_page_match) > 0:
+            next_page = next_page_match[0]
+            yield scrapy.Request(
+                url=next_page,
+                callback=self.product_collection,
+                meta={
+                    'cat_name': cat_name,
+                    'sex': sex
+                }
+            )
 
     # Scrape the product page
     def parse(self, response):
@@ -84,52 +124,36 @@ class FarfetchSpider(scrapy.Spider):
         item['category'] = response.meta['cat_name']
         item['shop'] = 'Farfetch'
         item['currency'] = '£'
-        item['sex'] = response.url.partition('shopping/')[2].partition('/')[0]
-        item['prod_url'] = response.url
+        item['sex'] = response.meta['sex']
+        item['name'] = response.meta['name']
+        item['prod_url'] = response.meta['prod_url']
+        item['price'] = response.meta['price']
+        item['saleprice'] = response.meta['saleprice']
+        item['sale'] = response.meta['sale']
+        item['brand'] = response.meta['brand']
 
-        item['name'] = response.xpath('.//title/text()').extract_first()
+        item['date'] = int(time.time())
 
-        try:
-            item['price'] = re.findall(r'(?<=unit_price\"\:).*?(?=\,)', str(response.body))[0]
-        except:
-            item['price'] = None
+        prod_json_string = re.search('(?<=__initialState_slice-pdp__\'\]\ \=\ ).*?(?=\<\/script)', response.text)
+        prod_json = json.loads(prod_json_string.group(0))
+        item['color_string'] = prod_json['productViewModel']['designerDetails']['designerColour'].split(' ')[-1].lower()
 
-        if item['price'] is not None:
-            try:
-                item['saleprice'] = re.findall(r'(?<=unit_sale_price\"\:).*?(?=\,)', str(response.body))[0]
-            except:
-                item['saleprice'] = ''
+        img_list = prod_json['productViewModel']['images']['main']
+        item['image_urls'] = [img_dict['600'] for img_dict in img_list]
+        img_strings = item['image_urls']
+        item['image_hash'] = []
+        for img_string in img_strings:
+            # Check if image string is a string, if not then do not pass this item
+            if isinstance(img_string, str):
+                # print(img_string)
+                hash_object = hashlib.sha1(img_string.encode('utf8'))
+                hex_dig = hash_object.hexdigest()
+                item['image_hash'].append(hex_dig)
 
-            if float(item['saleprice']) == float(item['price']):
-                item['sale'] = False
-                item['saleprice'] = ''
-            else:
-                item['sale'] = True
+        item['description'] = prod_json['productViewModel']['details']['description']
+        item['size_stock'] = [{
+            'size': value['description'],
+            'stock': 'In stock'
+        } for key, value in prod_json['productViewModel']['sizes']['available'].items()]
 
-            item['image_urls'] = response.xpath('.//img[@itemprop = "image"]/@data-zoom-image').extract()
-
-            # Calculate SHA1 hash of image URL to make it easy to find the image based on hash entry and vice versa
-            # Add the hash to item
-            img_strings = item['image_urls']
-
-            item['image_hash'] = []
-
-            for img_string in img_strings:
-                # Check if image string is a string, if not then do not pass this item
-                if isinstance(img_string, str):
-                    # print(img_string)
-                    hash_object = hashlib.sha1(img_string.encode('utf8'))
-                    hex_dig = hash_object.hexdigest()
-                    item['image_hash'].append(hex_dig)
-
-            color = response.xpath('.//span[@itemprop = "color"]/text()').extract_first()
-            color = ''.join(filter(str.isalpha, color))
-            item['color'] = color.lower()
-
-            item['brand'] = response.xpath('.//a[@itemprop = "brand"]/text()').extract_first()
-
-            item['date'] = int(time.time())
-
-            item['description'] = response.xpath('.//p[@itemprop = "description"]/text()').extract_first()
-
-            yield item
+        yield item
