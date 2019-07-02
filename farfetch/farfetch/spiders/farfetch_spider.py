@@ -25,8 +25,8 @@ class FarfetchSpider(scrapy.Spider):
         cat_url_list = []
         for cat_url_elem_list in cat_url_elems:
             for cat_url_anchor in cat_url_elem_list:
-                cat_url = 'https://www.farfetch.com' + cat_url_anchor.xpath('.//@href')[0]
-                cat_name = cat_url_anchor.xpath('.//text()')[0]
+                cat_url = 'https://www.farfetch.com' + cat_url_anchor.xpath('.//@href').extract_first()
+                cat_name = cat_url_anchor.xpath('.//text()').extract_first()
                 cat_url_list.append({
                     'cat_url': cat_url,
                     'cat_name': cat_name
@@ -64,28 +64,28 @@ class FarfetchSpider(scrapy.Spider):
         prod_tiles = response.xpath('.//li[@data-test="productCard"]')
         prod_list = []
         for prod_tile in prod_tiles:
-            prod_url = prod_tile.xpath('.//a[@itemprop="itemListElement"]/@href')
-            prod_name = prod_tile.xpath('.//p[@data-test="productDescription"]/text()')
-            price_match = prod_tile.xpath('.//span[@data-test="price"]/text()')
-            initial_price = prod_tile.xpath('.//span[@data-test="initialPrice"]/text()')
+            prod_url = prod_tile.xpath('.//a[@itemprop="itemListElement"]/@href').extract_first()
+            prod_name = prod_tile.xpath('.//p[@data-test="productDescription"]/text()').extract_first()
+            price_match = prod_tile.xpath('.//span[@data-test="price"]/text()').extract_first()
+            initial_price = prod_tile.xpath('.//span[@data-test="initialPrice"]/text()').extract_first()
             sale = False
             # price = None
             saleprice = None
-            if len(initial_price) > 0:
+            if initial_price is not None:
                 sale = True
-                price = initial_price[0]
-                saleprice = price_match[0]
+                price = initial_price
+                saleprice = price_match
             else:
-                price = price_match[0]
-            brand = prod_tile.xpath('.//h3[@data-test="productDesignerName"]/text()')
+                price = price_match
+            brand = prod_tile.xpath('.//h3[@data-test="productDesignerName"]/text()').extract_first()
 
             prod_list.append({
-                'name': prod_name[0].title(),
-                'prod_url': 'https://www.farfetch.com' + prod_url[0],
+                'name': prod_name.title(),
+                'prod_url': 'https://www.farfetch.com' + prod_url,
                 'price': price,
                 'sale': sale,
                 'saleprice': saleprice,
-                'brand': brand[0]
+                'brand': brand
             })
 
         for prod_dict in prod_list:
@@ -105,9 +105,9 @@ class FarfetchSpider(scrapy.Spider):
                 }
             )
 
-        next_page_match = response.xpath('.//link[@rel = "next"]/@href')
-        if len(next_page_match) > 0:
-            next_page = next_page_match[0]
+        next_page_match = response.xpath('.//link[@rel = "next"]/@href').extract_first()
+        if next_page_match is not None:
+            next_page = next_page_match
             yield scrapy.Request(
                 url=next_page,
                 callback=self.product_collection,
@@ -145,7 +145,6 @@ class FarfetchSpider(scrapy.Spider):
         for img_string in img_strings:
             # Check if image string is a string, if not then do not pass this item
             if isinstance(img_string, str):
-                # print(img_string)
                 hash_object = hashlib.sha1(img_string.encode('utf8'))
                 hex_dig = hash_object.hexdigest()
                 item['image_hash'].append(hex_dig)

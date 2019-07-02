@@ -89,11 +89,12 @@ DEFAULT_REQUEST_HEADERS = {
     'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
     'accept-encoding': 'gzip, deflate, br',
     'accept-language': 'en-US,en;q=0.9,lv;q=0.8',
-    'cookie': 'web_version=STANDARD; bm_sz=A6377E9B4171247ED4E1787937A304D1~YAAQF93dWO/2MMBpAQAA7vNMMAObY9jO/G6+AjrcVvrfpDjr9uYQGH3kPkwpKQKy3kyae9sCyFmgQLo2dUFmq69M9VXt/yAT5jHLkEdLN7RgR2M6u/B/g34ViKpnhP90I6Yvo23/qBNyGO5Ik1IZxrKgq6T8ZukmrjpmIaOW2/GudloC2BHm3+eIEsCzdw==; optimizelyEndUserId=oeu1555588511147r0.5341322124115195; socControl=https%3A%2F%2Fwww.zara.com; _abck=E9C4AE997C8F1ED3F10F7328D035A03858DDDD173E0F00009E65B85CBD3B7502~0~e21KbjrABjJtj4rAlkSB0G21/uDfFjsrH9CU9yogvD4=~-1~-1; _ga=GA1.2.1482112061.1555588512; _gid=GA1.2.216663099.1555588512; rid=b08b1b8d-c1f3-40d4-a6a5-db0dabd6ae1c; _fbp=fb.1.1555588512026.1537971650; chin={"status":"chat-status:not_connected","uid":"","crid":"","email":"","userJid":"","uiCurrentView":"view:hidden","areMessagesNotRead":false,"privacyAccepted":false,"isChatAttended":false,"timeShowInteractiveChat":0}; ak_bmsc=F8427E1BC141972B5CEEBC4898ABD18758DDDD173E0F00009E65B85CE8F3532F~plJIMSl8F7pfGFJPBB8upKLhvRwOsAwyAbAavYDwGMvK+UT8K8sbuq+QN604qpUvFcJQMSxmsSNax4nyJMp+UVKF0Y/zY1VMUqlBZ2jcVKRn/gZL1zs43ynKQno+s3ZNqzUq7qaPqIMz7BVMoMVZZ/Aq0gX/fOBJ0vRcO/HU5Xhvi44qTSPNc3doJd5aneJT+ctfYbdSf9zJRfD4J+H9zKfDOVBhCw4zWYI+mJYBzMHwVVlO5K4gZhb/OVp2ac3XRGHFxAtB0qFXN8yjpRnLA4AQ==; rskxRunCookie=0; rCookie=euevs798yyqxd1kbkns1; WC_cookiesMsg=1; policyVersion=1527202800000; storepath=uk%2Fen; lastRskxRun=1555588530255; bm_sv=BA7896552C453713F32D8ACFE3EDA08F~MyvGdegTYulYazCn2iIk5WeZ/Sgdzyh6ZUJfRIlqX1AL367Mbi2Fo6lUvRAn0nErpA4KANkUp10yXQ34qtHFe83PzviphUNs7m8tc+ZeCo4JnctA/SA+KkBI5/8gheL8rioL8MmxJiMRT7Lia4gbEg==; RT="sl=2&ss=1555588510395&tt=4293&obo=0&bcn=%2F%2F0211c844.akstat.io%2F&sh=1555588531314%3D2%3A0%3A4293%2C1555588516293%3D1%3A0%3A4034&dm=zara.com&si=f2efe0ce-4114-45de-9ac2-68f8cfccffaf&nu=https%3A%2F%2Fwww.zara.com%2Fuk%2Fen%2Fwoman-editorial-11-l1523.html%3Fv1%3D1180552&cl=1555588871021&r=https%3A%2F%2Fwww.zara.com%2Fuk%2Fen%2Fwoman-l1000.html%3Fv1%3D358532&ul=1555588880604"',
+    'cache-control': 'no-cache',
+    'cookie': '__cfduid=de6bab5f9b68cb380ef4b941545ef25eb1560717279; dwac_901934c2df27fe61a1e3d786c2=P5kOg8ksRdY4FNCsE33SGW63EtPWjruw3Ic%3D|dw-only|||GBP|false|Europe%2FLondon|true; cqcid=ac4G2blima1O28eecvkX8f8Q6R; sid=P5kOg8ksRdY4FNCsE33SGW63EtPWjruw3Ic; dwanonymous_3c96516478c33a12ebf223e921102926=ac4G2blima1O28eecvkX8f8Q6R; __cq_dnt=0; dw_dnt=0; dwsid=OWc0R1QfI8VvEC2-yw3jbWhJKBdLvd2ji4MqFJ7H12Vh4DaFMTg_YkQNp1HbaKM_nvYsNmrjPDCYYVBqNU-PyA==; mt.v=2.668808714.1560717288370; locationProtocol=https%3A; _gcl_au=1.1.1180915791.1560717290; __adal_first_visit=1560717290174; _ga=GA1.2.1094295532.1560717290; _gid=GA1.2.1918252411.1560717290; _scid=e9b4b24f-5cbd-4e52-9e40-a8e2197336b6; cd_user_id=16b61ffebb163f-0a6be026537f59-37647e03-232800-16b61ffebb252e; __cq_seg=0~0.00!1~0.00!2~0.00!3~0.00!4~0.00!5~0.00!6~0.00!7~0.00!8~0.00!9~0.00; _cs_c=1; _fbp=fb.1.1560717290889.1104685392; riTrack_WRSID=1560717293029544604; cto_lwid=c2f1d4a0-58d8-4a51-9129-f4539767a8fa; dw_locale=en_GB; __cq_uuid=ccdcf580-d6ce-11e8-af72-ef24856155e0; dwsecuretoken_3c96516478c33a12ebf223e921102926=ggHn-BU4Ko_lGpii1HkrnDP-YiDUfP4psA==; __adal_session_start=1560724388629; __adal_last_visit=1560724388629; C360i=242D6DB82A99425B9532965155D13D12|eyJjcmVhdGVkIjoxNTYwNzE3MjkwNjYwLCJ1cGRhdGVkIjoxNTYwNzI0Mzg4Nzg0LCJ0YWciOiIyLTIuMjQtNiIsImNvdW50Ijo2LCJldGFnIjoiNjk2MDkyNzE3MDY1MTA0NDU5MDAwMDAwMzU5ODNiMWQwN2QxNGVjMDc0YjdlOTdkNDAyMGU0YjhjNDNlIn0=; C360i=242D6DB82A99425B9532965155D13D12|eyJjcmVhdGVkIjoxNTYwNzE3MjkwNjYwLCJ1cGRhdGVkIjoxNTYwNzI0Mzg4Nzg0LCJ0YWciOiIyLTIuMjQtNiIsImNvdW50Ijo2LCJldGFnIjoiNjk2MDkyNzE3MDY1MTA0NDU5MDAwMDAwMzU5ODNiMWQwN2QxNGVjMDc0YjdlOTdkNDAyMGU0YjhjNDNlIn0=; _cs_id=e8c4a580-fe87-a8cb-bf2f-24e89f4f7e98.1560717290.5.1560766227.1560766227.1499948428.1594881290777; _cs_s=1.0; dw=1; dw_cookies_accepted=1',
     'pragma': 'no-cache',
-    'referer': 'https://www.zara.com',
+    'referer': 'https://www.boohoo.com',
     'upgrade-insecure-requests': '1',
-    'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36'
+    'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36'
 }
 
 # Enable or disable spider middlewares
@@ -104,8 +105,13 @@ DEFAULT_REQUEST_HEADERS = {
 
 # Enable or disable downloader middlewares
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
+# DOWNLOADER_MIDDLEWARES = {
+#     'scrapoxy.downloadmiddlewares.blacklist.BlacklistDownloaderMiddleware': 950,
+#     'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
+#     'scrapy_useragents.downloadermiddlewares.useragents.UserAgentsMiddleware': 500,
+# }
 DOWNLOADER_MIDDLEWARES = {
-    'scrapoxy.downloadmiddlewares.blacklist.BlacklistDownloaderMiddleware': 950,
+    'scrapoxy.downloadmiddlewares.blacklist.BlacklistDownloaderMiddleware': None,
     'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
     'scrapy_useragents.downloadermiddlewares.useragents.UserAgentsMiddleware': 500,
 }
