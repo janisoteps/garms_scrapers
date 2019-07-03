@@ -90,6 +90,7 @@ class FarfetchSpider(scrapy.Spider):
 
         for prod_dict in prod_list:
             print('Product URL scraped: ', str(prod_dict['prod_url']))
+
             yield scrapy.Request(
                 url=prod_dict['prod_url'],
                 callback=self.parse,
