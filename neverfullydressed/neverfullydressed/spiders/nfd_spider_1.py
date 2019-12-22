@@ -168,7 +168,7 @@ class NeverFullyDressedSpider(scrapy.Spider):
 
         sale = False
         saleprice = None
-        if len(was_price) > 0:
+        if was_price is not None:
             sale = True
             price = was_price_number
             saleprice = prod_price_number
@@ -180,7 +180,7 @@ class NeverFullyDressedSpider(scrapy.Spider):
         item['saleprice'] = saleprice
         item['prod_url'] = response.url
         if isinstance(response.url, str):
-            prod_id_hash_object = hashlib.sha1(response.meta['prod_url'].encode('utf8'))
+            prod_id_hash_object = hashlib.sha1(response.url.encode('utf8'))
             prod_id_hex_dig = prod_id_hash_object.hexdigest()
             item['prod_id'] = prod_id_hex_dig
 
