@@ -171,11 +171,11 @@ class NeverFullyDressedSpider(scrapy.Spider):
         if was_price is not None:
             sale = True
             price = was_price_number
-            saleprice = round(prod_price_number / 1.2068965, 0)
+            saleprice = round((prod_price_number / 100) / 1.2068965, 0)
         else:
             price = prod_price_number
 
-        item['price'] = round(price / 1.2068965, 0)
+        item['price'] = round((price / 100) / 1.2068965, 0)
         item['sale'] = sale
         item['saleprice'] = saleprice
         item['prod_url'] = response.url
