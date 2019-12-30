@@ -561,7 +561,7 @@ class ZalandoSpider(scrapy.Spider):
 
         item['color_string'] = prod_json[0]['model']['articleInfo']['color']
 
-        descr_match = response.xpath('.//div[@id="z-pdp-detailsSection"]/div/div/div/div/div/div/div/div/div')
+        descr_match = response.xpath('.//div[@id="z-pdp-detailsSection"]/div/div/div/div/div/div/div/div/div').extract()
         descr_els = []
         for el in descr_match:
             node = etree.tostring(el)
