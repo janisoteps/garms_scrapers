@@ -146,6 +146,12 @@ class ZalandoSpider(scrapy.Spider):
         item['sale'] = response.meta['sale']
         item['size_stock'] = response.meta['size_stock']
         item['prod_url'] = response.meta['prod_url']
+
+        if isinstance(response.meta['prod_url'], str):
+            prod_id_hash_object = hashlib.sha1(response.meta['prod_url'].encode('utf8'))
+            prod_id_hex_dig = prod_id_hash_object.hexdigest()
+            item['prod_id'] = prod_id_hex_dig
+
         item['size_stock'] = response.meta['size_stock']
         item['brand'] = response.meta['brand']
         item['category'] = response.xpath('.//script[contains(@id, "pdp-props")]').re(r'category_tag\":\"(.*?)\"')[0]
