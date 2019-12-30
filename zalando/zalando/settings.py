@@ -99,7 +99,7 @@ DOWNLOADER_MIDDLEWARES = {
 
 ITEM_PIPELINES = {'scrapy.pipelines.images.ImagesPipeline': 1}
 
-IMAGES_STORE = '/home/jdo/jdev/scrapers/img/zalando_1'
+IMAGES_STORE = '/home/janis/dev/garms_data/data_uk/zalando_uk/images/dec_2019'
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/autothrottle.html
