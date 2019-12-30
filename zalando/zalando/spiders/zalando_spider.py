@@ -564,9 +564,9 @@ class ZalandoSpider(scrapy.Spider):
         descr_match = response.xpath('.//div[@id="z-pdp-detailsSection"]/div/div/div/div/div/div/div/div/div').extract()
         descr_els = []
         for el in descr_match:
-            node = etree.tostring(el)
-            node_str = str(node, 'utf-8')
-            node_clean_1 = re.sub('class=\".*?\"', '', node_str)
+            # node = etree.tostring(el)
+            # node_str = str(node, 'utf-8')
+            node_clean_1 = re.sub('class=\".*?\"', '', el)
             node_clean_1_1 = re.sub('as=\".*?\"', '', node_clean_1)
             node_clean_2 = re.sub('\<\!--', '', node_clean_1_1)
             node_clean_3 = re.sub('--\>', '', node_clean_2)
@@ -575,6 +575,7 @@ class ZalandoSpider(scrapy.Spider):
 
         categories = prod_json[0]['model']['articleInfo']['categories']
         categories_sex = [cat for cat in categories if cat == 'women' or cat == 'men']
-        item['sex'] = categories_sex[0]
+        if len(categories_sex) > 0:
+            item['sex'] = categories_sex[0]
 
-        yield item
+            yield item
