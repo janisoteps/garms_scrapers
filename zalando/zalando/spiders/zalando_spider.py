@@ -31,35 +31,43 @@ class ZalandoSpider(scrapy.Spider):
         init_req_url = 'https://www.zalando.co.uk/api/catalog/articles?limit=84&offset=84&sort=popularity'
         init_ajax_req = requests.get(init_req_url, headers=headers)
         init_json_dict = json.loads(init_ajax_req.text)
-        page_count = init_json_dict['pagination']['page_count']
+        page_count = int(init_json_dict['pagination']['page_count'])
+        print(f'PAGE COUNT : {page_count}')
 
         for i in range(0, page_count, 1):
             inner_api_url = f'https://www.zalando.co.uk/api/catalog/articles?limit=84&offset={i * 84}&sort=popularity'
             inner_ajax_req = requests.get(inner_api_url, headers=headers)
             inner_json_dict = json.loads(inner_ajax_req.text)
             item_array = inner_json_dict['articles']
+            print(f'PAGE: {i}')
+            print(f'PROD COUNT: {len(item_array)}')
 
-            for item in item_array:
-                name = item['name']
-                price_match = item['price']['original']
-                price = float(re.sub(r'£', '', price_match))
-                saleprice_match = item['price']['promotional']
-                saleprice = float(re.sub(r'£', '', saleprice_match))
+            for parse_item in item_array:
+                name = parse_item['name']
+                price_match = parse_item['price']['original']
+                price_clean_1 = re.sub(r'£', '', price_match)
+                price = float(re.sub(r',', '', price_clean_1))
+                saleprice_match = parse_item['price']['promotional']
+                saleprice_clean = re.sub(r'£', '', saleprice_match)
+                saleprice = float(re.sub(r',', '', saleprice_clean))
                 if saleprice == price:
                     saleprice = None
                     sale = False
                 else:
                     sale = True
-                sizes = item['sizes']
-                prod_url = f'https://www.zalando.co.uk/{item["url_key"]}.html'
+                sizes = parse_item['sizes']
+                prod_url = f'https://www.zalando.co.uk/{parse_item["url_key"]}.html'
                 size_stock = [{"stock": "In stock", "size": size} for size in sizes]
                 in_stock = False
                 for size in size_stock:
                     if size['stock'] == 'In stock':
                         in_stock = True
-                brand = item['brand_name']
+                brand = parse_item['brand_name']
 
                 if in_stock:
+                    print('ITEM OK OK OK OK OK OK OK OK OK OK OK OK OK OK OK OK OK OK')
+                    print(f'PAGE: {i}')
+                    print(f'ITEM NR: {item_array.index(parse_item)}')
                     yield scrapy.Request(
                             url=prod_url,
                             callback=self.parse,
@@ -74,6 +82,9 @@ class ZalandoSpider(scrapy.Spider):
                                 'prod_url': prod_url
                             }
                         )
+                else:
+                    print('OOS OOS OOS OOS OOS OOS OOS OOS OOS OOS OOS OOS OOS OOS OOS OOS OOS')
+                    print(f'PAGE: {i}')
 
     def parse(self, response):
         kind_cats = [
@@ -544,7 +555,10 @@ class ZalandoSpider(scrapy.Spider):
         if len(cat_list) == 0:
             all_cat_list = [word.lower() for word in category_match.split(' ') if word.lower() in all_cats]
             cat_list = all_cat_list
-        item['category'] = cat_list[0]
+        if len(cat_list) > 0:
+            item['category'] = cat_list[0]
+        else:
+            item['category'] = category_match.lower()
 
         image_urls = [img_dict['sources']['gallery'] for img_dict in
                       prod_json[0]['model']['articleInfo']['media']['images'] if
