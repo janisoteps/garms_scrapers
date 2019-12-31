@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1bdd0736-13d7-4616-b3fc-d7dc7e4ce71e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/noisymay/noisymay/spiders/noisymay_spider_1.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/scrapers_new.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/scrapers_new.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zalando/zalando/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/zalando/zalando/items.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zalando/zalando/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/zalando/zalando/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zalando/zalando/spiders/.ipynb_checkpoints/Untitled-checkpoint.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zalando/zalando/spiders/Untitled.ipynb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/zalando/zalando/spiders/zalando_spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/zalando/zalando/spiders/zalando_spider.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -18,83 +14,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zalando/zalando/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zalando/zalando/items.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scraper11/scraper11/spiders/asos_spider_4.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2342">
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zara/zara/spiders/zara_spider_1.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="91" column="59" lean-forward="true" selection-start-line="91" selection-start-column="59" selection-end-line="91" selection-end-column="59" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/new_look/new_look/spiders/newlook_spider_1.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1764">
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scraper6/scraper6/spiders/topman_spider_uk_2.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1202">
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/zalando/zalando/spiders/zalando_spider.py">
+        <entry file="file://$PROJECT_DIR$/noisymay/noisymay/spiders/noisymay_spider_1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="718">
-              <caret line="580" lean-forward="true" selection-start-line="580" selection-end-line="580" />
+            <state relative-caret-position="478">
+              <caret line="205" column="18" selection-start-line="205" selection-start-column="18" selection-end-line="205" selection-end-column="18" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
-                <element signature="e#4962#7928#0" />
-                <element signature="e#7958#10018#0" />
-                <element signature="e#10040#12243#0" />
-                <element signature="e#12268#12997#0" />
-                <element signature="e#13023#14238#0" />
-                <element signature="e#14261#14492#0" />
+                <element signature="e#3763#5823#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/neverfullydressed/neverfullydressed/spiders/nfd_spider_1.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/noisymay/noisymay/items.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="26" column="10" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -117,7 +63,10 @@
         <option value="$PROJECT_DIR$/new_look/new_look/items.py" />
         <option value="$PROJECT_DIR$/zalando/zalando/items.py" />
         <option value="$PROJECT_DIR$/zalando/zalando/settings.py" />
+        <option value="$PROJECT_DIR$/noisymay/noisymay/settings.py" />
+        <option value="$PROJECT_DIR$/noisymay/noisymay/items.py" />
         <option value="$PROJECT_DIR$/zalando/zalando/spiders/zalando_spider.py" />
+        <option value="$PROJECT_DIR$/noisymay/noisymay/spiders/noisymay_spider_1.py" />
       </list>
     </option>
   </component>
@@ -245,6 +194,13 @@
             <path>
               <item name="scrapers_new" type="b2602c69:ProjectViewProjectNode" />
               <item name="scrapers_new" type="462c0819:PsiDirectoryNode" />
+              <item name="neverfullydressed" type="462c0819:PsiDirectoryNode" />
+              <item name="neverfullydressed" type="462c0819:PsiDirectoryNode" />
+              <item name="spiders" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scrapers_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scrapers_new" type="462c0819:PsiDirectoryNode" />
               <item name="new_look" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -258,6 +214,24 @@
               <item name="scrapers_new" type="462c0819:PsiDirectoryNode" />
               <item name="new_look" type="462c0819:PsiDirectoryNode" />
               <item name="new_look" type="462c0819:PsiDirectoryNode" />
+              <item name="spiders" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scrapers_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scrapers_new" type="462c0819:PsiDirectoryNode" />
+              <item name="noisymay" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scrapers_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scrapers_new" type="462c0819:PsiDirectoryNode" />
+              <item name="noisymay" type="462c0819:PsiDirectoryNode" />
+              <item name="noisymay" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scrapers_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scrapers_new" type="462c0819:PsiDirectoryNode" />
+              <item name="noisymay" type="462c0819:PsiDirectoryNode" />
+              <item name="noisymay" type="462c0819:PsiDirectoryNode" />
               <item name="spiders" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -471,15 +445,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scraper11/scraper11/spiders/asos_spider_4.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2342">
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scraper6/scraper6/spiders/topman_spider_uk_2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1202">
@@ -493,16 +458,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="388">
           <caret line="88" column="31" selection-start-line="88" selection-start-column="31" selection-end-line="88" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zara/zara/spiders/zara_spider_1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="91" column="59" lean-forward="true" selection-start-line="91" selection-start-column="59" selection-end-line="91" selection-end-column="59" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
@@ -532,32 +487,97 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zalando/zalando/items.py">
+    <entry file="file://$PROJECT_DIR$/zalando/zalando/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+        <state relative-caret-position="703">
+          <caret line="151" selection-start-line="151" selection-end-line="151" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zalando/zalando/settings.py">
+    <entry file="file://$PROJECT_DIR$/zalando/zalando/items.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zalando/zalando/spiders/zalando_explore_1.ipynb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="715">
+          <caret line="93" column="64" selection-start-line="93" selection-start-column="5" selection-end-line="93" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/noisymay/noisymay/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="85" column="24" selection-start-line="85" selection-start-column="24" selection-end-line="98" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scraper11/scraper11/spiders/asos_spider_4.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-100">
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/neverfullydressed/neverfullydressed/spiders/nfd_explore_1.ipynb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="73" column="5" lean-forward="true" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zara/zara/spiders/zara_spider_1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="91" column="50" selection-start-line="91" selection-start-column="50" selection-end-line="91" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/zalando/zalando/spiders/zalando_spider.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="718">
-          <caret line="580" lean-forward="true" selection-start-line="580" selection-end-line="580" />
+        <state relative-caret-position="102">
+          <caret line="526" column="8" lean-forward="true" selection-start-line="526" selection-start-column="8" selection-end-line="526" selection-end-column="28" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
-            <element signature="e#4962#7928#0" />
-            <element signature="e#7958#10018#0" />
-            <element signature="e#10040#12243#0" />
-            <element signature="e#12268#12997#0" />
-            <element signature="e#13023#14238#0" />
-            <element signature="e#14261#14492#0" />
+            <element signature="e#5587#8553#0" />
+            <element signature="e#8583#10643#0" />
+            <element signature="e#10665#12868#0" />
+            <element signature="e#12893#13622#0" />
+            <element signature="e#13648#14863#0" />
+            <element signature="e#14886#15117#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/neverfullydressed/neverfullydressed/spiders/nfd_spider_1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/noisymay/noisymay/items.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="10" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/noisymay/noisymay/spiders/noisymay_spider_1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="478">
+          <caret line="205" column="18" selection-start-line="205" selection-start-column="18" selection-end-line="205" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#3763#5823#0" />
           </folding>
         </state>
       </provider>
