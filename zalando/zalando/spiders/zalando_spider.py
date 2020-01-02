@@ -1,5 +1,4 @@
 import scrapy
-from lxml import etree
 from zalando.items import ZalandoItem
 import hashlib
 import re
