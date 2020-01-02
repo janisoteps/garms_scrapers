@@ -4,7 +4,7 @@ import hashlib
 import re
 import requests
 import json
-import datetime
+import time
 import random
 
 
@@ -177,20 +177,24 @@ class AsosSpider(scrapy.Spider):
         item['prod_url'] = response.meta['prod_url']
         item['sex'] = response.meta['sex']
         item['brand'] = response.meta['brand']
-        item['date'] = int(datetime.datetime.now().timestamp())
-        item['currency'] = 'GBP'
+        item['date'] = int(time.time())
+        item['currency'] = '£'
         item['color_string'] = response.meta['color_string']
         item['category'] = response.meta['cat_name']
 
-        description_match = response.xpath('.//div[@class="product-description"]/span/ul/li/text()').extract()
+        description_match = response.xpath('.//div[@class="product-description"]//ul/li/text()').extract()
         item['description'] = '\n'.join(description_match)
+
+        if isinstance(response.meta['prod_url'], str):
+            prod_id_hash_object = hashlib.sha1(response.meta['prod_url'].encode('utf8'))
+            prod_id_hex_dig = prod_id_hash_object.hexdigest()
+            item['prod_id'] = prod_id_hex_dig
 
         img_urls_match = re.search('(?<=\"images\"\:\[).*?(?=\])', response.text)
         img_urls_json = json.loads(f'[{img_urls_match.group(0)}]')
         item['image_urls'] = [img_dict['url'] for img_dict in img_urls_json]
 
         # Calculate SHA1 hash of image URL to make it easy to find the image based on hash entry and vice versa
-        # Add the hash to item
         img_strings = item['image_urls']
         item['image_hash'] = []
         for img_string in img_strings:
@@ -200,5 +204,18 @@ class AsosSpider(scrapy.Spider):
                 hash_object = hashlib.sha1(img_string.encode('utf8'))
                 hex_dig = hash_object.hexdigest()
                 item['image_hash'].append(hex_dig)
+
+        info_json_match = re.search(
+            '(?<=window.asos.pdp.config.product = ).*?(?=window.asos.pdp.config.translations)',
+            response.text, re.I | re.DOTALL)
+        info_json = json.loads(info_json_match.group(0).strip()[:-1])
+        item['size_stock'] = [{
+            'size': size_dict['size'],
+            'stock': 'In stock'
+        } for size_dict in info_json['variants']]
+        if len(item['size_stock']) > 0:
+            item['in_stock'] = True
+        else:
+            item['in_stock'] = False
 
         yield item
