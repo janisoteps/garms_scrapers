@@ -118,14 +118,16 @@ class BoohooSpider(scrapy.Spider):
             item['description'] = description_match
 
         img_urls = []
-        primary_img_match = response.xpath('.//img[contains(@class, "js-primary-image")]/@src').extract_first()
+        primary_img_match = response.xpath('.//img[contains(@class, "js-primary-image")]/@data-image-url-template').extract_first()
         if primary_img_match is not None:
             primary_img = 'https:' + primary_img_match
+            primary_img = primary_img.replace('{template}', 'product_image_main')
             img_urls.append(primary_img)
 
-        prim_im_split = img_urls[0].split('?')
+        prim_im_split_1 = img_urls[0].split('boohooamplience/')
+        prim_im_split_2 = prim_im_split_1[1].split('/')
         for t in range(1, 4):
-            sec_img_url = f'{prim_im_split[0]}_{t}?{prim_im_split[1]}'
+            sec_img_url = f'{prim_im_split_1[0]}boohooamplience/{prim_im_split_2[0]}_{t}/{prim_im_split_2[1]}'
             img_urls.append(sec_img_url)
 
         item['image_urls'] = img_urls
@@ -143,6 +145,11 @@ class BoohooSpider(scrapy.Spider):
                 'size': size_json['attributeValue']
             })
         item['size_stock'] = size_arr
+
+        if len(item['size_stock']) > 0:
+            item['in_stock'] = True
+        else:
+            item['in_stock'] = False
 
         item['shop'] = 'Boohoo'
         item['name'] = response.meta['name']
