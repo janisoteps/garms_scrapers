@@ -111,7 +111,7 @@ DEFAULT_REQUEST_HEADERS = {
 #     'scrapy_useragents.downloadermiddlewares.useragents.UserAgentsMiddleware': 500,
 # }
 DOWNLOADER_MIDDLEWARES = {
-    'scrapoxy.downloadmiddlewares.blacklist.BlacklistDownloaderMiddleware': None,
+    # 'scrapoxy.downloadmiddlewares.blacklist.BlacklistDownloaderMiddleware': None,
     'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
     'scrapy_useragents.downloadermiddlewares.useragents.UserAgentsMiddleware': 500,
 }
