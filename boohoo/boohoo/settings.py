@@ -130,7 +130,7 @@ DOWNLOADER_MIDDLEWARES = {
 
 ITEM_PIPELINES = {'scrapy.pipelines.images.ImagesPipeline': 1}
 
-IMAGES_STORE = '/home/janis/jdev/scrapers/img_uk/boohoo_uk_1'
+IMAGES_STORE = '/home/janis/dev/garms_data/data_uk/boohoo_uk/images/dec_2019'
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/autothrottle.html
