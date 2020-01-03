@@ -9,24 +9,21 @@ from scrapy.item import Item, Field
 
 
 class AsosItem(Item):
-    # define the fields for item:
     shop = Field()
     name = Field()
     price = Field()
+    saleprice = Field()
+    sale = Field()
     prod_url = Field()
+    prod_id = Field()
     image_urls = Field()
     image_hash = Field()
     sex = Field()
-    sale = Field()
-    saleprice = Field()
-
     brand = Field()
     currency = Field()
     date = Field()
     description = Field()
     color_string = Field()
-    color_hex = Field()
     category = Field()
     size_stock = Field()
-
-
+    in_stock = Field()

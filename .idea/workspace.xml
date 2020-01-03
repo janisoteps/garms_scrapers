@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1bdd0736-13d7-4616-b3fc-d7dc7e4ce71e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/noisymay/noisymay/spiders/noisymay_spider_1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zalando/zalando/spiders/zalando_spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/zalando/zalando/spiders/zalando_spider.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asos/asos/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/asos/asos/items.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asos/asos/spiders/.ipynb_checkpoints/Asos_explore-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/asos/asos/spiders/.ipynb_checkpoints/Asos_explore-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asos/asos/spiders/Asos_explore.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/asos/asos/spiders/Asos_explore.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asos/asos/spiders/asos_prod_cat_list_1.jsonl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/asos/asos/spiders/asos_spider_5.py" beforeDir="false" afterPath="$PROJECT_DIR$/asos/asos/spiders/asos_spider_5.py" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,14 +16,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/noisymay/noisymay/spiders/noisymay_spider_1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="478">
+            <state relative-caret-position="480">
               <caret line="205" column="18" selection-start-line="205" selection-start-column="18" selection-end-line="205" selection-end-column="18" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
-                <element signature="e#3763#5823#0" />
               </folding>
             </state>
           </provider>
@@ -31,16 +32,37 @@
         <entry file="file://$PROJECT_DIR$/neverfullydressed/neverfullydressed/spiders/nfd_spider_1.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="45">
-              <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="11" />
+              <caret line="3" column="11" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/asos/asos/spiders/asos_spider_5.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="720">
+              <caret line="221" lean-forward="true" selection-start-line="221" selection-end-line="221" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/noisymay/noisymay/items.py">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="540">
+              <caret line="97" column="37" selection-start-line="97" selection-start-column="33" selection-end-line="97" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/asos/asos/items.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="390">
-              <caret line="26" column="10" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
+              <caret line="26" column="9" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -53,6 +75,11 @@
         <option value="Python Script" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>time</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -67,6 +94,9 @@
         <option value="$PROJECT_DIR$/noisymay/noisymay/items.py" />
         <option value="$PROJECT_DIR$/zalando/zalando/spiders/zalando_spider.py" />
         <option value="$PROJECT_DIR$/noisymay/noisymay/spiders/noisymay_spider_1.py" />
+        <option value="$PROJECT_DIR$/asos/asos/items.py" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.json" />
+        <option value="$PROJECT_DIR$/asos/asos/spiders/asos_spider_5.py" />
       </list>
     </option>
   </component>
@@ -324,6 +354,15 @@
               <item name="zara" type="462c0819:PsiDirectoryNode" />
               <item name="spiders" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="scrapers_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+            </path>
+            <path>
+              <item name="scrapers_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+              <item name="Scratches" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -332,7 +371,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="TEXT" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JSON&#10;TEXT" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
@@ -374,7 +413,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="280" y="132" width="1638" height="947" extended-state="0" />
+    <frame x="189" y="160" width="1638" height="949" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24984539" />
@@ -557,27 +596,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/neverfullydressed/neverfullydressed/spiders/nfd_spider_1.py">
+    <entry file="file://$PROJECT_DIR$/noisymay/noisymay/spiders/noisymay_spider_1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="11" />
+        <state relative-caret-position="480">
+          <caret line="205" column="18" selection-start-line="205" selection-start-column="18" selection-end-line="205" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/noisymay/noisymay/items.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="10" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
+        <state relative-caret-position="165">
+          <caret line="11" column="4" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="28" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/noisymay/noisymay/spiders/noisymay_spider_1.py">
+    <entry file="file://$PROJECT_DIR$/neverfullydressed/neverfullydressed/spiders/nfd_spider_1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="478">
-          <caret line="205" column="18" selection-start-line="205" selection-start-column="18" selection-end-line="205" selection-end-column="18" />
+        <state relative-caret-position="45">
+          <caret line="3" column="11" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="97" column="37" selection-start-line="97" selection-start-column="33" selection-end-line="97" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/asos/asos/items.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="9" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/asos/asos/spiders/asos_spider_5.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="221" lean-forward="true" selection-start-line="221" selection-end-line="221" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
-            <element signature="e#3763#5823#0" />
           </folding>
         </state>
       </provider>
