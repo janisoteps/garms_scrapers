@@ -192,7 +192,8 @@ class AsosSpider(scrapy.Spider):
 
         img_urls_match = re.search('(?<=\"images\"\:\[).*?(?=\])', response.text)
         img_urls_json = json.loads(f'[{img_urls_match.group(0)}]')
-        item['image_urls'] = [img_dict['url'] for img_dict in img_urls_json]
+        img_urls = [img_dict['url'] for img_dict in img_urls_json]
+        item['image_urls'] = [f'{img_url}?$XXL$&wid=800&fit=constrain' for img_url in img_urls]
 
         # Calculate SHA1 hash of image URL to make it easy to find the image based on hash entry and vice versa
         img_strings = item['image_urls']
