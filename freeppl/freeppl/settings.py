@@ -43,25 +43,29 @@ CONCURRENT_REQUESTS_PER_DOMAIN = 1
 RETRY_TIMES = 0
 
 # PROXY
-PROXY = 'http://127.0.0.1:8888/?noconnect'
+# PROXY = 'http://127.0.0.1:8888/?noconnect'
 
 # SCRAPOXY
-API_SCRAPOXY = 'http://127.0.0.1:8889/api'
-API_SCRAPOXY_PASSWORD = 'Kurlasmaskas3345'
+# API_SCRAPOXY = 'http://127.0.0.1:8889/api'
+# API_SCRAPOXY_PASSWORD = 'Kurlasmaskas3345'
 
 # BLACKLISTING
 BLACKLIST_HTTP_STATUS_CODES = [503, 403]
 
+# DOWNLOADER_MIDDLEWARES = {
+#     'scrapoxy.downloadmiddlewares.proxy.ProxyMiddleware': 100,
+#     'scrapoxy.downloadmiddlewares.wait.WaitMiddleware': 101,
+#     'scrapoxy.downloadmiddlewares.scale.ScaleMiddleware': 102,
+#     'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware': None,
+#     'scrapoxy.downloadmiddlewares.blacklist.BlacklistDownloaderMiddleware': 950,
+#     'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
+#     'scrapy_useragents.downloadermiddlewares.useragents.UserAgentsMiddleware': 500,
+# }
+
 DOWNLOADER_MIDDLEWARES = {
-    'scrapoxy.downloadmiddlewares.proxy.ProxyMiddleware': 100,
-    'scrapoxy.downloadmiddlewares.wait.WaitMiddleware': 101,
-    'scrapoxy.downloadmiddlewares.scale.ScaleMiddleware': 102,
-    'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware': None,
-    'scrapoxy.downloadmiddlewares.blacklist.BlacklistDownloaderMiddleware': 950,
     'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
     'scrapy_useragents.downloadermiddlewares.useragents.UserAgentsMiddleware': 500,
 }
-
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
@@ -113,7 +117,7 @@ COOKIES_ENABLED = False
 
 ITEM_PIPELINES = {'scrapy.pipelines.images.ImagesPipeline': 1}
 
-IMAGES_STORE = '/home/jdo/jdev/scrapers/img_uk/freeppl_uk_1'
+IMAGES_STORE = '/home/janis/dev/garms_data/data_uk/freepeople_uk/images/dec_2019'
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See http://doc.scrapy.org/en/latest/topics/autothrottle.html
