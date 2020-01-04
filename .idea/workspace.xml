@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1bdd0736-13d7-4616-b3fc-d7dc7e4ce71e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/farfetch/farfetch/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/farfetch/farfetch/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/farfetch/farfetch/spiders/explore_farfetch_1.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/farfetch/farfetch/spiders/explore_farfetch_1.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/freeppl/freeppl/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/freeppl/freeppl/items.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/freeppl/freeppl/spiders/freeppl_spider_uk.py" beforeDir="false" afterPath="$PROJECT_DIR$/freeppl/freeppl/spiders/freeppl_spider_uk.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
