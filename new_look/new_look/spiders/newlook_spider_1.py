@@ -41,11 +41,11 @@ class ZaraSpider(scrapy.Spider):
 
             return sex
 
-        all_links = response.xpath('.//ul/li/a').extract()
+        all_links = response.xpath('.//ul/li/a')
         all_link_dicts = []
         for link in all_links:
-            link_url = link.xpath('@href')
-            link_name = link.xpath('text()')
+            link_url = link.xpath('@href').extract()
+            link_name = link.xpath('text()').extract()
             all_link_dicts.append({
                 'cat_name': link_name,
                 'cat_url': link_url
@@ -94,20 +94,21 @@ class ZaraSpider(scrapy.Spider):
                             name = prod_dict['name']
                             description = prod_dict['description']
                             size_options = prod_dict['sizeOptions']
+                            # print(size_options)
                             size_stock = [{
                                 'stock': 'In stock' if size_dict['stockStatus'] == 'AVAILABLE' else 'Out of stock',
                                 'size': size_dict['value']
-                            } for size_dict in size_options]
+                            } for size_dict in size_options if 'value' in size_dict]
                             prod_id = prod_dict['code']
                             color_string = prod_dict['colourOptions'][prod_id]['displayName']
                             prod_url = f'https://www.newlook.com/uk{prod_dict["url"]}'
-                            color_hex = prod_dict['swatchColour']
+                            color_hex = prod_dict['colourOptions'][prod_id]['swatchColour']
 
                             yield scrapy.Request(
                                 url=prod_url,
                                 callback=self.parse,
                                 meta={
-                                    'cat_name': response.meta['cat_name'],
+                                    'cat_name': cat_link_dict['cat_name'],
                                     'sex': cat_link_dict['sex'],
                                     'cat_url': cat_link_dict['cat_url'],
                                     'price': price,
@@ -143,15 +144,16 @@ class ZaraSpider(scrapy.Spider):
 
         item['date'] = int(datetime.datetime.now().timestamp())
 
-        prev_price = response.xpath('.//strike[contains(@class, "price--previous-price")]/text()').extract()
+        prev_price = response.xpath('.//strike[contains(@class, "price--previous-price")]/text()').extract_first()
         non_decimal = re.compile(r'[^\d.]+')
-        if prev_price is not None:
+        if prev_price is not None and len(prev_price) > 0:
+            print(f'PREV PRICE: {prev_price}')
             item['price'] = non_decimal.sub('', prev_price)
-            sale_price = response.xpath('.//span[contains(@class, "price--marked-down")]/text()').extract()
+            sale_price = response.xpath('.//span[contains(@class, "price--marked-down")]/text()').extract_first()
             item['saleprice'] = non_decimal.sub('', sale_price)
             item['sale'] = True
         else:
-            curr_price = response.xpath('.//span[contains(@class, "product-description__price")]/text()').extract()
+            curr_price = response.xpath('.//span[contains(@class, "product-description__price")]/text()').extract_first()
             item['price'] = non_decimal.sub('', curr_price)
             item['sale'] = False
             item['saleprice'] = None
