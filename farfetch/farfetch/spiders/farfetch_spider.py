@@ -155,6 +155,10 @@ class FarfetchSpider(scrapy.Spider):
             'size': value['description'],
             'stock': 'In stock'
         } for key, value in prod_json['productViewModel']['sizes']['available'].items()]
+        if len(item['size_stock']) > 0:
+            item['in_stock'] = True
+        else:
+            item['in_stock'] = False
 
         if isinstance(response.meta['prod_url'], str):
             prod_id_hash_object = hashlib.sha1(response.meta['prod_url'].encode('utf8'))
