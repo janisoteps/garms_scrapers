@@ -9,8 +9,8 @@ import datetime
 import time
 
 
-class ZaraSpider(scrapy.Spider):
-    name = "zara_spider_uk_1"
+class NewlookSpider(scrapy.Spider):
+    name = "newlook_spider_uk_1"
 
     # The main start function which initializes the scraping URLs and triggers parse function
     def start_requests(self):
@@ -162,8 +162,11 @@ class ZaraSpider(scrapy.Spider):
         item['currency'] = 'GBP'
         item['description'] = response.meta['description']
         item['color_string'] = response.meta['color_string']
-        item['color_hex'] = response.meta['color_hex']
         item['category'] = response.meta['cat_name']
         item['size_stock'] = response.meta['size_stock']
+        if len(item['size_stock']) > 0:
+            item['in_stock'] = True
+        else:
+            item['in_stock'] = False
 
         yield item
