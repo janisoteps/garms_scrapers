@@ -297,15 +297,15 @@ DEFAULT_REQUEST_HEADERS = {
     'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36'
 }
 
-# PROXY
-PROXY = 'http://127.0.0.1:8888/?noconnect'
-
-# SCRAPOXY
-API_SCRAPOXY = 'http://127.0.0.1:8889/api'
-API_SCRAPOXY_PASSWORD = 'Kurlasmaskas3345'
-
-# BLACKLISTING
-BLACKLIST_HTTP_STATUS_CODES = [503, 403]
+# # PROXY
+# PROXY = 'http://127.0.0.1:8888/?noconnect'
+#
+# # SCRAPOXY
+# API_SCRAPOXY = 'http://127.0.0.1:8889/api'
+# API_SCRAPOXY_PASSWORD = 'Kurlasmaskas3345'
+#
+# # BLACKLISTING
+# BLACKLIST_HTTP_STATUS_CODES = [503, 403]
 
 # Enable or disable spider middlewares
 # See https://doc.scrapy.org/en/latest/topics/spider-middleware.html
@@ -320,7 +320,7 @@ BLACKLIST_HTTP_STATUS_CODES = [503, 403]
 #}
 
 DOWNLOADER_MIDDLEWARES = {
-    'scrapoxy.downloadmiddlewares.blacklist.BlacklistDownloaderMiddleware': 950,
+    # 'scrapoxy.downloadmiddlewares.blacklist.BlacklistDownloaderMiddleware': 950,
     'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
     'scrapy_useragents.downloadermiddlewares.useragents.UserAgentsMiddleware': 500,
 }
@@ -338,7 +338,7 @@ DOWNLOADER_MIDDLEWARES = {
 #}
 ITEM_PIPELINES = {'scrapy.pipelines.images.ImagesPipeline': 1}
 
-IMAGES_STORE = '/home/janis/jdev/scrapers/img_uk/newlook_uk_1'
+IMAGES_STORE = '/home/janis/dev/garms_data/data_uk/newlook_uk/images/2019_dec'
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/autothrottle.html

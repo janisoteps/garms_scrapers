@@ -4,6 +4,9 @@
     <list default="true" id="1bdd0736-13d7-4616-b3fc-d7dc7e4ce71e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/freeppl/freeppl/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/freeppl/freeppl/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/new_look/new_look/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/new_look/new_look/items.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/new_look/new_look/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/new_look/new_look/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/new_look/new_look/spiders/newlook_spider_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/new_look/new_look/spiders/newlook_spider_1.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
