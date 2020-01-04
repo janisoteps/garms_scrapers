@@ -118,7 +118,7 @@ DOWNLOADER_MIDDLEWARES = {
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {'scrapy.pipelines.images.ImagesPipeline': 1}
 
-IMAGES_STORE = '/Users/jdo/dev/scrapers/img_uk/farfetch_uk_1'
+IMAGES_STORE = '/home/janis/dev/garms_data/data_uk/farfetch_uk/images/dec_2019'
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/autothrottle.html
