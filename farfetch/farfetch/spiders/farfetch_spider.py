@@ -31,7 +31,7 @@ class FarfetchSpider(scrapy.Spider):
         for cat_url_el in cat_url_els:
             cat_url_match = cat_url_el.xpath('@href').extract_first()
             if len(cat_url_match.split('?')) > 1:
-                cat_url = f'https://www.farfetch.com{cat_url_match.split("?").extract_first()}'
+                cat_url = f'https://www.farfetch.com{cat_url_match.split("?")[0]}'
             else:
                 cat_url = f'https://www.farfetch.com{cat_url_match}'
             cat_name = cat_url_el.xpath('text()').extract_first().strip()
