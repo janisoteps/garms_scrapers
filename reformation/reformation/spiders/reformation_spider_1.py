@@ -20,7 +20,7 @@ class ReformationSpider(scrapy.Spider):
         yield scrapy.Request(url=url, callback=self.category_collection)
 
     def category_collection(self, response):
-        sitemap_links = response.xpath('.//li[@class="sitemap__item"]').extract()
+        sitemap_links = response.xpath('.//li[@class="sitemap__item"]')
         cat_urls = []
         for sitemap_link in sitemap_links:
             sitemap_url = sitemap_link.xpath('.//a/@href').extract_first()
@@ -83,7 +83,7 @@ class ReformationSpider(scrapy.Spider):
 
         item['name'] = response.meta['name']
         item['description'] = response.xpath('.//div[@itemprop="description"]/text()').extract_first()
-        item['image_urls'] = response.xpath('.//img[contains(@class, "pdp__primary-image-link-image")]/@data-src')
+        item['image_urls'] = response.xpath('.//img[contains(@class, "pdp__primary-image-link-image")]/@data-src').extract()
 
         img_strings = item['image_urls']
         item['image_hash'] = []
