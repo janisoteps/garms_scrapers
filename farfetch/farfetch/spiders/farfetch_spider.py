@@ -11,7 +11,7 @@ class FarfetchSpider(scrapy.Spider):
 
     # Main start function
     def start_requests(self):
-        url = 'https://www.farfetch.com/uk/sitemap/'
+        url = 'https://www.farfetch.com/uk/'
 
         yield scrapy.Request(url=url, callback=self.category_collection)
 
@@ -72,10 +72,13 @@ class FarfetchSpider(scrapy.Spider):
             if initial_price is not None:
                 sale = True
                 price = initial_price
-                saleprice = float(price_match.replace('£', ''))
+                saleprice = price_match.replace('£', '')
+                saleprice = float(saleprice.replace(',', ''))
             else:
                 price = price_match
             brand = prod_tile.xpath('.//h3[@data-test="productDesignerName"]/text()').extract_first()
+
+            price = price.replace(',', '')
 
             prod_list.append({
                 'name': prod_name.title(),
