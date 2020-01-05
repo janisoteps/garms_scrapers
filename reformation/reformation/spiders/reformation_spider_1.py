@@ -50,7 +50,7 @@ class ReformationSpider(scrapy.Spider):
         for prod_tile in prod_tiles:
             prod_url = 'https://www.thereformation.com' + \
                        prod_tile.xpath('.//a[@class="product-summary__media-link"]/@href').extract_first()
-            prod_name = prod_tile.xpath('.//p[@class="product-summary__name"]/a/text()').extract_first()
+            prod_name = prod_tile.xpath('.//h2[@class="product-summary__name"]/a/text()').extract_first()
             prod_list.append({
                 'prod_url': prod_url,
                 'prod_name': prod_name
@@ -83,7 +83,7 @@ class ReformationSpider(scrapy.Spider):
 
         item['name'] = response.meta['name']
         item['description'] = response.xpath('.//div[@itemprop="description"]/text()').extract_first()
-        item['image_urls'] = response.xpath('.//img[contains(@class, "product-details__primary-image-link-image")]/@data-src')
+        item['image_urls'] = response.xpath('.//img[contains(@class, "pdp__primary-image-link-image")]/@data-src')
 
         img_strings = item['image_urls']
         item['image_hash'] = []
@@ -112,7 +112,7 @@ class ReformationSpider(scrapy.Spider):
         item['saleprice'] = None
 
         orig_url = response.meta['prod_url']
-        alt_color_opts = response.xpath('.//li[@class="color-options__color"]/a/div/text()').extract()
+        alt_color_opts = response.xpath('.//li[@class="pdp-color-options__color"]/a/div/text()').extract()
         orig_color = orig_url.split('?color=')[1].split('&')[0]
 
         item['color_string'] = orig_color
@@ -120,10 +120,10 @@ class ReformationSpider(scrapy.Spider):
         item['date'] = int(time.time())
         item['category'] = response.meta['cat_name']
 
-        size_opts = response.xpath('.//div[@class="size-options__size-button"]')
+        size_opts = response.xpath('.//div[@class="pdp-size-options__size-button"]')
         size_stock = []
         for size_opt in size_opts:
-            size_json_string = size_opt.xpath('.//input/@data-product-details-size-button').extract_first()
+            size_json_string = size_opt.xpath('.//input/@data-pdp-size-button').extract_first()
             size_json = json.loads(size_json_string)
             size = size_json['size']
 
@@ -138,6 +138,10 @@ class ReformationSpider(scrapy.Spider):
             })
 
         item['size_stock'] = size_stock
+        if len(item['size_stock']) > 0:
+            item['in_stock'] = True
+        else:
+            item['in_stock'] = False
 
         alt_color_urls = [orig_url.split(orig_color)[0] + alt_color + orig_url.split(orig_color)[1] for alt_color in alt_color_opts]
         for alt_color_url in alt_color_urls:
