@@ -3,9 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="1bdd0736-13d7-4616-b3fc-d7dc7e4ce71e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/farfetch/farfetch/spiders/.ipynb_checkpoints/explore_farfetch_1-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/farfetch/farfetch/spiders/.ipynb_checkpoints/explore_farfetch_1-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/farfetch/farfetch/spiders/explore_farfetch_1.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/farfetch/farfetch/spiders/explore_farfetch_1.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/farfetch/farfetch/spiders/farfetch_spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/farfetch/farfetch/spiders/farfetch_spider.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reformation/reformation/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/reformation/reformation/items.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reformation/reformation/spiders/.ipynb_checkpoints/reformation_explore_1-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/reformation/reformation/spiders/.ipynb_checkpoints/reformation_explore_1-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reformation/reformation/spiders/reformation_explore_1.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/reformation/reformation/spiders/reformation_explore_1.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reformation/reformation/spiders/reformation_spider_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/reformation/reformation/spiders/reformation_spider_1.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,14 +43,35 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/farfetch/farfetch/spiders/farfetch_spider.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="555">
+              <caret line="163" column="8" lean-forward="true" selection-start-line="163" selection-start-column="8" selection-end-line="166" selection-end-column="36" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/reformation/reformation/spiders/reformation_spider_1.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="132" column="31" lean-forward="true" selection-start-line="132" selection-start-column="31" selection-end-line="132" selection-end-column="31" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/reformation/reformation/items.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" column="17" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -89,6 +111,12 @@
       </file>
     </leaf>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>color-options</find>
+      <find>size_opts</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -96,6 +124,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/farfetch/farfetch/spiders/farfetch_spider.py" />
+        <option value="$PROJECT_DIR$/reformation/reformation/spiders/reformation_spider_1.py" />
+        <option value="$PROJECT_DIR$/reformation/reformation/items.py" />
       </list>
     </option>
   </component>
@@ -483,8 +513,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/farfetch/farfetch/spiders/farfetch_spider.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="555">
+          <caret line="163" column="8" lean-forward="true" selection-start-line="163" selection-start-column="8" selection-end-line="166" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reformation/reformation/items.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="17" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reformation/reformation/spiders/reformation_spider_1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="132" column="31" lean-forward="true" selection-start-line="132" selection-start-column="31" selection-end-line="132" selection-end-column="31" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
