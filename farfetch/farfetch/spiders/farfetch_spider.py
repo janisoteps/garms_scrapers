@@ -37,19 +37,20 @@ class FarfetchSpider(scrapy.Spider):
             cat_name = cat_url_el.xpath('text()').extract_first().strip()
             cat_sex = get_sex(cat_url)
             if len(cat_name) > 0 and cat_sex is not None:
+                print(f'CAT URL: {cat_url}')
                 cat_urls.append({
                     'url': cat_url,
                     'name': cat_name,
                     'sex': cat_sex
                 })
 
-        for cat_url in cat_urls:
+        for cat_url_dict in cat_urls:
             yield scrapy.Request(
-                url=cat_url['url'],
+                url=cat_url_dict['url'],
                 callback=self.product_collection,
                 meta={
-                    'cat_name': cat_url['name'],
-                    'sex': cat_url['sex']
+                    'cat_name': cat_url_dict['name'],
+                    'sex': cat_url_dict['sex']
                 }
             )
 
