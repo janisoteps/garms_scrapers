@@ -17,21 +17,6 @@ class FarfetchSpider(scrapy.Spider):
 
     # Go through category links
     def category_collection(self, response):
-        cat_url_anchors_top = response.xpath('.//h4/a')
-        cat_url_anchors_lower = response.xpath('.//h5/a')
-
-        cat_url_elems = [cat_url_anchors_top, cat_url_anchors_lower]
-
-        cat_url_list = []
-        for cat_url_elem_list in cat_url_elems:
-            for cat_url_anchor in cat_url_elem_list:
-                cat_url = 'https://www.farfetch.com' + cat_url_anchor.xpath('.//@href').extract_first()
-                cat_name = cat_url_anchor.xpath('.//text()').extract_first()
-                cat_url_list.append({
-                    'cat_url': cat_url,
-                    'cat_name': cat_name
-                })
-
         def get_sex(url_string):
             if 'women' in url_string:
                 return 'women'
@@ -40,19 +25,31 @@ class FarfetchSpider(scrapy.Spider):
             else:
                 return None
 
-        adult_cat_url_list = [{
-            'cat_url': cat_dict['cat_url'],
-            'cat_name': cat_dict['cat_name'],
-            'sex': get_sex(cat_dict['cat_url'])
-        } for cat_dict in cat_url_list if get_sex(cat_dict['cat_url']) is not None]
+        cat_url_els = response.xpath('.//ul[contains(@class, "ff-primary-nav")]//a[contains(@class, "ff-nav-a")]')
 
-        for cat_url_name in adult_cat_url_list:
+        cat_urls = []
+        for cat_url_el in cat_url_els:
+            cat_url_match = cat_url_el.xpath('@href')[0]
+            if len(cat_url_match.split('?')) > 1:
+                cat_url = f'https://www.farfetch.com{cat_url_match.split("?")[0]}'
+            else:
+                cat_url = f'https://www.farfetch.com{cat_url_match}'
+            cat_name = cat_url_el.xpath('text()')[0].strip()
+            cat_sex = get_sex(cat_url)
+            if len(cat_name) > 0 and cat_sex is not None:
+                cat_urls.append({
+                    'url': cat_url,
+                    'name': cat_name,
+                    'sex': cat_sex
+                })
+
+        for cat_url in cat_urls:
             yield scrapy.Request(
-                url=cat_url_name['cat_url'],
+                url=cat_url['url'],
                 callback=self.product_collection,
                 meta={
-                    'cat_name': cat_url_name['cat_name'],
-                    'sex': cat_url_name['sex']
+                    'cat_name': cat_url['name'],
+                    'sex': cat_url['sex']
                 }
             )
 
@@ -74,7 +71,7 @@ class FarfetchSpider(scrapy.Spider):
             if initial_price is not None:
                 sale = True
                 price = initial_price
-                saleprice = price_match
+                saleprice = float(price_match.replace('£', ''))
             else:
                 price = price_match
             brand = prod_tile.xpath('.//h3[@data-test="productDesignerName"]/text()').extract_first()
@@ -82,7 +79,7 @@ class FarfetchSpider(scrapy.Spider):
             prod_list.append({
                 'name': prod_name.title(),
                 'prod_url': 'https://www.farfetch.com' + prod_url,
-                'price': price,
+                'price': float(price.replace('£', '')),
                 'sale': sale,
                 'saleprice': saleprice,
                 'brand': brand
@@ -140,7 +137,12 @@ class FarfetchSpider(scrapy.Spider):
         item['color_string'] = prod_json['productViewModel']['designerDetails']['designerColour'].split(' ')[-1].lower()
 
         img_list = prod_json['productViewModel']['images']['main']
-        item['image_urls'] = [img_dict['600'] for img_dict in img_list]
+        image_urls_list = [img_dict['600'] for img_dict in img_list]
+        if len(image_urls_list) > 4:
+            item['image_urls'] = image_urls_list[:4]
+        else:
+            item['image_urls'] = image_urls_list
+
         img_strings = item['image_urls']
         item['image_hash'] = []
         for img_string in img_strings:

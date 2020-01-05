@@ -3,15 +3,101 @@
   <component name="ChangeListManager">
     <list default="true" id="1bdd0736-13d7-4616-b3fc-d7dc7e4ce71e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new_look/new_look/spiders/newlook_spider_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/new_look/new_look/spiders/newlook_spider_1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/farfetch/farfetch/spiders/.ipynb_checkpoints/explore_farfetch_1-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/farfetch/farfetch/spiders/.ipynb_checkpoints/explore_farfetch_1-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/farfetch/farfetch/spiders/explore_farfetch_1.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/farfetch/farfetch/spiders/explore_farfetch_1.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/farfetch/farfetch/spiders/farfetch_spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/farfetch/farfetch/spiders/farfetch_spider.py" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hm/hm/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2040">
+              <caret line="136" selection-start-line="136" selection-end-line="136" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zalando/zalando/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1200">
+              <caret line="80" selection-start-line="80" selection-end-line="80" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/farfetch/farfetch/items.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="30" selection-start-line="30" selection-end-line="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/farfetch/farfetch/spiders/farfetch_spider.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hm/hm/items.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="30" selection-start-line="30" selection-end-line="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hm/hm/spiders/hm_spider_uk.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2760">
+              <caret line="193" column="8" selection-start-line="193" selection-start-column="8" selection-end-line="196" selection-end-column="36" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/boohoo/boohoo/spiders/boohoo_spider_1.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2295">
+              <caret line="159" column="8" selection-start-line="159" selection-start-column="8" selection-end-line="162" selection-end-column="45" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/farfetch/farfetch/spiders/farfetch_spider.py" />
+      </list>
+    </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="189" />
@@ -20,9 +106,283 @@
     <option name="height" value="949" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="scrapers_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scrapers_new" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scrapers_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scrapers_new" type="462c0819:PsiDirectoryNode" />
+              <item name="asos" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scrapers_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scrapers_new" type="462c0819:PsiDirectoryNode" />
+              <item name="asos" type="462c0819:PsiDirectoryNode" />
+              <item name="asos" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scrapers_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scrapers_new" type="462c0819:PsiDirectoryNode" />
+              <item name="asos" type="462c0819:PsiDirectoryNode" />
+              <item name="asos" type="462c0819:PsiDirectoryNode" />
+              <item name="spiders" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scrapers_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scrapers_new" type="462c0819:PsiDirectoryNode" />
+              <item name="boohoo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scrapers_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scrapers_new" type="462c0819:PsiDirectoryNode" />
+              <item name="boohoo" type="462c0819:PsiDirectoryNode" />
+              <item name="boohoo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scrapers_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scrapers_new" type="462c0819:PsiDirectoryNode" />
+              <item name="boohoo" type="462c0819:PsiDirectoryNode" />
+              <item name="boohoo" type="462c0819:PsiDirectoryNode" />
+              <item name="spiders" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scrapers_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scrapers_new" type="462c0819:PsiDirectoryNode" />
+              <item name="farfetch" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scrapers_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scrapers_new" type="462c0819:PsiDirectoryNode" />
+              <item name="farfetch" type="462c0819:PsiDirectoryNode" />
+              <item name="farfetch" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scrapers_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scrapers_new" type="462c0819:PsiDirectoryNode" />
+              <item name="farfetch" type="462c0819:PsiDirectoryNode" />
+              <item name="farfetch" type="462c0819:PsiDirectoryNode" />
+              <item name="spiders" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scrapers_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scrapers_new" type="462c0819:PsiDirectoryNode" />
+              <item name="freeppl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scrapers_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scrapers_new" type="462c0819:PsiDirectoryNode" />
+              <item name="freeppl" type="462c0819:PsiDirectoryNode" />
+              <item name="freeppl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scrapers_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scrapers_new" type="462c0819:PsiDirectoryNode" />
+              <item name="freeppl" type="462c0819:PsiDirectoryNode" />
+              <item name="freeppl" type="462c0819:PsiDirectoryNode" />
+              <item name="spiders" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scrapers_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scrapers_new" type="462c0819:PsiDirectoryNode" />
+              <item name="hm" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scrapers_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scrapers_new" type="462c0819:PsiDirectoryNode" />
+              <item name="hm" type="462c0819:PsiDirectoryNode" />
+              <item name="hm" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scrapers_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scrapers_new" type="462c0819:PsiDirectoryNode" />
+              <item name="hm" type="462c0819:PsiDirectoryNode" />
+              <item name="hm" type="462c0819:PsiDirectoryNode" />
+              <item name="spiders" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scrapers_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scrapers_new" type="462c0819:PsiDirectoryNode" />
+              <item name="neverfullydressed" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scrapers_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scrapers_new" type="462c0819:PsiDirectoryNode" />
+              <item name="neverfullydressed" type="462c0819:PsiDirectoryNode" />
+              <item name="neverfullydressed" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scrapers_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scrapers_new" type="462c0819:PsiDirectoryNode" />
+              <item name="neverfullydressed" type="462c0819:PsiDirectoryNode" />
+              <item name="neverfullydressed" type="462c0819:PsiDirectoryNode" />
+              <item name="spiders" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scrapers_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scrapers_new" type="462c0819:PsiDirectoryNode" />
+              <item name="new_look" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scrapers_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scrapers_new" type="462c0819:PsiDirectoryNode" />
+              <item name="new_look" type="462c0819:PsiDirectoryNode" />
+              <item name="new_look" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scrapers_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scrapers_new" type="462c0819:PsiDirectoryNode" />
+              <item name="new_look" type="462c0819:PsiDirectoryNode" />
+              <item name="new_look" type="462c0819:PsiDirectoryNode" />
+              <item name="spiders" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scrapers_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scrapers_new" type="462c0819:PsiDirectoryNode" />
+              <item name="noisymay" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scrapers_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scrapers_new" type="462c0819:PsiDirectoryNode" />
+              <item name="noisymay" type="462c0819:PsiDirectoryNode" />
+              <item name="noisymay" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scrapers_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scrapers_new" type="462c0819:PsiDirectoryNode" />
+              <item name="noisymay" type="462c0819:PsiDirectoryNode" />
+              <item name="noisymay" type="462c0819:PsiDirectoryNode" />
+              <item name="spiders" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scrapers_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scrapers_new" type="462c0819:PsiDirectoryNode" />
+              <item name="reformation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scrapers_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scrapers_new" type="462c0819:PsiDirectoryNode" />
+              <item name="reformation" type="462c0819:PsiDirectoryNode" />
+              <item name="reformation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scrapers_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scrapers_new" type="462c0819:PsiDirectoryNode" />
+              <item name="reformation" type="462c0819:PsiDirectoryNode" />
+              <item name="reformation" type="462c0819:PsiDirectoryNode" />
+              <item name="spiders" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scrapers_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scrapers_new" type="462c0819:PsiDirectoryNode" />
+              <item name="scraper6" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scrapers_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scrapers_new" type="462c0819:PsiDirectoryNode" />
+              <item name="scraper6" type="462c0819:PsiDirectoryNode" />
+              <item name="scraper6" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scrapers_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scrapers_new" type="462c0819:PsiDirectoryNode" />
+              <item name="scraper6" type="462c0819:PsiDirectoryNode" />
+              <item name="scraper6" type="462c0819:PsiDirectoryNode" />
+              <item name="spiders" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scrapers_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scrapers_new" type="462c0819:PsiDirectoryNode" />
+              <item name="scraper11" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scrapers_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scrapers_new" type="462c0819:PsiDirectoryNode" />
+              <item name="scraper11" type="462c0819:PsiDirectoryNode" />
+              <item name="scraper11" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scrapers_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scrapers_new" type="462c0819:PsiDirectoryNode" />
+              <item name="scraper11" type="462c0819:PsiDirectoryNode" />
+              <item name="scraper11" type="462c0819:PsiDirectoryNode" />
+              <item name="spiders" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scrapers_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scrapers_new" type="462c0819:PsiDirectoryNode" />
+              <item name="zalando" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scrapers_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scrapers_new" type="462c0819:PsiDirectoryNode" />
+              <item name="zalando" type="462c0819:PsiDirectoryNode" />
+              <item name="zalando" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scrapers_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scrapers_new" type="462c0819:PsiDirectoryNode" />
+              <item name="zalando" type="462c0819:PsiDirectoryNode" />
+              <item name="zalando" type="462c0819:PsiDirectoryNode" />
+              <item name="spiders" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scrapers_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scrapers_new" type="462c0819:PsiDirectoryNode" />
+              <item name="zara" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scrapers_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scrapers_new" type="462c0819:PsiDirectoryNode" />
+              <item name="zara" type="462c0819:PsiDirectoryNode" />
+              <item name="zara" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scrapers_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scrapers_new" type="462c0819:PsiDirectoryNode" />
+              <item name="zara" type="462c0819:PsiDirectoryNode" />
+              <item name="zara" type="462c0819:PsiDirectoryNode" />
+              <item name="spiders" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scrapers_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+            </path>
+            <path>
+              <item name="scrapers_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+              <item name="Scratches" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -48,5 +408,88 @@
       <updated>1578089049380</updated>
     </task>
     <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="189" y="160" width="1638" height="949" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24984539" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32905483" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/hm/hm/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2040">
+          <caret line="136" selection-start-line="136" selection-end-line="136" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zalando/zalando/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1200">
+          <caret line="80" selection-start-line="80" selection-end-line="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/farfetch/farfetch/items.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hm/hm/items.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hm/hm/spiders/hm_spider_uk.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2760">
+          <caret line="193" column="8" selection-start-line="193" selection-start-column="8" selection-end-line="196" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boohoo/boohoo/spiders/boohoo_spider_1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2295">
+          <caret line="159" column="8" selection-start-line="159" selection-start-column="8" selection-end-line="162" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/farfetch/farfetch/spiders/farfetch_spider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
