@@ -56,4 +56,108 @@ class TopshopSpider(scrapy.Spider):
 
         first_api_request_url = f'https://www.topshop.com/api/products?currentPage=1&pageSize=24&category={cat_id}'
         first_api_request = requests.get(first_api_request_url, headers=headers)
-        
+        first_api_req_json = json.loads(first_api_request.text)
+        prod_count = first_api_req_json['totalProducts']
+        page_count = int(prod_count / 24)
+
+        for i in range(0, page_count):
+            print(f'page: {i + 1}')
+            req_url = f'https://www.topshop.com/api/products?currentPage={i + 1}&pageSize=24&category={cat_id}'
+            api_request = requests.get(req_url, headers=headers)
+            response_json = json.loads(api_request.text)
+            response_prods = response_json['products']
+            for response_prod in response_prods:
+                prod_name = response_prod['name']
+                current_price = float(response_prod['unitPrice'])
+                try:
+                    was_price = float(response_prod['wasPrice'])
+                except:
+                    was_price = None
+                sale = was_price is not None
+                if sale:
+                    price = was_price
+                    saleprice = current_price
+                else:
+                    price = current_price
+                    saleprice = None
+
+                prod_url = f'https://www.topshop.com{response_prod["productUrl"]}'
+
+                yield scrapy.Request(
+                    url=prod_url,
+                    callback=self.parse,
+                    meta={
+                        'cat_name': response.meta['cat_name'],
+                        'cat_url': response.meta['cat_url'],
+                        'prod_name': prod_name,
+                        'prod_url': prod_url,
+                        'price': price,
+                        'saleprice': saleprice,
+                        'sale': sale
+                    }
+                )
+
+    def parse(self, response):
+        item = TopshopItem()
+
+        item['shop'] = 'Top Shop'
+        item['name'] = response.meta['name']
+        item['price'] = response.meta['price']
+        item['saleprice'] = response.meta['saleprice']
+        item['sale'] = response.meta['sale']
+        item['prod_url'] = response.meta['prod_url']
+
+        if isinstance(response.meta['prod_url'], str):
+            prod_id_hash_object = hashlib.sha1(response.meta['prod_url'].encode('utf8'))
+            prod_id_hex_dig = prod_id_hash_object.hexdigest()
+            item['prod_id'] = prod_id_hex_dig
+
+        prod_info_string_match = re.search('(?<=window\.__INITIAL_STATE__\=).*?(?=window\.version\=\{)', response.text,
+                                           re.I | re.DOTALL)
+        prod_info_string = prod_info_string_match.group(0).strip()[:-1]
+        prod_info_json = json.loads(prod_info_string)
+
+        item['color_string'] = prod_info_json['currentProduct']['colour'].lower()
+        item['description'] = prod_info_json['currentProduct']['description']
+
+        image_list = prod_info_json['currentProduct']['assets']
+        img_index_list = []
+        img_urls = []
+        for img_slug_dict in image_list:
+            img_index = img_slug_dict['index']
+            if img_index not in img_index_list:
+                img_index_list.append(img_index)
+                img_slug = img_slug_dict['url']
+                img_slug_split = img_slug.split('?$')
+                img_url = f'{img_slug_split[0]}?$w1000$&fmt=jpg&qlt=80'
+                img_urls.append(img_url)
+        item['image_urls'] = img_urls
+
+        img_strings = item['image_urls']
+        item['image_hash'] = []
+        for img_string in img_strings:
+            # Check if image string is a string, if not then do not pass this item
+            if isinstance(img_string, str):
+                hash_object = hashlib.sha1(img_string.encode('utf8'))
+                hex_dig = hash_object.hexdigest()
+                item['image_hash'].append(hex_dig)
+
+        size_list = prod_info_json['currentProduct']['items']
+        size_stock = [{
+            'size': size_dict['size'],
+            'stock': size_dict['stockText']
+        } for size_dict in size_list]
+        item['size_stock'] = size_stock
+        in_stock_sizes = [size_dict for size_dict in size_stock if size_dict['stock'] == 'In stock']
+        if len(in_stock_sizes) > 0:
+            item['in_stock'] = True
+        else:
+            item['in_stock'] = False
+
+        item['sex'] = 'women'
+        item['brand'] = 'Top Shop'
+        item['currency'] = 'GBP'
+        item['date'] = int(time.time())
+        item['category'] = response.meta['cat_name']
+
+        yield item
