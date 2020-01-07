@@ -8,7 +8,7 @@
 from scrapy.item import Item, Field
 
 
-class ReformationItem(scrapy.Item):
+class ReformationItem(Item):
     shop = Field()
     name = Field()
     price = Field()
