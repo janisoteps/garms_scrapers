@@ -101,7 +101,7 @@ class TopshopSpider(scrapy.Spider):
         item = TopshopItem()
 
         item['shop'] = 'Top Shop'
-        item['name'] = response.meta['name']
+        item['name'] = response.meta['prod_name']
         item['price'] = response.meta['price']
         item['saleprice'] = response.meta['saleprice']
         item['sale'] = response.meta['sale']
