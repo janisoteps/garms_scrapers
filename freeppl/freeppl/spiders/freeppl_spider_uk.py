@@ -92,15 +92,15 @@ class FreepplSpider(scrapy.Spider):
         # Assemble the item object which will be passed then to pipeline
         item['shop'] = 'Free People'
         name = response.xpath(NAME_SELECTOR).extract_first()
-        item['name'] = ''.join(ch for ch in name if ch.isalnum())
+        item['name'] = name.strip()
 
         item['price'] = None
         item['saleprice'] = None
         current_price = response.xpath(CURRENT_PRICE_SELECTOR).extract_first()
-        current_price = int(''.join(ch for ch in current_price if ch.isalnum()))
+        current_price = float(''.join(ch for ch in current_price if ch.isalnum())) / 100
         orig_price = response.xpath(ORIG_PRICE_SELECTOR).extract_first()
         if orig_price is not None:
-            item['price'] = int(''.join(ch for ch in orig_price if ch.isalnum()))
+            item['price'] = float(''.join(ch for ch in orig_price if ch.isalnum())) / 100
             item['saleprice'] = current_price
             item['sale'] = True
         else:
