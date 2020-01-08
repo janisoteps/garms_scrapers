@@ -33,21 +33,24 @@ class ZaraSpider(scrapy.Spider):
                 'cat_url': string
             }
 
-        cat_urls_women = response.xpath('.//li[@data-name="WOMAN"]/ul/li[@data-isredirected="false"]/a[contains(@class, "_category-link")]/@href').extract()
-        cat_w_names_urls = [get_sex_name(cat_url) for cat_url in cat_urls_women]
-        cat_w_names_urls_nokids = [cat_dict for cat_dict in cat_w_names_urls if cat_dict['sex'] is not None]
+        # cat_urls_women = response.xpath('.//li[@data-name="WOMAN"]/ul/li[@data-isredirected="false"]/a[contains(@class, "_category-link")]/@href').extract()
+        # cat_w_names_urls = [get_sex_name(cat_url) for cat_url in cat_urls_women]
+        # cat_w_names_urls_nokids = [cat_dict for cat_dict in cat_w_names_urls if cat_dict['sex'] is not None]
+        #
+        # cat_urls_trf = response.xpath('.//li[@data-name="TRF"]/ul/li[@data-isredirected="false"]/a[contains(@class, "_category-link")]/@href').extract()
+        # cat_trf_names_urls = [get_sex_name(cat_url) for cat_url in cat_urls_trf]
+        # cat_trf_names_urls_nokids = [cat_dict for cat_dict in cat_trf_names_urls if cat_dict['sex'] is not None]
+        #
+        # cat_urls_men = response.xpath('.//li[@data-name="MAN"]/ul/li[@data-isredirected="false"]/a[contains(@class, "_category-link")]/@href').extract()
+        # cat_men_names_urls = [get_sex_name(cat_url) for cat_url in cat_urls_men]
+        # cat_men_names_urls_nokids = [cat_dict for cat_dict in cat_men_names_urls if cat_dict['sex'] is not None]
+        #
+        # cat_list = cat_w_names_urls_nokids + cat_trf_names_urls_nokids + cat_men_names_urls_nokids
+        cat_urls = response.xpath('.//a[contains(@class, "_category-link")]/@href').extract()
+        cat_sex_names_urls = [get_sex_name(cat_url) for cat_url in cat_urls]
+        cat_sex_names_urls_nokids = [cat_dict for cat_dict in cat_sex_names_urls if cat_dict['sex'] is not None]
 
-        cat_urls_trf = response.xpath('.//li[@data-name="TRF"]/ul/li[@data-isredirected="false"]/a[contains(@class, "_category-link")]/@href').extract()
-        cat_trf_names_urls = [get_sex_name(cat_url) for cat_url in cat_urls_trf]
-        cat_trf_names_urls_nokids = [cat_dict for cat_dict in cat_trf_names_urls if cat_dict['sex'] is not None]
-
-        cat_urls_men = response.xpath('.//li[@data-name="MAN"]/ul/li[@data-isredirected="false"]/a[contains(@class, "_category-link")]/@href').extract()
-        cat_men_names_urls = [get_sex_name(cat_url) for cat_url in cat_urls_men]
-        cat_men_names_urls_nokids = [cat_dict for cat_dict in cat_men_names_urls if cat_dict['sex'] is not None]
-
-        cat_list = cat_w_names_urls_nokids + cat_trf_names_urls_nokids + cat_men_names_urls_nokids
-
-        for cat_dict in cat_list:
+        for cat_dict in cat_sex_names_urls_nokids:
             yield scrapy.Request(
                 url=cat_dict['cat_url'],
                 callback=self.get_prod_urls,
