@@ -8,22 +8,22 @@
 from scrapy.item import Item, Field
 
 
-class ReformationItem(scrapy.Item):
+class ReformationItem(Item):
     shop = Field()
     name = Field()
     price = Field()
+    saleprice = Field()
+    sale = Field()
     prod_url = Field()
     prod_id = Field()
     image_urls = Field()
     image_hash = Field()
     sex = Field()
-    sale = Field()
-    saleprice = Field()
     color_string = Field()
-    color_hex = Field()
     brand = Field()
     currency = Field()
     date = Field()
     description = Field()
     category = Field()
     size_stock = Field()
+    in_stock = Field()

@@ -127,7 +127,7 @@ class FreepplSpider(scrapy.Spider):
             item['description'] = desc_regex.group(1)
 
         color_string = response.xpath(COLOR_SELECTOR).extract_first()
-        item['colour_string'] = ''.join(ch for ch in color_string if ch.isalnum())
+        item['color_string'] = ''.join(ch for ch in color_string if ch.isalnum())
         item['category'] = response.meta['cat_name']
 
         sizes_match = response.xpath(SIZES_SELECTOR).extract()
@@ -151,6 +151,10 @@ class FreepplSpider(scrapy.Spider):
         print('SIZES STOCK:')
         print(sizes_stock)
         item['size_stock'] = sizes_stock
+        if len(item['size_stock']) > 0:
+            item['in_stock'] = True
+        else:
+            item['in_stock'] = False
 
         # Calculate SHA1 hash of image URL to make it easy to find the image based on hash entry and vice versa
         # Add the hash to item

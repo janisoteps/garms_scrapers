@@ -106,6 +106,11 @@ class ZaraSpider(scrapy.Spider):
                     'stock': 'In stock',
                     'size': size
                 } for size in sizes]
+                in_stock_sizes = [size_dict for size_dict in item['size_stock'] if size_dict['stock'] == 'In stock']
+                if len(in_stock_sizes) > 0:
+                    item['in_stock'] = True
+                else:
+                    item['in_stock'] = False
 
                 img_strings = item['image_urls']
                 item['image_hash'] = []
