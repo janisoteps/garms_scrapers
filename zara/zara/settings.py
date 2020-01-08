@@ -67,7 +67,7 @@ USER_AGENTS = [
 ROBOTSTXT_OBEY = False
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
-#CONCURRENT_REQUESTS = 32
+CONCURRENT_REQUESTS = 4
 
 # Configure a delay for requests for the same website (default: 0)
 # See https://doc.scrapy.org/en/latest/topics/settings.html#download-delay
@@ -76,8 +76,8 @@ ROBOTSTXT_OBEY = False
 # The download delay setting will honor only one of:
 #CONCURRENT_REQUESTS_PER_DOMAIN = 16
 #CONCURRENT_REQUESTS_PER_IP = 16
-CONCURRENT_REQUESTS_PER_DOMAIN = 1
-RETRY_TIMES = 0
+# CONCURRENT_REQUESTS_PER_DOMAIN = 1
+# RETRY_TIMES = 0
 
 # Disable cookies (enabled by default)
 #COOKIES_ENABLED = False
@@ -108,12 +108,12 @@ DEFAULT_REQUEST_HEADERS = {
 #    'zara.middlewares.ZaraSpiderMiddleware': 543,
 #}
 
-# PROXY
-PROXY = 'http://127.0.0.1:8888/?noconnect'
-
-# SCRAPOXY
-API_SCRAPOXY = 'http://127.0.0.1:8889/api'
-API_SCRAPOXY_PASSWORD = 'Kurlasmaskas3345'
+# # PROXY
+# PROXY = 'http://127.0.0.1:8888/?noconnect'
+#
+# # SCRAPOXY
+# API_SCRAPOXY = 'http://127.0.0.1:8889/api'
+# API_SCRAPOXY_PASSWORD = 'Kurlasmaskas3345'
 
 # BLACKLISTING
 BLACKLIST_HTTP_STATUS_CODES = [503, 403]
@@ -131,7 +131,7 @@ BLACKLIST_HTTP_STATUS_CODES = [503, 403]
 # }
 
 DOWNLOADER_MIDDLEWARES = {
-    'scrapoxy.downloadmiddlewares.blacklist.BlacklistDownloaderMiddleware': 950,
+    # 'scrapoxy.downloadmiddlewares.blacklist.BlacklistDownloaderMiddleware': 950,
     'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
     'scrapy_useragents.downloadermiddlewares.useragents.UserAgentsMiddleware': 500,
 }
@@ -150,18 +150,18 @@ DOWNLOADER_MIDDLEWARES = {
 
 ITEM_PIPELINES = {'scrapy.pipelines.images.ImagesPipeline': 1}
 
-IMAGES_STORE = '/home/janis/jdev/scrapers/img_uk/zara_uk_1'
+IMAGES_STORE = '/Users/jdo/dev/garms_data/data_uk/zara_uk/images/2019_dec'
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/autothrottle.html
 AUTOTHROTTLE_ENABLED = True
 # The initial download delay
-AUTOTHROTTLE_START_DELAY = 0
+AUTOTHROTTLE_START_DELAY = 3
 # The maximum download delay to be set in case of high latencies
-AUTOTHROTTLE_MAX_DELAY = 20
+AUTOTHROTTLE_MAX_DELAY = 40
 # The average number of requests Scrapy should be sending in parallel to
 # each remote server
-AUTOTHROTTLE_TARGET_CONCURRENCY = 5
+AUTOTHROTTLE_TARGET_CONCURRENCY = 4
 # Enable showing throttling stats for every response received:
 #AUTOTHROTTLE_DEBUG = False
 
