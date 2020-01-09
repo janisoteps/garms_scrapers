@@ -67,16 +67,16 @@ USER_AGENTS = [
 ROBOTSTXT_OBEY = False
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
-#CONCURRENT_REQUESTS = 32
+CONCURRENT_REQUESTS = 8
 
 # Configure a delay for requests for the same website (default: 0)
 # See https://doc.scrapy.org/en/latest/topics/settings.html#download-delay
 # See also autothrottle settings and docs
 #DOWNLOAD_DELAY = 3
 # The download delay setting will honor only one of:
-CONCURRENT_REQUESTS_PER_DOMAIN = 1
+# CONCURRENT_REQUESTS_PER_DOMAIN = 1
 #CONCURRENT_REQUESTS_PER_IP = 16
-RETRY_TIMES = 0
+# RETRY_TIMES = 0
 
 # Disable cookies (enabled by default)
 #COOKIES_ENABLED = False
@@ -86,13 +86,17 @@ RETRY_TIMES = 0
 
 # Override the default request headers:
 DEFAULT_REQUEST_HEADERS = {
-    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
     'accept-encoding': 'gzip, deflate, br',
     'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8',
-    'cookie': 'browseMVT=nam-block-group90; geocountry=DE; check=true; browseCountry=GB; browseCurrency=GBP; browseLanguage=en-GB; browseSizeSchema=UK; storeCode=COM; currency=1; asos-b-sdv629=p1swt7e-15; test_cookie=test; AMCVS_C0137F6A52DEAFCC0A490D4C%40AdobeOrg=1; asos-gdpr22=true; asos-perx=cfb54f88a3e54745a915315ce82ab8a3||1bcfd40dcc93452e9e1ab9dc849be26c; s_cc=true; bt_recUser=0; btpdb.ydg7T9K.dGZjLjcxMzA0Nzc=U0VTU0lPTg; btpdb.ydg7T9K.dGZjLjU3Njg1MjA=U0VTU0lPTg; btpdb.ydg7T9K.dGZjLjcwNTk5ODM=U0VTU0lPTg; bt_stdstatus=NOTSTUDENT; browseMVT=nam-block-group90; _fbp=fb.1.1554637584789.601635272; cto_lwid=db4c3047-4f3a-4b31-af32-66eb2bff8f64; _abck=6222325EDE65634C3951A2B675E02DCD58DDDD054868000086E2A95C2B0EB928~0~XgZ2+ATe5YWre0LfcYvq7XzExAWTsiod5T8iGwHXjgE=~-1~-1; floor=1000; asos=PreferredSite=&currencyid=1&currencylabel=GBP&customerguid=cfb54f88a3e54745a915315ce82ab8a3&topcatid=1000; __gads=ID=5c129af916d8dbe6:T=1554639141:S=ALNI_MY1Hz0xGAWmx9jg_rDTb4xuKjoltA; s_sq=%5B%5BB%5D%5D; bm_sz=11CD6689EABC4E8653C2AD44CBF7A9E5~YAAQBd3dWK/AzuFpAQAAisd/+AOoPawp0PeZb1HGcDkuH3+c34O2HQPkqeR7Tu9XMAL6IojWRClJjt6o5lYp10DiY5bES9pftHAyh2vVk8u1Op/sBTtfQCFKNCAFeOYo05ml7a6hxNjnNT4hW0Ssu8pfTFpPjtzXlorrVIZMVHylqU8iOpDPu+iug0Di4w==; siteChromeVersion=au=10&com=10&de=10&es=10&fr=10&it=10&nl=10&roe=10&row=10&ru=10&se=10&us=10; keyStoreDataversion=p1swt7e-15; plp_columsCount=fourColumns; AMCV_C0137F6A52DEAFCC0A490D4C%40AdobeOrg=-1303530583%7CMCIDTS%7C17994%7CMCMID%7C06640552785408282730272795733520164425%7CMCAAMLH-1555257119%7C6%7CMCAAMB-1555257119%7CRKhpRz8krg2tLO6pguXWp5olkAcUniQYPHaMWWgdJ3xzPWQmdj0y%7CMCOPTOUT-1554659519s%7CNONE%7CMCAID%7CNONE%7CvVersion%7C3.3.0%7CMCCIDH%7C0; _s_fpv=true; ak_bmsc=2B4E90CF717CCC6F1959934952EDAA6858DDDD05486800009D1CAA5CAEAF3F6D~plqdwGQ5cC4/JlwTrodwWAhINTKsPSU56P98Y96ZJMPLQygoBAEGEFAOy2s5PaYEXvDzr9O2nCUd28gK8nPJj6QA4nSE2CWyCQpHewT2qDD6eBbSmsHBFYOL57eGCm3Px4JuSoxiK87Vhd4zmwAQzpKOe7STmLy+Ltixy2IxFt/d9sHDQK7ABul53whwUKKhWw/MCUtNVdgI3gMWBDo0WIIoI44a+s4FTDtiDqDbXSfxOJFT/rWmnfz2H4ZAbDGGdq; mbox=PC#eacea3cad37841428b83b849d76c9274.26_19#1617897118|session#474ae7385906432b8af5e54b18dcc90a#1554654499; bm_sv=7683BF03395A22AED04415880C76599D~zbsnHh9G7aQ7Mk0aFXBbjTsE28On/K5B8I3XvbUNlZAqMXYTJ+FSH/3b1FITiJTCFSN8rjG5Q2bDXSGHDISLjcc2AvaTxgJL9nIA3f/E6a7neXv+1b5kY98h4/RqnBh8tAW5kExHSGGfUVoJThfGoQ==; s_pers=%20s_vnum%3D1556665200342%2526vn%253D2%7C1556665200342%3B%20s_invisit%3Dtrue%7C1554654439466%3B%20s_nr%3D1554652639475-Repeat%7C1586188639475%3B%20gpv_p10%3Ddesktop%2520com%257Cfloor%2520page%257Cwomen%7C1554654439476%3B%20gpv_p6%3D%2520%7C1554654439478%3B%20gpv_e47%3Dwomen%257Chome%7C1554654439479%3B',
+    'cookie': 'browseMVT=nam-block-group90; browseCountry=GB; browseCurrency=GBP; browseLanguage=en-GB; browseSizeSchema=UK; storeCode=COM; currency=1; gig_hasGmid=ver2; cto_lwid=133f4beb-229b-4d0e-a0fb-ccc9c88c5761; _gcl_au=1.1.956884994.1556384015; _fbp=fb.1.1556384015375.952917663; _ga=GA1.2.1410495741.1556384015; welcomeMessageClosed=true; plp_columsCount=fourColumns; fita.sid.asos=vN-3PNSjdvI18kyaugnOmnhRYZAl00Uj; floor=1000; asos=PreferredSite=&currencyid=1&currencylabel=GBP&customerguid=adf51689030e4b0e9bcefafd964f09b7&topcatid=1000; _abck=EA800BBB9649B6419ED6A700C356A466~0~YAAQVW3UF3sfIA5rAQAAjKzZGAFB8osDT/93aPQ6cFtQ2GqegvWxbw4J74hZzAJvfITl3cQkMMLXdsc2MyiJPaIIFQTy6TnEuQNwsWRbjdP+sm3Mtcyo0fsdWhQUwuZN+R1olE+Exbbbcdd2VUB3EGEG0/YJAzljpa1uAZpFHE+0pbFhKxtnuwLEmJ9nTvPqT2enSsW6Pmtrf3UxlnH10/vZrcGPJirSSv/USd+yFjveLE/UdMH/BKyud8TNTyS0sbFdJPPpjKhfiKKJSNKlW1ZKF/A8Y6NVTX67RgixDtaocINZ2aQf~-1~-1~-1; geocountry=DE; bm_sz=2A234C595B5025042980A28E27BBD33E~YAAQjrUQAvscEmhvAQAAsDiWiQYl+UUcXNl9VsOPfVVt16J5IBECJgmY8egmEC0/TxcQ0aQlMBlKTdQcf2HjmxwLGIrb5P1k4kZwZRknc6QEZh2OZH3jiGvCorixEV1a02jzM48jMJaEmS0A5x9r9LkNoi4Nr4MtZoJc5M5PSX1dwpNU/jsNWr1YcaMm/w==; ak_bmsc=51FFC5E0E5237EFD5DE00F98CD14ECEB0210B58EB91F000029EF165E3287713B~plo7vt+Cqf7TAwalPA6bJ994ojy0nlSt2R3lhU24HsejuwFGA0oJKnATQ6McIOwD/5sVha98Ie21aTy8OYDQz4J6uQzC/k8UryvD1uXfQWmUCtav6m/hqVqcvWUUdjrx6xXfFWQX4Y6QeTf7KEAaTEuo55kz/aeaqNY6zKfMeYULEYie5uq2Zmx36tVeWM4IHRR272wXY69hJmv8dp2CA8kvCI69K4kTPG4WWp/u+HyHlAZTnaAauFC7YYzugLqDIllXXAOwFifi15bN1BLX91H67wmwZpvE+UESOVA0C51t2hsmHNzK7KKSgcZw9DXIVs1uaDVpZ9dj+6BSLXjQ3Ybg==; check=true; AMCVS_C0137F6A52DEAFCC0A490D4C%40AdobeOrg=1; AMCV_C0137F6A52DEAFCC0A490D4C%40AdobeOrg=-1303530583%7CMCIDTS%7C18271%7CMCMID%7C48129871169395856320527775713080436586%7CMCAAMLH-1579166123%7C6%7CMCAAMB-1579166123%7CRKhpRz8krg2tLO6pguXWp5olkAcUniQYPHaMWWgdJ3xzPWQmdj0y%7CMCOPTOUT-1578568523s%7CNONE%7CMCAID%7CNONE%7CvVersion%7C3.3.0%7CMCCIDH%7C0; siteChromeVersion=au=11&com=11&de=11&dk=11&es=11&fr=11&it=11&nl=11&pl=11&roe=11&row=11&ru=11&se=11&us=11; keyStoreDataversion=jqvkhhb-21; asosAffiliate=affiliateId=17295; asos-gdpr22=true; asos-b-sdv629=jqvkhhb-21; test_cookie=test; mbox=PC#38676d7982a441599efab39e14c52361.26_55#1641806124|session#5b16e1f461f24bfdbd8d91217e63b1e6#1578563185; asos-perx=9e30deef028247c58ed58be93d9cf2a6||6e7719dd71e44a84a9c35436f25fe706; s_pers=%20s_vnum%3D1580511600911%2526vn%253D1%7C1580511600911%3B%20s_invisit%3Dtrue%7C1578563124911%3B%20s_nr%3D1578561324917-Repeat%7C1610097324917%3B%20gpv_p10%3Ddesktop%2520com%257Cfloor%2520page%257Cwomen%7C1578563124921%3B%20gpv_p6%3D%2520%7C1578563124925%3B%20gpv_e47%3Dwomen%257Chome%7C1578563124928%3B; _s_fpv=true; s_cc=true; bt_recUser=0; btpdb.ydg7T9K.dGZjLjcxMzA0Nzc=U0VTU0lPTg; btpdb.ydg7T9K.dGZjLjU3Njg1MjA=U0VTU0lPTg; bt_stdstatus=NOTSTUDENT; btpdb.ydg7T9K.dGZjLjcyMzUwNjA=U0VTU0lPTg; btpdb.ydg7T9K.dGZjLjcwNTk5ODM=U0VTU0lPTg; _gid=GA1.2.1450734469.1578561325; _gat=1; _derived_epik=dj0yJnU9X1pUd0dQY2VHTThhUU9CQldieXpsUVB6TkVfRHdJdEwmbj1FWW43NGRMNE1xQkpRUkVGeEpCMU13Jm09NyZ0PUFBQUFBRjRXN3kw; s_sq=asoscomprod%3D%2526c.%2526a.%2526activitymap.%2526page%253Ddesktop%252520com%25257Cfloor%252520page%25257Cwomen%2526link%253DShoes%2526region%253D1020946c-8949-4e9c-9719-43435002bcd4%2526pageIDType%253D1%2526.activitymap%2526.a%2526.c',
     'pragma': 'no-cache',
     'referer': 'https://www.asos.com/',
-    'upgrade-insecure-requests': '1'
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-site': 'same-origin',
+    'sec-fetch-user': '?1',
+    'upgrade-insecure-requests': '1',
+    'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36'
 }
 
 # Enable or disable spider middlewares
@@ -112,28 +116,28 @@ PROXY = 'http://127.0.0.1:8888/?noconnect'
 
 # SCRAPOXY
 API_SCRAPOXY = 'http://127.0.0.1:8889/api'
-API_SCRAPOXY_PASSWORD = 'Kurlasmaskas3345'
+API_SCRAPOXY_PASSWORD = 'Kurlasmaskas9921'
 
 # BLACKLISTING
 BLACKLIST_HTTP_STATUS_CODES = [503, 403]
 
 # Enable or disable downloader middlewares
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
-# DOWNLOADER_MIDDLEWARES = {
-#     'scrapoxy.downloadmiddlewares.proxy.ProxyMiddleware': 100,
-#     'scrapoxy.downloadmiddlewares.wait.WaitMiddleware': 101,
-#     'scrapoxy.downloadmiddlewares.scale.ScaleMiddleware': 102,
-#     'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware': None,
-#     'scrapoxy.downloadmiddlewares.blacklist.BlacklistDownloaderMiddleware': 950,
-#     'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
-#     'scrapy_useragents.downloadermiddlewares.useragents.UserAgentsMiddleware': 500,
-# }
-
 DOWNLOADER_MIDDLEWARES = {
+    'scrapoxy.downloadmiddlewares.proxy.ProxyMiddleware': 100,
+    'scrapoxy.downloadmiddlewares.wait.WaitMiddleware': 101,
+    'scrapoxy.downloadmiddlewares.scale.ScaleMiddleware': 102,
+    'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware': None,
     'scrapoxy.downloadmiddlewares.blacklist.BlacklistDownloaderMiddleware': 950,
     'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
     'scrapy_useragents.downloadermiddlewares.useragents.UserAgentsMiddleware': 500,
 }
+
+# DOWNLOADER_MIDDLEWARES = {
+#     'scrapoxy.downloadmiddlewares.blacklist.BlacklistDownloaderMiddleware': 950,
+#     'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
+#     'scrapy_useragents.downloadermiddlewares.useragents.UserAgentsMiddleware': 500,
+# }
 
 # Enable or disable extensions
 # See https://doc.scrapy.org/en/latest/topics/extensions.html
@@ -149,7 +153,7 @@ DOWNLOADER_MIDDLEWARES = {
 
 ITEM_PIPELINES = {'scrapy.pipelines.images.ImagesPipeline': 1}
 
-IMAGES_STORE = '/home/janis/jdev/scrapers/img_uk/asos_uk_2'
+IMAGES_STORE = '/Users/jdo/dev/garms_data/data_uk/asos_uk/images/2019_dec'
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/autothrottle.html
