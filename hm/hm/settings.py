@@ -22,8 +22,7 @@ NEWSPIDER_MODULE = 'hm.spiders'
 ROBOTSTXT_OBEY = False
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-USER_AGENT = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) ' \
-             'Chrome/72.0.3626.119 Safari/537.36 '
+USER_AGENT = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36'
 
 USER_AGENTS = [
     ('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 '
@@ -66,21 +65,22 @@ USER_AGENTS = [
     ('Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) '
      'AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0.2 Safari/605.1.15'),
     ('Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 '
-     '(KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36')
+     '(KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36'),
+    ('Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36')
 ]
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
-#CONCURRENT_REQUESTS = 32
+CONCURRENT_REQUESTS = 4
 
 # Configure a delay for requests for the same website (default: 0)
 # See https://doc.scrapy.org/en/latest/topics/settings.html#download-delay
 # See also autothrottle settings and docs
-#DOWNLOAD_DELAY = 3
+DOWNLOAD_DELAY = 3
 # The download delay setting will honor only one of:
-#CONCURRENT_REQUESTS_PER_DOMAIN = 16
+CONCURRENT_REQUESTS_PER_DOMAIN = 2
 #CONCURRENT_REQUESTS_PER_IP = 16
 
 # Disable cookies (enabled by default)
-#COOKIES_ENABLED = False
+COOKIES_ENABLED = False
 
 # Disable Telnet Console (enabled by default)
 #TELNETCONSOLE_ENABLED = False
@@ -133,7 +133,7 @@ DOWNLOADER_MIDDLEWARES = {
 
 ITEM_PIPELINES = {'scrapy.pipelines.images.ImagesPipeline': 1}
 
-IMAGES_STORE = '/home/janis/dev/garms_data/data_uk/hm_uk/images/dec_2019'
+IMAGES_STORE = '/home/pi/dev/garms_data/data_uk/hm_uk/images/dec_2019'
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/autothrottle.html
@@ -150,8 +150,9 @@ AUTOTHROTTLE_TARGET_CONCURRENCY = 2.0
 
 # Enable and configure HTTP caching (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html#httpcache-middleware-settings
-#HTTPCACHE_ENABLED = True
-#HTTPCACHE_EXPIRATION_SECS = 0
-#HTTPCACHE_DIR = 'httpcache'
-#HTTPCACHE_IGNORE_HTTP_CODES = []
-#HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
+HTTPCACHE_ENABLED = True
+HTTPCACHE_EXPIRATION_SECS = 0
+HTTPCACHE_DIR = 'httpcache'
+HTTPCACHE_IGNORE_HTTP_CODES = []
+HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
+HTTPERROR_ALLOWED_CODES = [404, 403]
