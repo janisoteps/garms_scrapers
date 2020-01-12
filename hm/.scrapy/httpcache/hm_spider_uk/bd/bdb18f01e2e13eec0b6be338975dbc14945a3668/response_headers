@@ -1,0 +1,14 @@
+Access-Control-Allow-Origin: (null)
+Access-Control-Allow-Headers: Content-Type
+Access-Control-Allow-Methods: PUT, GET, POST, OPTIONS
+Access-Control-Allow-Credentials: true
+Access-Control-Max-Age: 600
+Content-Type: text/html; charset=iso-8859-1
+Date: Sat, 04 Jan 2020 16:36:34 GMT
+Set-Cookie: TS0150476f=01dd555d350a281a8f0d1384fd3051bb84d428b15697a62938b5a1ecb283864c34fd2ccd4cbe96ef771c6ba7d0c4b0fc9b20c8150c3fbbe34c59fac95634e222e672376e6c9d97aba9070255bd48e0603de4d13b0c31fb2a656b8f8fdd2460ba3dfaee190a15c2f8b6e429888b41d412d574c9ba37; Path=/
+Set-Cookie: akainst=EU1; path=/; domain=.www2.hm.com
+Set-Cookie: akamref=; path=/; domain=www2.hm.com
+Set-Cookie: ak_bmsc=200CC601CA62B5AED384CA445B0647A10210BA9569290000FD290F5EEF53C94F~plNkbv1Q+bUCEJ6s5avcoQhFfz3EVrc0AEef/9D8Y/tUuNC9kCVnfUOYCauuWxgxQFUtTuTLoVGbCAdoanppR1ZAWLZw8x42q4VVSqrFqUSoMfr9S9O7jut45Vu2vCa6nJWzVswR2M7n6HfKaAzwaISbd/9EJabwhHX0Ohv2gRH/BQQjCZQxQStOn4mSBqlAtcUgb7DFsdqjrnDfxtsvWzNKpvdo9kyJYvTZWOQqkk76Y1Er+RGtcnmxagpo42WIzi; expires=Thu, 01 Jan 1970 00:00:01 GMT; max-age=0; path=/; domain=.hm.com; HttpOnly
+Server-Timing: cdn-cache; desc=MISS
+Server-Timing: edge; dur=43
+Server-Timing: origin; dur=76

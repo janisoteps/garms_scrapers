@@ -1,0 +1,16 @@
+Access-Control-Allow-Origin: (null)
+Access-Control-Allow-Headers: Content-Type
+Access-Control-Allow-Methods: PUT, GET, POST, OPTIONS
+Access-Control-Allow-Credentials: true
+Access-Control-Max-Age: 600
+Location: http://www2.hm.com/content/hmonline/en_gb/ladies/new-arrivals/clothes.html/
+Content-Type: text/html; charset=iso-8859-1
+Date: Sat, 04 Jan 2020 16:36:03 GMT
+Set-Cookie: TS0150476f=01dd555d35e049601d754b1dbe15ea22a97cf148d09cc7d8dd9aaf902900def09d4f61f2f872ef089c90842fb685528f04eed225d20ac5f121b7af7038d136c6b6c139a64e9bb21cfaf829c852d3b803c7bfde2f9dfbcf5e019d0e364f8616a7c251df6b1967e9bc99e540362250c7cc934e9e1308; Path=/
+Set-Cookie: akainst=EU1; path=/; domain=.www2.hm.com
+Set-Cookie: akamref=en_gb; path=/; domain=www2.hm.com
+Set-Cookie: ak_bmsc=200CC601CA62B5AED384CA445B0647A10210BA9569290000FD290F5EEF53C94F~plNkbv1Q+bUCEJ6s5avcoQhFfz3EVrc0AEef/9D8Y/tUuNC9kCVnfUOYCauuWxgxQFUtTuTLoVGbCAdoanppR1ZAWLZw8x42q4VVSqrFqUSoMfr9S9O7jut45Vu2vCa6nJWzVswR2M7n6HfKaAzwaISbd/9EJabwhHX0Ohv2gRH/BQQjCZQxQStOn4mSBqlAtcUgb7DFsdqjrnDfxtsvWzNKpvdo9kyJYvTZWOQqkk76Y1Er+RGtcnmxagpo42WIzi; expires=Thu, 01 Jan 1970 00:00:01 GMT; max-age=0; path=/; domain=.hm.com; HttpOnly
+Set-Cookie: akavpau_www2_en_gb=1578156063~id=98e1862038755c11ff627676868012cc; Path=/
+Server-Timing: cdn-cache; desc=REVALIDATE
+Server-Timing: edge; dur=54
+Server-Timing: origin; dur=128
