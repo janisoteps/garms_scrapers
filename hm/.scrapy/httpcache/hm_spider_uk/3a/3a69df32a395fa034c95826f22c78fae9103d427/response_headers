@@ -1,9 +1,0 @@
-Server: AkamaiGHost
-Location: https://www2.hm.com/content/hmonline/en_gb/ladies/new-arrivals/clothes.html/
-Date: Sat, 04 Jan 2020 16:36:17 GMT
-Set-Cookie: akainst=EU1; path=/; domain=.www2.hm.com
-Set-Cookie: akamref=; path=/; domain=www2.hm.com
-Set-Cookie: ak_bmsc=200CC601CA62B5AED384CA445B0647A10210BA9569290000FD290F5EEF53C94F~plNkbv1Q+bUCEJ6s5avcoQhFfz3EVrc0AEef/9D8Y/tUuNC9kCVnfUOYCauuWxgxQFUtTuTLoVGbCAdoanppR1ZAWLZw8x42q4VVSqrFqUSoMfr9S9O7jut45Vu2vCa6nJWzVswR2M7n6HfKaAzwaISbd/9EJabwhHX0Ohv2gRH/BQQjCZQxQStOn4mSBqlAtcUgb7DFsdqjrnDfxtsvWzNKpvdo9kyJYvTZWOQqkk76Y1Er+RGtcnmxagpo42WIzi; expires=Thu, 01 Jan 1970 00:00:01 GMT; max-age=0; path=/; domain=.hm.com; HttpOnly
-Set-Cookie: akavpau_www2_en_gb=1578156077~id=d4084ad4f44c1d758695f2ead5184498; Path=/
-Server-Timing: cdn-cache; desc=HIT
-Server-Timing: edge; dur=1
