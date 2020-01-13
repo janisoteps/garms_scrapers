@@ -14,12 +14,12 @@
             "type": "awsec2",
             "accessKeyId": "AKIA5NBZ666LA3WMHROD",
             "secretAccessKey": "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",
-            "region": "eu-west-1",
+            "region": "eu-west-2",
             "instance": {
                 "InstanceType": "t1.micro",
-                "ImageId": "ami-c74d0db4",
+                "ImageId": "ami-0de48eecd84fcfd29",
                 "SecurityGroups": [
-                    "forward-proxy"
+                    "scratchy-group-1"
                 ]
             }
         }
