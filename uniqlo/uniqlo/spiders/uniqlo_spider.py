@@ -103,7 +103,7 @@ class UniqloSpider(scrapy.Spider):
         description = response.xpath('.//div[contains(@class,"js-pdpDescription__container")]/text()').extract_first()
         item['description'] = '\n'.join(description)
         item['color_string'] = None
-        item['category'] = response.meta['category']
+        item['category'] = response.meta['cat_name']
 
         size_matches = response.xpath('.//div[contains(@class,"pdp__swatchBox--size")]/button')
 
