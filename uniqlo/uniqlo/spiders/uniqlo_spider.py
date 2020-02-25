@@ -84,7 +84,7 @@ class UniqloSpider(scrapy.Spider):
             prod_id_hex_dig = prod_id_hash_object.hexdigest()
             item['prod_id'] = prod_id_hex_dig
 
-        img_url_matches = response.xpath('.//img[contains(@class,"pdp__mainImg")]/@src')
+        img_url_matches = response.xpath('.//img[contains(@class,"pdp__mainImg")]/@src').extract()
         item['image_urls'] = [img_url_match.split('?')[0] for img_url_match in img_url_matches]
 
         item['image_hash'] = []
@@ -100,7 +100,7 @@ class UniqloSpider(scrapy.Spider):
         item['currency'] = 'GBP'
         item['date'] = int(time.time())
 
-        description = response.xpath('.//div[contains(@class,"js-pdpDescription__container")]/text()')
+        description = response.xpath('.//div[contains(@class,"js-pdpDescription__container")]/text()').extract_first()
         item['description'] = '\n'.join(description)
         item['color_string'] = None
         item['category'] = response.meta['category']
@@ -109,8 +109,8 @@ class UniqloSpider(scrapy.Spider):
 
         size_stock = []
         for size_match in size_matches:
-            size = size_match.xpath('.//@data-size-value')[0]
-            stock_class = size_match.xpath('.//@class')[0]
+            size = size_match.xpath('.//@data-size-value').extract_first()
+            stock_class = size_match.xpath('.//@class').extract_first()
             if 'pdp__swatch--available' in stock_class:
                 stock = 'In stock'
             else:
