@@ -100,7 +100,7 @@ class UniqloSpider(scrapy.Spider):
         item['currency'] = 'GBP'
         item['date'] = int(time.time())
 
-        description = response.xpath('.//div[contains(@class,"js-pdpDescription__container")]/text()').extract_first()
+        description = response.xpath('.//div[contains(@class,"js-pdpDescription__container")]/text()').extract()
         item['description'] = '\n'.join(description)
         item['color_string'] = None
         item['category'] = response.meta['cat_name']
