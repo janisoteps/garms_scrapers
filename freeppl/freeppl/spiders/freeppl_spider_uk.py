@@ -22,8 +22,8 @@ class FreepplSpider(scrapy.Spider):
         link_matches = response.xpath('.//a[contains(@class, "c-main-navigation__a--level-2")]')
         cat_dicts = []
         for link_match in link_matches:
-            cat_url = f'https://www.freepeople.com{link_match.xpath(".//@href")[0]}'
-            cat_name = link_match.xpath('.//span/text()')[0].strip()
+            cat_url = f'https://www.freepeople.com{link_match.xpath(".//@href").extract_first()}'
+            cat_name = link_match.xpath('.//span/text()').extract_first().strip()
             cat_dicts.append({
                 'cat_url': cat_url,
                 'cat_name': cat_name
@@ -91,7 +91,7 @@ class FreepplSpider(scrapy.Spider):
 
         current_price_match = re.search('(?<=\"highPrice\": ).*?(?=,)', response.text)
         current_price = float(current_price_match.group(0))
-        orig_price_match = re.search('(?<=product_original_price: \[\").*?(?=\")', prod_req.text)
+        orig_price_match = re.search('(?<=product_original_price: \[\").*?(?=\")', response.text)
         orig_price = float(orig_price_match.group(0))
         if orig_price > current_price:
             item['price'] = orig_price
