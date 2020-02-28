@@ -1,6 +1,6 @@
 import scrapy
 # from scrapy.selector import Selector
-from uniqlo.items import RealisationItem
+from realisation.items import RealisationItem
 import hashlib
 # import re
 import time
