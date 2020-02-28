@@ -18,9 +18,10 @@
             "instance": {
                 "InstanceType": "t1.micro",
                 "ImageId": "ami-0de48eecd84fcfd29",
-                "SecurityGroups": [
-                    "scratchy-group-1"
-                ]
+                "SecurityGroupIds": [
+                    "sg-0cfe86b0b0a10c33d"
+                ],
+                "SubnetId": "subnet-b99145c3"
             }
         }
     ]

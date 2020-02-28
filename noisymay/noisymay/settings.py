@@ -121,7 +121,7 @@ DOWNLOADER_MIDDLEWARES = {
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {'scrapy.pipelines.images.ImagesPipeline': 1}
 
-IMAGES_STORE = '/home/janis/dev/garms_data/data_uk/noisymay_uk/images/dec_2019'
+IMAGES_STORE = '/Users/janis/dev/garms_data/data_uk/noisymay_uk/images/2020_feb'
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html

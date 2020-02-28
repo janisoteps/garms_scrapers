@@ -165,7 +165,7 @@ DEFAULT_REQUEST_HEADERS = {
 
 ITEM_PIPELINES = {'scrapy.pipelines.images.ImagesPipeline': 1}
 
-IMAGES_STORE = '/home/pi/dev/garms_data/data_uk/freepeople_uk/images/2019_dec'
+IMAGES_STORE = '/Users/janis/dev/garms_data/data_uk/freepeople_uk/images/2020_feb'
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See http://doc.scrapy.org/en/latest/topics/autothrottle.html
