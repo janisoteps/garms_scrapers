@@ -3,9 +3,7 @@ from scrapy.selector import Selector
 from freeppl.items import FreepplItem
 import hashlib
 import re
-# import requests
-# import json
-import datetime
+import time
 from urllib.parse import urlparse
 
 
@@ -21,22 +19,22 @@ class FreepplSpider(scrapy.Spider):
             yield scrapy.Request(url=url, callback=self.get_cat_urls)
 
     def get_cat_urls(self, response):
-        links = Selector(response).xpath('.//a[contains(@class, "main-navigation")]')
-        print(f'links: {links}')
+        link_matches = response.xpath('.//a[contains(@class, "c-main-navigation__a--level-2")]')
+        cat_dicts = []
+        for link_match in link_matches:
+            cat_url = f'https://www.freepeople.com{link_match.xpath(".//@href")[0]}'
+            cat_name = link_match.xpath('.//span/text()')[0].strip()
+            cat_dicts.append({
+                'cat_url': cat_url,
+                'cat_name': cat_name
+            })
 
-        for link in links:
-            cat_url = link.xpath("./@href").extract_first()
-            if len(cat_url.split('freepeople.com')) != 2:
-                cat_url = f'https://www.freepeople.com{cat_url}'
-            print(f'Cat URL: {cat_url}')
-            cat_name = link.xpath('./span/text()').extract_first()
-            cat_name = ''.join(ch for ch in cat_name if ch.isalnum())
-            print(f'Cat name: {cat_name}')
+        for cat_dict in cat_dicts:
             yield scrapy.Request(
-                url=cat_url,
+                url=cat_dict['cat_url'],
                 callback=self.get_prod_urls,
                 meta={
-                    'cat_name': cat_name
+                    'cat_name': cat_dict['cat_name']
                 }
             )
 
@@ -81,11 +79,8 @@ class FreepplSpider(scrapy.Spider):
         # Write out xpath and css selectors for all fields to be retrieved
         item = FreepplItem()
         NAME_SELECTOR = './/h1[contains(@class, "product-meta__h1")]/span/text()'
-        CURRENT_PRICE_SELECTOR = './/span[contains(@class, "current-price")]/text()'
-        ORIG_PRICE_SELECTOR = './/span[contains(@class, "original-price")]/text()'
         IMAGE_SELECTOR = './/img[contains(@class, "zoom-product-image")]/@src'
         COLOR_SELECTOR = './/span[contains(@class, "product-colors__name")]/text()'
-        # SALE_PRICE_SELECTOR = './/div[@class = "product_prices"]/span[3]/text()'
         SIZES_SELECTOR = './/input[contains(@class, "js-size-select")]/@value'
         OOS_SELECTOR = './/li[contains(@class, "is-back-in-stock")]/input/@value'
 
@@ -94,13 +89,12 @@ class FreepplSpider(scrapy.Spider):
         name = response.xpath(NAME_SELECTOR).extract_first()
         item['name'] = name.strip()
 
-        item['price'] = None
-        item['saleprice'] = None
-        current_price = response.xpath(CURRENT_PRICE_SELECTOR).extract_first()
-        current_price = float(''.join(ch for ch in current_price if ch.isalnum())) / 100
-        orig_price = response.xpath(ORIG_PRICE_SELECTOR).extract_first()
-        if orig_price is not None:
-            item['price'] = float(''.join(ch for ch in orig_price if ch.isalnum())) / 100
+        current_price_match = re.search('(?<=\"highPrice\": ).*?(?=,)', response.text)
+        current_price = float(current_price_match.group(0))
+        orig_price_match = re.search('(?<=product_original_price: \[\").*?(?=\")', prod_req.text)
+        orig_price = float(orig_price_match.group(0))
+        if orig_price > current_price:
+            item['price'] = orig_price
             item['saleprice'] = current_price
             item['sale'] = True
         else:
@@ -109,6 +103,10 @@ class FreepplSpider(scrapy.Spider):
             item['sale'] = False
 
         item['prod_url'] = response.url
+        if isinstance(response.meta['prod_url'], str):
+            prod_id_hash_object = hashlib.sha1(response.meta['prod_url'].encode('utf8'))
+            prod_id_hex_dig = prod_id_hash_object.hexdigest()
+            item['prod_id'] = prod_id_hex_dig
 
         img_url_paths = response.xpath(IMAGE_SELECTOR).extract()
         item['image_urls'] = [f'https:{img_url_path}' for img_url_path in img_url_paths]
@@ -121,10 +119,12 @@ class FreepplSpider(scrapy.Spider):
 
         # Free People has only women fashion
         item['sex'] = 'women'
-        item['date'] = int(datetime.datetime.now().timestamp())
-        desc_regex = re.search(r'\"description\":\ \"(.*?)\"', response.text)
-        if desc_regex is not None:
-            item['description'] = desc_regex.group(1)
+        item['date'] = int(time.time())
+        description_math = response.xpath('.//div[contains(@class,"c-text-truncate__text")]').extract_first()
+        if description_math is not None:
+            item['description'] = description_math.text_content()
+        else:
+            item['description'] = None
 
         color_string = response.xpath(COLOR_SELECTOR).extract_first()
         item['color_string'] = ''.join(ch for ch in color_string if ch.isalnum())
@@ -151,7 +151,8 @@ class FreepplSpider(scrapy.Spider):
         print('SIZES STOCK:')
         print(sizes_stock)
         item['size_stock'] = sizes_stock
-        if len(item['size_stock']) > 0:
+        in_stock_sizes = [size for size in sizes_stock if size['stock'] == 'In stock']
+        if len(in_stock_sizes) > 0:
             item['in_stock'] = True
         else:
             item['in_stock'] = False
