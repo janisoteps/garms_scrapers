@@ -1,10 +1,10 @@
 import scrapy
-from scrapy.selector import Selector
+# from scrapy.selector import Selector
 from uniqlo.items import UniqloItem
 import hashlib
-import re
+# import re
 import time
-from urllib.parse import urlparse
+# from urllib.parse import urlparse
 
 
 class UniqloSpider(scrapy.Spider):
