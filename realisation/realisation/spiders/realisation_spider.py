@@ -68,7 +68,7 @@ class RealisationSpider(scrapy.Spider):
         price_was = None
         if price_was_match is not None:
             price_was = float(price_was_match)
-        if price_was is not None:
+        if price_was is not None and price_was > price_current:
             sale = True
             price = price_was
             saleprice = price_current
