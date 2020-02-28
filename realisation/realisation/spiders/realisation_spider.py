@@ -108,7 +108,7 @@ class RealisationSpider(scrapy.Spider):
         size_stock = []
         for size_match in size_matches:
             size_stock.append({
-                'size': size_match.xpath('.//text()').extract_first(),
+                'size': size_match.xpath('.//text()').extract()[1],
                 'stock': 'In stock'
             })
         item['size_stock'] = size_stock
