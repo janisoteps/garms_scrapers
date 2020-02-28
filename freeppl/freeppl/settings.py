@@ -90,7 +90,24 @@ RETRY_TIMES = 0
 #     'scrapy_useragents.downloadermiddlewares.useragents.UserAgentsMiddleware': 500,
 # }
 
+# PROXY
+PROXY = 'http://127.0.0.1:8888/?noconnect'
+
+# SCRAPOXY
+API_SCRAPOXY = 'http://127.0.0.1:8889/api'
+API_SCRAPOXY_PASSWORD = 'Kurlasmaskas9921'
+
+# BLACKLISTING
+BLACKLIST_HTTP_STATUS_CODES = [503, 403]
+
+# Enable or disable downloader middlewares
+# See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 DOWNLOADER_MIDDLEWARES = {
+    'scrapoxy.downloadmiddlewares.proxy.ProxyMiddleware': 100,
+    'scrapoxy.downloadmiddlewares.wait.WaitMiddleware': 101,
+    'scrapoxy.downloadmiddlewares.scale.ScaleMiddleware': 102,
+    'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware': None,
+    'scrapoxy.downloadmiddlewares.blacklist.BlacklistDownloaderMiddleware': 950,
     'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
     'scrapy_useragents.downloadermiddlewares.useragents.UserAgentsMiddleware': 500,
 }
