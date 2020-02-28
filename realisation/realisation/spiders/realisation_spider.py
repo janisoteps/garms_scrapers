@@ -21,8 +21,8 @@ class RealisationSpider(scrapy.Spider):
         cat_matches = response.xpath('.//li[@class="navPage-subMenu-item"]/a')
         cat_dicts = []
         for cat_match in cat_matches:
-            cat_url = cat_match.xpath('.//@href')[0]
-            cat_name = cat_match.xpath('.//text()')[0]
+            cat_url = cat_match.xpath('.//@href').extract_first()
+            cat_name = cat_match.xpath('.//text()').extract_first()
             cat_dicts.append({
                 'cat_url': cat_url,
                 'cat_name': cat_name
