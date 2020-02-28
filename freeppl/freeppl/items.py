@@ -9,13 +9,13 @@ from scrapy.item import Item, Field
 
 
 class FreepplItem(Item):
-    # define the fields for your item here like:
     shop = Field()
     name = Field()
     price = Field()
     saleprice = Field()
     sale = Field()
     prod_url = Field()
+    prod_id = Field()
     image_urls = Field()
     image_hash = Field()
     sex = Field()
