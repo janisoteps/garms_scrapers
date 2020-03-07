@@ -533,7 +533,8 @@ class ZalandoSpider(scrapy.Spider):
         item['prod_url'] = response.meta['prod_url']
         item['in_stock'] = response.meta['in_stock']
         item['date'] = int(datetime.datetime.now().timestamp())
-        item['currency'] = '£'
+        item['currency'] = 'GBP'
+        item['shop'] = 'Zalando'
 
         if isinstance(response.meta['prod_url'], str):
             prod_id_hash_object = hashlib.sha1(response.meta['prod_url'].encode('utf8'))
