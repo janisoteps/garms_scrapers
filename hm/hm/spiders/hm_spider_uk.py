@@ -6,12 +6,124 @@ import re
 import requests
 import json
 import datetime
-# from urllib.parse import urlparse
+import time
 import math
+
+kind_cats = [
+    'accessories',
+    'activewear',
+    'backpack',
+    'bag',
+    'beachwear',
+    'beanie',
+    'belt',
+    'bikini',
+    'blazer',
+    'blouse',
+    'bodycon',
+    'bodysuit',
+    'boot',
+    'bottom',
+    'bra',
+    'bracelet',
+    'bralet',
+    'bralette',
+    'brief',
+    'brogues',
+    'cami',
+    'cape',
+    'cardigan',
+    'chinos',
+    'clutch',
+    'coat',
+    'corset',
+    'culotte',
+    'dress',
+    'dungaree',
+    'espadrille',
+    'gloves',
+    'handbag',
+    'hat',
+    'headband',
+    'heel',
+    'hoodie',
+    'hoody',
+    'jacket',
+    'jean',
+    'jeggings',
+    'jersey',
+    'jewellery',
+    'jogger',
+    'jumper',
+    'jumpsuit',
+    'kimono',
+    'knickers',
+    'legging',
+    'lingerie',
+    'loafers',
+    'mules',
+    'nightwear',
+    'pant',
+    'parka',
+    'playsuit',
+    'pullover',
+    'pyjama',
+    'rucksack',
+    'sandal',
+    'scarf',
+    'shirt',
+    'shoe',
+    'shorts',
+    'skirt',
+    'sneakers',
+    'sock',
+    'suit',
+    'sundress',
+    'sunglasses',
+    'sweater',
+    'sweatpants',
+    'sweatshirt',
+    'swim',
+    'swimming',
+    'swimsuit',
+    'swimwear',
+    't-shirt',
+    'thong',
+    'tights',
+    'top',
+    'tote',
+    'tracksuit',
+    'trainer',
+    'trouser',
+    'trunks',
+    'tunic',
+    'turtleneck',
+    'tuxedo',
+    'underwear',
+    'vest',
+    'waistcoat',
+    'windbreaker',
+    'workwear'
+]
 
 
 class HmSpider(scrapy.Spider):
     name = "hm_spider_uk"
+
+    headers = {
+        'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'en-US,en;q=0.9,lv;q=0.8',
+        'cache-control': 'no-cache',
+        'cookie': 'adform_qv=1; optimizelyEndUserId=87851502006c0000c0a3ae5eaa02000018e20000; akainst=EU1; bm_sz=B09907DA76056612E679B137FA36F89C~YAAQh4UVAr/Wu9ZxAQAAqqgv2geyKuyFICyWKbnpUtfN27OKiUhLjzs/H2fjeLLox4Ugmka9BYLY0m7eDZzhvyOg7MRkkOAS8Dh5Tr+EZTNeU++YTrzpgYtM9nLz6n9fS8lRgjrX2JLnWXubAXKL9iiU2nv7+JlbYSdbgR0qPINF4naEALjy+V0EGXU=; dtCookie=80B131FF847291D3979A6205B951F3DF|SCUyNk0rUHJvZHVjdGlvbitXZWJ8MQ; TS013be3eb=01dd555d35b1b453ea28bac6a33603a938abe6dbdd57f2d18390588134c0533a9cb4acf252b888604bcf55009c2f819179ba9771945da653a71dca55081f68cf743e67de0c; agCookie=09aad154-2635-48e0-a7bc-6634b5fa3906; JSESSIONID=2182E43DD3873C81898C40383E7FAB61EFE258E7BB2BBA9815D232D4B0CE83DC03588BA79284321B192B74A06BAE36A651774EE1F93C36D51F12B5E576599D8D.HYBECMPRDEU1P29; userCookie=##eyJjYXJ0Q291bnQiOjB9##; hm-greatbritain-favourites=""; TS0150476f=01dd555d350cbb25f3dd8f0866b2a0f95e54a6c17957f2d18390588134c0533a9cb4acf2525a09898e984ee3013230cafe58a7396abbfcbd573a8c5cabd9bb68dca40cdd37cbeb3a741ceb5d9bc21c85ea5a36341e2e3ca6871a0e18b66b009f7826e03f5fef98c11ec5c0ab39f470b7d8ee96bbf3; HMX_123=1; akavpau_www2_en_gb=1588503790~id=a81b7734c3a15383b080142d44065d79; bm_sv=C16E7439BFA646C247A3115D6C0E1BB0~k+NYSlnLy+D6VDcFos8HZkh6+JLe49m1suTTFeXTtOY+v96e3NHO5xFuwxdUnfGuksFmquF8tqwtdCCIarYXomer/xHae2Rbx4F01ORIDYK8kXnIvX9FEh78hjVdiwCmj7Rp98IbiwEpg3kcNolbGQ==; akamref=; ak_bmsc=7B3A36A6E1F2D3F739C95052F82FB9B902158587006C0000C0A3AE5EA9CD6869~plrMXrTQsg+/2ApyTUuol1r9+0M94nUuHGh2+WDkf2iUee6058kJt71A8KGUaluybtNAdy6Yw9mlPc+XYmNQXh5KpJ0udNzUhuwXZXto8U4JdVPJsIlWitsS1oaHICRtwdwx5lQ1gfrskjCUUsdmxjj5RThHKUjJBsE6Nk6ZhQg2+OOYt1lTE4f+qprYDVIySVVer2Zj3dPXeQAXgkenvgVC0LNoNhiab+9Fa+AtFTx9vX8J6xWqceudW98XYfzXQj; _abck=21D722E9065A88B928AA7140EE0D2411~0~YAAQh4UVAt3Wu9ZxAQAApa8v2gNbABw7f0Ur+nv0CQwMdkWdtKVIvhKvfpjmaQ7Bkn+Ld3SL95Z697sAZr0lTc3Lx0j1I69KwSJdJ90JcmgOue/1diVwRGpBfuYuWEhBMxKAYfG6OZyoPX/GnHjCQiuLNGuLWR15262AGpLW/77FpaDRkaw/PHb8vLvu7XITZocMX9NJxaAfug5tWZzjuOJ/2Rr6hNN4Vr3LdlphwdYiOAVJMyLmF1AhXAyCZJJ2pgMZUMoqHYfTpK1VByKNbryq1XrJvu7NhFSb2VPvIjkzZE5jnb+zp1kwVz+ORXwAqaCr~-1~-1~-1; _ga=GA1.2.23667329.1588503492; _gid=GA1.2.405601047.1588503492; utag_main=v_id:0171da2fae1a00125ccf89b3614d03079002507100c48$_sn:1$_se:3$_ss:0$_st:1588505291737$ses_id:1588503490075%3Bexp-session$_pn:1%3Bexp-session$accept_cookies:1$touchpoint:DESKTOP%3Bexp-session$vc:%7B%7D%3Bexp-session$cart_active:No%3Bexp-session$opt_ga:16836871062_16857820741%3Bexp-session$vapi_domain:hm.com; s_fid=7EA0798BEC65AAEA-1B3080A1ED5A66B4; _gat_GA_GLOBAL=1; _gat_GA_LOCAL=1; rmStore=atm:mop; stc114913=tsa:1588503491881.386098388.88782835.6246015107342446.:20200503112811|env:1%7C20200603105811%7C20200503112811%7C1%7C1044345:20210503105811|uid:1588503491881.1612343271.5377817.114913.847253275.:20210503105811|srchist:1044345%3A1%3A20200603105811:20210503105811; _scid=aee280d1-2dc8-41ca-8fc8-224c82b2af2c; _uetsid=_uet19ac9f29-4bf8-d2aa-11bf-d5d01f126f19; _gcl_au=1.1.1854431299.1588503492; _cs_c=1; _cs_cvars=%7B%221%22%3A%5B%22page%20id%22%2C%22Ladies%20Department%22%5D%2C%222%22%3A%5B%22category%20id%22%2C%22LADIES_DEPARTMENT_VIEW_ALL%22%5D%2C%223%22%3A%5B%22category%20path%22%2C%22LADIES_DEPARTMENT_VIEW_ALL%22%5D%2C%224%22%3A%5B%22selected%20market%22%2C%22GB%22%5D%2C%228%22%3A%5B%22customer%20status%22%2C%22FALSE%22%5D%7D; _cs_id=f630f36c-b4c1-af4e-9428-cc59e8ffae27.1588503492.1.1588503492.1588503492.1.1622667492645.Lax.0; _cs_s=1.1; __CT_Data=gpv=1&ckp=tld&dm=hm.com&apv_44_www36=1&cpv_44_www36=1; _derived_epik=dj0yJnU9ZWFQQTlSX3E0a2R1eml4bXRjT19ucEsyTUdROTNNWVQmbj1WVDFfS1N5aG9WQnEzbTNCdUhOTzdnJm09MSZ0PUFBQUFBRjZ1bzhRJnJtPTEmcnQ9QUFBQUFGNnVvOFE; ctm={\'pgv\':1494588963716155|\'vst\':99064286683716|\'vstr\':8824529793755444|\'intr\':1588503497325|\'v\':1}; RT="sl=1&ss=1588503488535&tt=3067&obo=0&sh=1588503491607%3D1%3A0%3A3067&dm=hm.com&si=sl2gkzojjtc&ld=1588503491607&r=https%3A%2F%2Fwww2.hm.com%2Fen_gb%2Fladies.html&ul=1588503514585"',
+        'pragma': 'no-cache',
+        'sec-fetch-dest': 'document',
+        'sec-fetch-mode': 'navigate',
+        'sec-fetch-site': 'none',
+        'sec-fetch-user': '?1',
+        'upgrade-insecure-requests': '1',
+        'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.129 Safari/537.36'
+    }
 
     # The main start function which initializes the scraping URLs and triggers parse function
     def start_requests(self):
@@ -28,14 +140,16 @@ class HmSpider(scrapy.Spider):
             }
         ]
         for url in urls:
-            yield scrapy.Request(
-                url=url['url'],
-                callback=self.get_cat_urls,
-                meta={
-                    'sex': url['sex'],
-                    'api_prefix': url['api_prefix']
-                }
-            )
+            if 'licence' not in url['url']:
+                yield scrapy.Request(
+                    url=url['url'],
+                    callback=self.get_cat_urls,
+                    headers=self.headers,
+                    meta={
+                        'sex': url['sex'],
+                        'api_prefix': url['api_prefix']
+                    }
+                )
 
     def get_cat_urls(self, response):
         links = Selector(response).xpath('.//a[@role="menuitem"]')
@@ -53,18 +167,20 @@ class HmSpider(scrapy.Spider):
             api_regex = re.search(r'(?<=\/).*?(?=\.html?)', cat_api_regex.group(0))
             print(f'API slug: {api_regex.group(0)}')
             api_slug = api_regex.group(0)
-
-            yield scrapy.Request(
-                url=cat_url,
-                callback=self.infinite_requests,
-                meta={
-                    'cat_name': cat_name,
-                    'sex': response.meta['sex'],
-                    'api_prefix': response.meta['api_prefix'],
-                    'api_slug': api_slug,
-                    'cat_url': cat_url
-                }
-            )
+            time.sleep(5)
+            if 'licence' not in cat_url:
+                yield scrapy.Request(
+                    url=cat_url,
+                    callback=self.infinite_requests,
+                    headers=self.headers,
+                    meta={
+                        'cat_name': cat_name,
+                        'sex': response.meta['sex'],
+                        'api_prefix': response.meta['api_prefix'],
+                        'api_slug': api_slug,
+                        'cat_url': cat_url
+                    }
+                )
 
     def infinite_requests(self, response):
         headers = {
@@ -136,22 +252,33 @@ class HmSpider(scrapy.Spider):
                                     color_string = current_swatch[0]['colorName']
                                     color_hex = current_swatch[0]['colorCode']
 
-                                    yield scrapy.Request(
-                                        url=f'https://www2.hm.com{prod_url}',
-                                        callback=self.prod_parse,
-                                        meta={
-                                            'cat_name': response.meta['cat_name'],
-                                            'sex': response.meta['sex'],
-                                            'name': prod['title'],
-                                            'price': prod['price'],
-                                            'sale': prod['showPriceMarker'],
-                                            'sale_price': sale_price,
-                                            'prod_url': f'https://www2.hm.com{prod_url}',
-                                            'prod_id': prod_id,
-                                            'color_string': color_string,
-                                            'color_hex': color_hex
-                                        }
-                                    )
+                                    prod_name_arr = prod['title'].lower().split(' ')
+                                    prod_name_arr = [word.replace('*', '') for word in prod_name_arr]
+                                    prod_kind_cats = []
+                                    for cat in kind_cats:
+                                        for word in prod_name_arr:
+                                            if cat == word or f'{cat}s' == word or f'{cat}es' == word or f'{cat}ed' == word:
+                                                prod_kind_cats.append(cat)
+
+                                    if len(prod_kind_cats) > 0:
+                                        if 'licence' not in f'https://www2.hm.com{prod_url}':
+                                            yield scrapy.Request(
+                                                url=f'https://www2.hm.com{prod_url}',
+                                                callback=self.prod_parse,
+                                                headers=self.headers,
+                                                meta={
+                                                    'cat_name': response.meta['cat_name'],
+                                                    'sex': response.meta['sex'],
+                                                    'name': prod['title'],
+                                                    'price': prod['price'],
+                                                    'sale': prod['showPriceMarker'],
+                                                    'sale_price': sale_price,
+                                                    'prod_url': f'https://www2.hm.com{prod_url}',
+                                                    'prod_id': prod_id,
+                                                    'color_string': color_string,
+                                                    'color_hex': color_hex
+                                                }
+                                            )
 
     def prod_parse(self, response):
         item = HmItem()
@@ -205,7 +332,7 @@ class HmSpider(scrapy.Spider):
                 item['image_hash'].append(hex_dig)
 
         item['date'] = int(datetime.datetime.now().timestamp())
-        item['currency'] = '£'
+        item['currency'] = 'GBP'
         item['brand'] = 'H&M'
 
         DESCRIPTION_SELECTOR = './/p[contains(@class, "pdp-description-tex")]/text()'

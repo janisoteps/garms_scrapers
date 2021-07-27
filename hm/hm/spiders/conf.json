@@ -12,8 +12,8 @@
     "providers": [
         {
             "type": "awsec2",
-            "accessKeyId": "AKIA5NBZ666LA3WMHROD",
-            "secretAccessKey": "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",
+            "accessKeyId": "",
+            "secretAccessKey": "",
             "region": "eu-west-2",
             "instance": {
                 "InstanceType": "t1.micro",
